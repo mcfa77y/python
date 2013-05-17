@@ -1,0 +1,15 @@
+SELECT Task.id as 'id', Task.assignToId as 'assignToId', Task.alphaId as 'alphaId', Task.name as 'name', Task.status as 'status', Task.periodStatus as 'periodStatus', Task.priority as 'priority', Task.dueDate as 'dueDate', Task.infoDate as 'infoDate', Task.advanceNotice as 'advanceNotice', Task.notice as 'notice', Task.lateNotice as 'lateNotice', Task.refObjectId as 'refObjectId', Task.refObjectType as 'refObjectType', Task.rootObjectId as 'rootObjectId', Task.rootObjectType as 'rootObjectType', Person.person_status as 'assignee.status', Person.person_fname as 'assignee.firstName', Person.person_mname as 'assignee.middleName', Person.person_lname as 'assignee.lastName', Task.taskGroupId as 'taskGroupId', TaskGroup.name as 'taskGroup.name' 
+FROM dbo.Task LEFT JOIN R_PERSON as Person
+                                          ON Task.assignToId = Person.person_id
+                                         AND Person.delete_status = 0 LEFT JOIN TaskGroup as TaskGroup
+                                          ON Task.taskGroupId = TaskGroup.id
+                                         AND TaskGroup.deleteStatus = 0 WHERE Task.deleteStatus=0 AND ((Task.rootObjectType = 2000)) AND ((Task.rootObjectId = 3023)) AND ((Task.status = 1) OR (Task.status = 2)) AND (
+            (CASE WHEN status = 3 THEN periodStatus WHEN dueDate IS NULL THEN 1 WHEN getdate() - dateadd(day, - 1 * advancenotice, duedate)
+                          < 0 THEN 1 WHEN getdate() - duedate < 0 THEN 2 ELSE 3 END) = 1
+         OR 
+            (CASE WHEN status = 3 THEN periodStatus WHEN dueDate IS NULL THEN 1 WHEN getdate() - dateadd(day, - 1 * advancenotice, duedate)
+                          < 0 THEN 1 WHEN getdate() - duedate < 0 THEN 2 ELSE 3 END) = 2
+         OR 
+            (CASE WHEN status = 3 THEN periodStatus WHEN dueDate IS NULL THEN 1 WHEN getdate() - dateadd(day, - 1 * advancenotice, duedate)
+                          < 0 THEN 1 WHEN getdate() - duedate < 0 THEN 2 ELSE 3 END) = 3
+        ) ORDER BY 'priority' ASC ,'dueDate' ASC 

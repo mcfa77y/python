@@ -1,0 +1,22 @@
+* @ejb.finder
+ *      signature="java.util.Collection findAllForObject(java.lang.Integer objId,java.lang.Integer objType)"
+ *      query="select object(c) from Task as c
+ *             where c.refObjectId = ?1 and c.refObjectType = ?2 and c.deleteStatus = 0"
+ * @ejb.finder
+ *      signature="java.util.Collection findAllForRootObject(int rootId,int rootType)"
+ *      query="select object(c) from Task as c
+ *             where c.rootObjectId = ?1 and c.rootObjectType = ?2 and c.deleteStatus = 0"
+ *
+ * @ejb.finder
+ *      signature="java.util.Collection findAllForTeamMember(int assignee,int rootId,int rootType)"
+ *      query="select object(c) from Task as c where c.assignToId = ?1 and c.rootObjectId = ?2 and c.rootObjectType = ?3 and c.deleteStatus = 0"
+ * @ejb.finder
+ *      signature="java.util.Collection findByDateField(int objId, int objType, java.lang.String dateProperty)"
+ *      query="select object(c) from Task as c where c.refObjectId = ?1 and c.refObjectType = ?2 and c.beanProperty = ?3 and c.deleteStatus = 0"
+ * @ejb.finder
+ *      signature="java.util.Collection findByDateFieldFilterStatus(int objId, int objType, java.lang.String dateProperty, int status)"
+ *      query="select object(c) from Task as c where c.refObjectId = ?1 and c.refObjectType = ?2 and c.beanProperty = ?3 and c.status <> ?4 and c.deleteStatus = 0"
+ *
+ * @ejb.finder 
+ *      signature="com.bricsnet.core.entity.task.TaskDTO findByAlphaId(java.lang.String alphaId)"
+ *                 query="select object(c) from Task as c where c.alphaId = ?1 and c.deleteStatus = 0"

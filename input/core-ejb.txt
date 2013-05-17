@@ -1,0 +1,13 @@
+com.bricsnet.core.mdb.notification.NotificationServiceMDB 	 
+com.bricsnet.core.util.session.BaseAncillaryObjectSessionBean 	 
+com.bricsnet.core.util.session.BaseBusinessObjectSessionBean 	 
+com.bricsnet.core.util.session.BaseSessionBean 	 
+com.bricsnet.core.util.session.BaseSubObjectSessionBean 	 
+com.bricsnet.core.util.session.ValidationUtil 	 
+com.bricsnet.core.web.listener.util.session.SessionListener 	 
+com.bricsnet.docmanager.ejb.document.entity.AppDocTreeItem
+com.bricsnet.docmanager.ejb.document.entity.ObjectDocumentDTO 	 
+com.bricsnet.docmanager.ejb.document.session.LegacyDocumentLightWeightFileStore 	 
+com.bricsnet.docmanager.ejb.document.session.LegacyDocumentLightWeightServletStore 	 
+com.bricsnet.docmanager.ejb.document.session.LegacyDocumentLightWeightStore 	 
+com.bricsnet.docmanager.ejb.documentviewingextension.entity.ViewingExtensionDTO

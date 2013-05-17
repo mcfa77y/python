@@ -1,0 +1,13 @@
+What is your favorite website?
+If you could have a superpower what would it be?
+What is your favorite color?
+
+have a table of questions
+that can be edited by admin
+
+users
+	name
+	log in
+	
+	admin
+	candidates

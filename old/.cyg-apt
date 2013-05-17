@@ -1,0 +1,7 @@
+ROOT="/."
+MKNETREL="/cygdrive/c/home/sofeng"
+NETREL="/cygdrive/c/home/sofeng/cygwin"
+mirror="http://sources-redhat.mirror.redwire.net/cygwin"
+cache="/./var/cache/setup"
+setup_ini="nstall"
+distname="curr"

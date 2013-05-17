@@ -1,0 +1,2538 @@
+14a15,190
+>     <form-bean
+>       name="SpaceRateForm"
+>       type="com.bricsnet.space.web.forms.SpaceRateForm"
+>     />
+>     <form-bean
+>       name="SpaceTypeForm"
+>       type="com.bricsnet.space.web.forms.SpaceTypeForm"
+>     />
+>     <form-bean
+>       name="PropertySpaceListForm"
+>       type="com.bricsnet.space.web.forms.PropertySpaceListForm"
+>     />
+>     <form-bean
+>       name="PropertySpaceInfoForm"
+>       type="com.bricsnet.space.web.forms.PropertySpaceInfoForm"
+>     />
+>     <form-bean
+>       name="PropertySpaceEditListForm"
+>       type="com.bricsnet.space.web.forms.PropertySpaceEditListForm"
+>     />
+>     <form-bean
+>       name="AttachSpaceRequestOwnerForm"
+>       type="com.bricsnet.space.web.forms.AttachSpaceRequestOwnerForm"
+>     />
+>     <form-bean
+>       name="ReportSpaceForm"
+>       type="com.bricsnet.space.web.forms.ReportSpaceForm"
+>     />
+>     <form-bean
+>       name="PropertySpaceRequestDetailForm"
+>       type="com.bricsnet.space.web.forms.PropertySpaceRequestDetailForm"
+>     />
+>     <form-bean
+>       name="PropertyFloorForm"
+>       type="com.bricsnet.space.web.forms.PropertyFloorForm"
+>     />
+>     <form-bean
+>       name="PropertyFloorCandidateListForm"
+>       type="com.bricsnet.space.web.forms.PropertyFloorCandidateListForm"
+>     />
+>     <form-bean
+>       name="PropertySpaceRequestOccupantForm"
+>       type="com.bricsnet.space.web.forms.PropertySpaceRequestOccupantForm"
+>     />
+>     <form-bean
+>       name="HistoryForm"
+>       type="com.bricsnet.space.web.forms.HistoryForm"
+>     />
+>     <form-bean
+>       name="PropertySpaceReferenceForm"
+>       type="com.bricsnet.space.web.forms.PropertySpaceReferenceForm"
+>     />
+>     <form-bean
+>       name="RoomAvailabliltyListForm"
+>       type="com.bricsnet.space.web.forms.RoomAvailabliltyListForm"
+>     />
+>     <form-bean
+>       name="PropertyFloorCandidateSummaryForm"
+>       type="com.bricsnet.space.web.forms.PropertyFloorCandidateSummaryForm"
+>     />
+>     <form-bean
+>       name="SpaceRequestImportResultListForm"
+>       type="com.bricsnet.space.web.forms.SpaceRequestImportResultListForm"
+>     />
+>     <form-bean
+>       name="PropertySpaceRequestOwnerForm"
+>       type="com.bricsnet.space.web.forms.PropertySpaceRequestOwnerForm"
+>     />
+>     <form-bean
+>       name="PropertySpaceRequestListForm"
+>       type="com.bricsnet.space.web.forms.PropertySpaceRequestListForm"
+>     />
+>     <form-bean
+>       name="PropertyAllocationProjectionListForm"
+>       type="com.bricsnet.space.web.forms.PropertyAllocationProjectionListForm"
+>     />
+>     <form-bean
+>       name="BasicSpaceListForm"
+>       type="com.bricsnet.space.web.forms.BasicSpaceListForm"
+>     />
+>     <form-bean
+>       name="PropertySpaceAssetPopupForm"
+>       type="com.bricsnet.space.web.forms.PropertySpaceAssetPopupForm"
+>     />
+>     <form-bean
+>       name="PropertyAllocationProjectionEditListForm"
+>       type="com.bricsnet.space.web.forms.PropertyAllocationProjectionEditListForm"
+>     />
+>     <form-bean
+>       name="PropertySpaceOccupantForm"
+>       type="com.bricsnet.space.web.forms.PropertySpaceOccupantForm"
+>     />
+>     <form-bean
+>       name="SpaceGradeForm"
+>       type="com.bricsnet.space.web.forms.SpaceGradeForm"
+>     />
+>     <form-bean
+>       name="PropertyFloorSummaryForm"
+>       type="com.bricsnet.space.web.forms.PropertyFloorSummaryForm"
+>     />
+>     <form-bean
+>       name="PropertySpaceRequestAssetForm"
+>       type="com.bricsnet.space.web.forms.PropertySpaceRequestAssetForm"
+>     />
+>     <form-bean
+>       name="AttachChildSpaceRequestForm"
+>       type="com.bricsnet.space.web.forms.AttachChildSpaceRequestForm"
+>     />
+>     <form-bean
+>       name="AttachSpaceRequestAssetForm"
+>       type="com.bricsnet.space.web.forms.AttachSpaceRequestAssetForm"
+>     />
+>     <form-bean
+>       name="PropertySummaryForm"
+>       type="com.bricsnet.space.web.forms.PropertySummaryForm"
+>     />
+>     <form-bean
+>       name="PropertySpaceRequestForm"
+>       type="com.bricsnet.space.web.forms.PropertySpaceRequestForm"
+>     />
+>     <form-bean
+>       name="PropertySpaceRequestDetailLayoutForm"
+>       type="com.bricsnet.space.web.forms.PropertySpaceRequestDetailLayoutForm"
+>     />
+>     <form-bean
+>       name="PropertyFloorDrawingSpaceLayoutForm"
+>       type="com.bricsnet.space.web.forms.PropertyFloorDrawingSpaceLayoutForm"
+>     />
+>     <form-bean
+>       name="PropertySpaceReferenceItemForm"
+>       type="com.bricsnet.space.web.forms.PropertySpaceReferenceItemForm"
+>     />
+>     <form-bean
+>       name="RoomReservationDatasheetForm"
+>       type="com.bricsnet.space.web.forms.RoomReservationDatasheetForm"
+>     />
+>     <form-bean
+>       name="PropertySpaceAllocationSnapshotForm"
+>       type="com.bricsnet.space.web.forms.PropertySpaceAllocationSnapshotForm"
+>     />
+>     <form-bean
+>       name="PropertySpaceRequestImportForm"
+>       type="com.bricsnet.space.web.forms.PropertySpaceRequestImportForm"
+>     />
+>     <form-bean
+>       name="PropertySpaceOwnerForm"
+>       type="com.bricsnet.space.web.forms.PropertySpaceOwnerForm"
+>     />
+>     <form-bean
+>       name="SpaceUseTypeForm"
+>       type="com.bricsnet.space.web.forms.SpaceUseTypeForm"
+>     />
+>     <form-bean
+>       name="PropertySpaceForm"
+>       type="com.bricsnet.space.web.forms.PropertySpaceForm"
+>     />
+>     <form-bean
+>       name="PropertyAllocationForm"
+>       type="com.bricsnet.space.web.forms.PropertyAllocationForm"
+>     />
+>     <form-bean
+>       name="PerformancePanelKpiLayoutForm"
+>       type="com.bricsnet.space.web.forms.PerformancePanelKpiLayoutForm"
+>     />
+>     <form-bean
+>       name="DrawingForm"
+>       type="com.bricsnet.space.web.forms.DrawingForm"
+>     />
+>     <form-bean
+>       name="PropertyAllocationProjectionForm"
+>       type="com.bricsnet.space.web.forms.PropertyAllocationProjectionForm"
+>     />
+>     <form-bean
+>       name="AttachSpaceRequestOccupantForm"
+>       type="com.bricsnet.space.web.forms.AttachSpaceRequestOccupantForm"
+>     />
+17d192
+< 
+21d195
+< 
+25d198
+< 
+48a222,2118
+>     <action
+>       path="/SpaceTypePopupStore"
+>       type="com.bricsnet.space.web.actions.SpaceTypePopupStoreAction"
+>       name="SpaceTypeForm"
+>       scope="session"
+>       input="/SpaceTypePopup.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/CloseExtPopupAndRefreshOpener.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertySpaceAllocationSnapshotListLoad"
+>       type="com.bricsnet.space.web.actions.PropertySpaceAllocationSnapshotListLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySpaceAllocationSnapshotList.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="reLoad"
+>         path="/PropertySpaceAllocationSnapshotListLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/PropertySpaceOwnerPopupLoad"
+>       type="com.bricsnet.space.web.actions.PropertySpaceOwnerPopupLoadAction"
+>       name="PropertySpaceOwnerForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySpaceOwnerPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/SpaceSelectMACStore"
+>       type="com.bricsnet.space.web.actions.SpaceSelectMACStoreAction"
+>       name="DrawingForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>     </action>
+>     <action
+>       path="/CostCentersRoutingBinaryOpFirstElement"
+>       type="com.bricsnet.space.web.actions.ajax.costcenter.CostCentersRoutingBinaryOpFirstElementAction"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/MyCostCentersLookup.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyFloorSummaryStore"
+>       type="com.bricsnet.space.web.actions.PropertyFloorSummaryStoreAction"
+>       name="PropertyFloorSummaryForm"
+>       scope="request"
+>       input="/PropertyFloorSummary.jsp"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyFloorSummaryLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/SpaceUseTypePopupLoad"
+>       type="com.bricsnet.space.web.actions.SpaceUseTypePopupLoadAction"
+>       name="SpaceUseTypeForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/SpaceUseTypePopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyAllocationStore"
+>       type="com.bricsnet.space.web.actions.PropertyAllocationStoreAction"
+>       name="PropertyAllocationForm"
+>       scope="session"
+>       input="/PropertyAllocation.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySummaryLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/SpaceSelectMACLoad"
+>       type="com.bricsnet.space.web.actions.SpaceSelectMACLoadAction"
+>       name="DrawingForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/SpaceSelectMAC.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertySpaceReferenceLoad"
+>       type="com.bricsnet.space.web.actions.PropertySpaceReferenceLoadAction"
+>       name="PropertySpaceReferenceForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySpaceReference.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertySpaceRequestStore"
+>       type="com.bricsnet.space.web.actions.PropertySpaceRequestStoreAction"
+>       name="PropertySpaceRequestForm"
+>       scope="session"
+>       input="/PropertySpaceRequest.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySpaceRequestLoad.do"
+>         redirect="true"
+>       />
+>       <forward
+>         name="success_import"
+>         path="/PropertySpaceRequestImport.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertySpaceAssetPopupStore"
+>       type="com.bricsnet.space.web.actions.PropertySpaceAssetPopupStoreAction"
+>       name="PropertySpaceAssetPopupForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/CloseAndRefreshOpener.jsp"
+>         redirect="true"
+>       />
+>       <forward
+>         name="attachSuccess"
+>         path="/AttachSpaceRequestAssetStoreResponse.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="floorDrawing"
+>         path="/CloseAndRefreshFloorDrawing.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertySpaceRequestNewLoad"
+>       type="com.bricsnet.space.web.actions.PropertySpaceRequestNewLoadAction"
+>       name="PropertySpaceRequestForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySpaceRequestLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/PropertySpaceRequestListLoad"
+>       type="com.bricsnet.space.web.actions.PropertySpaceRequestListLoadAction"
+>       name="PropertySpaceRequestListForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySpaceRequestList.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="advancedSuccess"
+>         path="/PropertySpaceRequestAdvancedSearch.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyFloorDrawingLoad"
+>       type="com.bricsnet.space.web.actions.PropertyFloorDrawingLoadAction"
+>       name="DrawingForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyFloorDrawing.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/DrawingReloadAjax"
+>       type="com.bricsnet.space.web.actions.DrawingReloadAjaxAction"
+>       name="DrawingForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/DrawingReloadAjax.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertySpaceRequestOccupantPopupStore"
+>       type="com.bricsnet.space.web.actions.PropertySpaceRequestOccupantPopupStoreAction"
+>       name="PropertySpaceRequestOccupantForm"
+>       scope="request"
+>       input="/PropertySpaceRequestOccupantPopup.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySpaceRequestOccupantPopupLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/DetachChildSpaceRequestStore"
+>       type="com.bricsnet.space.web.actions.DetachChildSpaceRequestStoreAction"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySpaceRequestLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertySpaceSelectPopupLoad"
+>       type="com.bricsnet.space.web.actions.PropertySpaceSelectPopupLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySpaceSelectPopup.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="error"
+>         path="/PropertySpaceSelectPopup.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="successDrawingSelect"
+>         path="/PropertyFloorDrawingSelectPopupLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/PropertySpaceRequestAddRequestDetailStore"
+>       type="com.bricsnet.space.web.actions.PropertySpaceRequestAddRequestDetailStoreAction"
+>       name="BaseForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/CloseRefreshParent.jsp"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/AdhocLoad"
+>       type="com.bricsnet.space.web.actions.AdhocLoadAction"
+>       name="AdhocForm"
+>       scope="session"
+>       input="/Adhoc.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/Adhoc.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success-mac"
+>         path="/AdhocMAC.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         contextRelative="false"
+>         module="/"
+>         name="failure"
+>         path="/AdhocListLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/SpaceReferenceItemPopupStore"
+>       type="com.bricsnet.space.web.actions.SpaceReferenceItemPopupStoreAction"
+>       name="PropertySpaceReferenceItemForm"
+>       scope="session"
+>       input="/SpaceReferenceItemPopup.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/SpaceReferenceItemPopupLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/SpaceReferenceItemNewPopupLoad"
+>       type="com.bricsnet.space.web.actions.SpaceReferenceItemNewPopupLoadAction"
+>       name="PropertySpaceReferenceItemForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/SpaceReferenceItemPopupLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/PropertySpaceRequestOwnerNewPopupLoad"
+>       type="com.bricsnet.space.web.actions.PropertySpaceRequestOwnerNewPopupLoadAction"
+>       name="PropertySpaceRequestOwnerForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySpaceRequestOwnerPopupLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyAllocationProjectionPopupLoad"
+>       type="com.bricsnet.space.web.actions.PropertyAllocationProjectionPopupLoadAction"
+>       name="PropertyAllocationProjectionForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyAllocationProjectionPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertySpaceOccupantPopupStore"
+>       type="com.bricsnet.space.web.actions.PropertySpaceOccupantPopupStoreAction"
+>       name="PropertySpaceOccupantForm"
+>       scope="session"
+>       input="/PropertySpaceOccupantPopup.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySpaceOccupantPopupLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyAllocationProjectionPopupStore"
+>       type="com.bricsnet.space.web.actions.PropertyAllocationProjectionPopupStoreAction"
+>       name="PropertyAllocationProjectionForm"
+>       scope="session"
+>       input="/PropertyAllocationProjectionPopup.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyAllocationProjectionPopupLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/PropertySpaceListLoad"
+>       type="com.bricsnet.space.web.actions.PropertySpaceListLoadAction"
+>       name="PropertySpaceListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySpaceList.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="propertySuccess"
+>         path="/PropertyList.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="advancedSuccess"
+>         path="/SpacePropertyAdvancedSearch.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertySpaceOccupantPopupLoad"
+>       type="com.bricsnet.space.web.actions.PropertySpaceOccupantPopupLoadAction"
+>       name="PropertySpaceOccupantForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySpaceOccupantPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/DatasheetModify"
+>       type="com.bricsnet.space.web.actions.DatasheetModifyAction"
+>       name="PropertySpaceRequestForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySpaceRequest.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/HistoryLoad"
+>       type="com.bricsnet.space.web.actions.HistoryLoadAction"
+>       name="HistoryForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/History.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertySpaceRequestAssetPopupStore"
+>       type="com.bricsnet.space.web.actions.PropertySpaceRequestAssetPopupStoreAction"
+>       name="PropertySpaceRequestAssetForm"
+>       scope="request"
+>       input="/PropertySpaceRequestAssetPopup.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySpaceRequestAssetPopupLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/AttachSpaceRequestOwnerNewLoad"
+>       type="com.bricsnet.space.web.actions.AttachSpaceRequestOwnerNewLoadAction"
+>       name="AttachSpaceRequestOwnerForm"
+>       scope="session"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/AttachSpaceRequestOwnerLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/PropertySpaceRequestOccupantPopupLoad"
+>       type="com.bricsnet.space.web.actions.PropertySpaceRequestOccupantPopupLoadAction"
+>       name="PropertySpaceRequestOccupantForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySpaceRequestOccupantPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertySpaceRequestSelectSpaceStore"
+>       type="com.bricsnet.space.web.actions.PropertySpaceRequestSelectSpaceStoreAction"
+>       name="BaseForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/CloseRefreshParent.jsp"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyFloorSummaryLoad"
+>       type="com.bricsnet.space.web.actions.PropertyFloorSummaryLoadAction"
+>       name="PropertyFloorSummaryForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyFloorSummary.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertySpaceRequestOwnerPopupStore"
+>       type="com.bricsnet.space.web.actions.PropertySpaceRequestOwnerPopupStoreAction"
+>       name="PropertySpaceRequestOwnerForm"
+>       scope="request"
+>       input="/PropertySpaceRequestOwnerPopup.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySpaceRequestOwnerPopupLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/PropertySpaceOwnerPopupStore"
+>       type="com.bricsnet.space.web.actions.PropertySpaceOwnerPopupStoreAction"
+>       name="PropertySpaceOwnerForm"
+>       scope="session"
+>       input="/PropertySpaceOwnerPopup.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySpaceOwnerPopupLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/AttachSpaceRequestOccupantNewLoad"
+>       type="com.bricsnet.space.web.actions.AttachSpaceRequestOccupantNewLoadAction"
+>       name="AttachSpaceRequestOccupantForm"
+>       scope="session"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/AttachSpaceRequestOccupantLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/PropertySpaceMigrationAction"
+>       type="com.bricsnet.space.web.actions.PropertySpaceMigrationAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/AttachSpaceRequestOccupantLoad"
+>       type="com.bricsnet.space.web.actions.AttachSpaceRequestOccupantLoadAction"
+>       name="AttachSpaceRequestOccupantForm"
+>       scope="session"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/AttachSpaceRequestOccupantPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyAllocationProjectionListLoad"
+>       type="com.bricsnet.space.web.actions.PropertyAllocationProjectionListLoadAction"
+>       name="PropertyAllocationProjectionListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyAllocationProjectionList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertySpaceNewLoad"
+>       type="com.bricsnet.space.web.actions.PropertySpaceNewLoadAction"
+>       name="PropertySpaceForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySpaceLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/AttachSpaceRequestAssetNewLoad"
+>       type="com.bricsnet.space.web.actions.AttachSpaceRequestAssetNewLoadAction"
+>       name="AttachSpaceRequestAssetForm"
+>       scope="session"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/AttachSpaceRequestAssetLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/MyCostCentersLookup"
+>       type="com.bricsnet.space.web.actions.ajax.costcenter.MyCostCentersLookupAction"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/CostCentersRoutingBinaryOpSecondElement.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/DetachSpaceRequestAssetStore"
+>       type="com.bricsnet.space.web.actions.DetachSpaceRequestAssetStoreAction"
+>       name="PropertySpaceRequestForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySpaceRequestLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/PropertySpaceRequestOwnerPopupLoad"
+>       type="com.bricsnet.space.web.actions.PropertySpaceRequestOwnerPopupLoadAction"
+>       name="PropertySpaceRequestOwnerForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySpaceRequestOwnerPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertySpaceSummaryLoad"
+>       type="com.bricsnet.space.web.actions.PropertySpaceSummaryLoadAction"
+>       name="PropertySpaceForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySpaceSummary.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertySpaceOccupantNewPopupLoad"
+>       type="com.bricsnet.space.web.actions.PropertySpaceOccupantNewPopupLoadAction"
+>       name="PropertySpaceOccupantForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySpaceOccupantPopupLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/ReportListSpaceLoad"
+>       type="com.bricsnet.space.web.actions.ReportListSpaceLoadAction"
+>       name="ReportSpaceForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/ReportListSpace.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/SpaceRatePopupStore"
+>       type="com.bricsnet.space.web.actions.SpaceRatePopupStoreAction"
+>       name="SpaceRateForm"
+>       scope="session"
+>       input="/SpaceRatePopup.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/CloseExtPopupAndRefreshOpener.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertySpaceRequestDetailLayoutLoad"
+>       type="com.bricsnet.space.web.actions.PropertySpaceRequestDetailLayoutLoadAction"
+>       name="PropertySpaceRequestDetailLayoutForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySpaceRequestDetailLayout.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/AttachChildSpaceRequestLoad"
+>       type="com.bricsnet.space.web.actions.AttachChildSpaceRequestLoadAction"
+>       name="AttachChildSpaceRequestForm"
+>       scope="session"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/AttachChildSpaceRequestPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/AvailableCostCentersLookup"
+>       type="com.bricsnet.space.web.actions.ajax.costcenter.AvailableCostCentersLookupAction"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/CostCentersRoutingBinaryOpFirstElement.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertySpaceRequestTransientUpdate"
+>       type="com.bricsnet.space.web.actions.PropertySpaceRequestTransientUpdateAction"
+>       name="PropertySpaceRequestForm"
+>       scope="session"
+>       input="/PropertySpaceRequest.jsp"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySpaceRequestTransientUpdateResponse.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertySpaceRequestDetailPopupStore"
+>       type="com.bricsnet.space.web.actions.PropertySpaceRequestDetailPopupStoreAction"
+>       name="PropertySpaceRequestDetailForm"
+>       scope="session"
+>       input="/PropertySpaceRequestDetailPopup.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySpaceRequestDetailPopupLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/CostCentersRoutingBinaryOpSecondElement"
+>       type="com.bricsnet.space.web.actions.ajax.costcenter.CostCentersRoutingBinaryOpSecondElementAction"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/CostCentersCollectionsDifferenceCalculation.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/DetachAllocationProjectionStore"
+>       type="com.bricsnet.space.web.actions.DetachAllocationProjectionStoreAction"
+>       name="PropertyAllocationProjectionForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyAllocationProjectionListLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/PropertySpaceRequestListStore"
+>       type="com.bricsnet.space.web.actions.PropertySpaceRequestListStoreAction"
+>       name="PropertySpaceRequestListForm"
+>       scope="session"
+>       input="/PropertySpaceRequestList.jsp"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySpaceRequestListLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/PropertySpaceInfoLoad"
+>       type="com.bricsnet.space.web.actions.PropertySpaceInfoLoadAction"
+>       name="PropertySpaceInfoForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySpaceInfoPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertySpaceRequestLoad"
+>       type="com.bricsnet.space.web.actions.PropertySpaceRequestLoadAction"
+>       name="PropertySpaceRequestForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySpaceRequest.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertySpaceEditListLoad"
+>       type="com.bricsnet.space.web.actions.PropertySpaceEditListLoadAction"
+>       name="PropertySpaceEditListForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySpaceEditList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertySpaceRequestDetailNewPopupLoad"
+>       type="com.bricsnet.space.web.actions.PropertySpaceRequestDetailNewPopupLoadAction"
+>       name="PropertySpaceRequestDetailForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySpaceRequestDetailPopupLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/AttachChildSpaceRequestNewLoad"
+>       type="com.bricsnet.space.web.actions.AttachChildSpaceRequestNewLoadAction"
+>       name="AttachChildSpaceRequestForm"
+>       scope="session"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/AttachChildSpaceRequestLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/PropertySpaceAllocationSnapshotPopupStore"
+>       type="com.bricsnet.space.web.actions.PropertySpaceAllocationSnapshotPopupStoreAction"
+>       name="PropertySpaceAllocationSnapshotForm"
+>       scope="session"
+>       input="/PropertySpaceAllocationSnapshotPopup.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/CloseAndRefreshOpener.jsp"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyAllocationProjectionEditListLoad"
+>       type="com.bricsnet.space.web.actions.PropertyAllocationProjectionEditListLoadAction"
+>       name="PropertyAllocationProjectionEditListForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyAllocationProjectionEditList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/SpaceTypePopupLoad"
+>       type="com.bricsnet.space.web.actions.SpaceTypePopupLoadAction"
+>       name="SpaceTypeForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/SpaceTypePopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertySpaceOwnerNewPopupLoad"
+>       type="com.bricsnet.space.web.actions.PropertySpaceOwnerNewPopupLoadAction"
+>       name="PropertySpaceOwnerForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySpaceOwnerPopupLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/PropertySpaceRequestListAjaxLoad"
+>       type="com.bricsnet.space.web.actions.PropertySpaceRequestListAjaxLoadAction"
+>       name="PropertySpaceRequestListForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySpaceRequestListAjax.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="advancedSuccess"
+>         path="/PropertySpaceRequestListAjax.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertySpaceAllocationSnapshotPopupLoad"
+>       type="com.bricsnet.space.web.actions.PropertySpaceAllocationSnapshotPopupLoadAction"
+>       name="PropertySpaceAllocationSnapshotForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySpaceAllocationSnapshotPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/AttachSpaceRequestOwnerStore"
+>       type="com.bricsnet.space.web.actions.AttachSpaceRequestOwnerStoreAction"
+>       name="AttachSpaceRequestOwnerForm"
+>       scope="session"
+>       input="/AttachSpaceRequestOwner.jsp"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/CloseAndRefreshOpener.jsp"
+>         redirect="true"
+>       />
+>       <forward
+>         name="attachSuccess"
+>         path="/AttachSpaceRequestOwnerStoreResponse.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="loadSuccess"
+>         path="/AttachSpaceRequestOwnerLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertySpaceRequestOccupantNewPopupLoad"
+>       type="com.bricsnet.space.web.actions.PropertySpaceRequestOccupantNewPopupLoadAction"
+>       name="PropertySpaceRequestOccupantForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySpaceRequestOccupantPopupLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/CostCentersPresentation"
+>       type="com.bricsnet.space.web.actions.ajax.costcenter.CostCentersPresentationAction"
+>       unknown="false"
+>       validate="false"
+>     >
+>     </action>
+>     <action
+>       path="/SpaceUseTypePopupStore"
+>       type="com.bricsnet.space.web.actions.SpaceUseTypePopupStoreAction"
+>       name="SpaceUseTypeForm"
+>       scope="session"
+>       input="/SpaceUseTypePopup.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/CloseExtPopupAndRefreshOpener.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyFloorLoad"
+>       type="com.bricsnet.space.web.actions.PropertyFloorLoadAction"
+>       name="PropertyFloorForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyFloor.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/AttachSpaceRequestOwnerLoad"
+>       type="com.bricsnet.space.web.actions.AttachSpaceRequestOwnerLoadAction"
+>       name="AttachSpaceRequestOwnerForm"
+>       scope="session"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/AttachSpaceRequestOwnerPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertySpaceListStore"
+>       type="com.bricsnet.space.web.actions.PropertySpaceListStoreAction"
+>       name="PropertySpaceListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySpaceListLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/DetachSpaceRequestDetailStore"
+>       type="com.bricsnet.space.web.actions.DetachSpaceRequestDetailStoreAction"
+>       name="PropertySpaceRequestDetailForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySpaceRequestLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/PropertySummaryLoad"
+>       type="com.bricsnet.space.web.actions.PropertySummaryLoadAction"
+>       name="PropertySummaryForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySummary.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PerformancePanelKpiLayOutStore"
+>       type="com.bricsnet.space.web.actions.PerformancePanelKpiLayOutStoreAction"
+>       name="PerformancePanelKpiLayoutForm"
+>       scope="session"
+>       input="/PropertyList.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/ajax/AjaxResponse.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/SpaceGradePopupStore"
+>       type="com.bricsnet.space.web.actions.SpaceGradePopupStoreAction"
+>       name="SpaceGradeForm"
+>       scope="session"
+>       input="/SpaceGradePopup.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/CloseExtPopupAndRefreshOpener.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/RoomReservationDatasheetStore"
+>       type="com.bricsnet.space.web.actions.RoomReservationDatasheetStoreAction"
+>       name="RoomReservationDatasheetForm"
+>       scope="session"
+>       input="/RoomReservationDatasheet.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/RoomReservationDatasheetLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/SpaceReferenceItemPopupLoad"
+>       type="com.bricsnet.space.web.actions.SpaceReferenceItemPopupLoadAction"
+>       name="PropertySpaceReferenceItemForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/SpaceReferenceItemPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertySpaceEditListStore"
+>       type="com.bricsnet.space.web.actions.PropertySpaceEditListStoreAction"
+>       name="PropertySpaceEditListForm"
+>       scope="session"
+>       input="/PropertySpaceEditList.jsp"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyFloorSummaryLoad.do"
+>         redirect="true"
+>       />
+>       <forward
+>         name="spacesSuccess"
+>         path="/PropertySpaceListLoad.do?searchType=space"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/DetachSpaceOwnerStore"
+>       type="com.bricsnet.space.web.actions.DetachSpaceOwnerStoreAction"
+>       name="PropertySpaceForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySpaceSummaryLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/DetachSpaceRequestOccupantStore"
+>       type="com.bricsnet.space.web.actions.DetachSpaceRequestOccupantStoreAction"
+>       name="PropertySpaceRequestForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySpaceRequestLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/PropertySpaceRequestAssetPopupLoad"
+>       type="com.bricsnet.space.web.actions.PropertySpaceRequestAssetPopupLoadAction"
+>       name="PropertySpaceRequestAssetForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySpaceRequestAssetPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertySummaryStore"
+>       type="com.bricsnet.space.web.actions.PropertySummaryStoreAction"
+>       name="PropertySummaryForm"
+>       scope="request"
+>       input="/PropertySummary.jsp"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySummaryLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertySpaceRequestImport"
+>       type="com.bricsnet.space.web.actions.PropertySpaceRequestImportAction"
+>       name="PropertySpaceRequestImportForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySpaceRequestImport.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="notify"
+>         path="/PropertySpaceRequestLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyFloorPreviewDrawingPopupLoad"
+>       type="com.bricsnet.space.web.actions.PropertyFloorPreviewDrawingPopupLoadAction"
+>       name="DrawingForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyFloorDrawingPreviewPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyFloorStore"
+>       type="com.bricsnet.space.web.actions.PropertyFloorStoreAction"
+>       name="PropertyFloorForm"
+>       scope="session"
+>       input="/PropertyFloor.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyFloorSummaryLoad.do"
+>         redirect="true"
+>       />
+>       <forward
+>         name="newSuccess"
+>         path="/PropertySummaryLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/PropertySpaceListAjaxLoad"
+>       type="com.bricsnet.space.web.actions.PropertySpaceListAjaxLoadAction"
+>       name="PropertySpaceListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySpaceListAjax.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="propertySuccess"
+>         path="/PropertyListAjax.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="advancedSuccess"
+>         path="/PropertySpaceListAjax.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyAllocationProjectionEditListStore"
+>       type="com.bricsnet.space.web.actions.PropertyAllocationProjectionEditListStoreAction"
+>       name="PropertyAllocationProjectionEditListForm"
+>       scope="session"
+>       input="/PropertyAllocationProjectionEditList.jsp"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyAllocationProjectionListLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyFloorFullDrawingLoad"
+>       type="com.bricsnet.space.web.actions.PropertyFloorFullDrawingLoadAction"
+>       name="DrawingForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyFloorFullDrawing.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertySpaceRequestOccupants"
+>       type="com.bricsnet.space.web.actions.ajax.request.FindAllPropertySpaceRequestOccupantsForPropertySpaceRequestAction"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySpaceRequestOccupantsPresentation.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/RoomReservationDatasheetLoad"
+>       type="com.bricsnet.space.web.actions.RoomReservationDatasheetLoadAction"
+>       name="RoomReservationDatasheetForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/RoomReservationDatasheet.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyFloorSelectPopupLoad"
+>       type="com.bricsnet.space.web.actions.PropertyFloorSelectPopupLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyFloorSelectPopup.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="error"
+>         path="/PropertyFloorSelectPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyFloorDispatcherLoad"
+>       type="com.bricsnet.space.web.actions.PropertyFloorDispatcherLoadAction"
+>       name="PropertyFloorForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyFloorLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyFloorDrawingSelectPopupLoad"
+>       type="com.bricsnet.space.web.actions.PropertyFloorDrawingSelectPopupLoadAction"
+>       name="DrawingForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyFloorDrawingSelectPopup.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="successSpaceSelect"
+>         path="/PropertySpaceSelectPopupLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/DetachSpaceOccupantStore"
+>       type="com.bricsnet.space.web.actions.DetachSpaceOccupantStoreAction"
+>       name="PropertySpaceForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySpaceSummaryLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/AttachSpaceRequestOccupantStore"
+>       type="com.bricsnet.space.web.actions.AttachSpaceRequestOccupantStoreAction"
+>       name="AttachSpaceRequestOccupantForm"
+>       scope="session"
+>       input="/AttachSpaceRequestOccupant.jsp"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/CloseAndRefreshOpener.jsp"
+>         redirect="true"
+>       />
+>       <forward
+>         name="attachSuccess"
+>         path="/AttachSpaceRequestOccupantStoreResponse.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="loadSuccess"
+>         path="/AttachSpaceRequestOccupantLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/SpaceGradePopupLoad"
+>       type="com.bricsnet.space.web.actions.SpaceGradePopupLoadAction"
+>       name="SpaceGradeForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/SpaceGradePopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertySummaryHierarchyLoad"
+>       type="com.bricsnet.space.web.actions.PropertySummaryHierarchyLoadAction"
+>       name="PropertySummaryForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySummaryHierarchy.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/SpaceRatePopupLoad"
+>       type="com.bricsnet.space.web.actions.SpaceRatePopupLoadAction"
+>       name="SpaceRateForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/SpaceRatePopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyFloorCandidateListLoad"
+>       type="com.bricsnet.space.web.actions.PropertyFloorCandidateListLoadAction"
+>       name="PropertyFloorCandidateListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyFloorCandidateList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertySpaceRequestOccupantsPresentation"
+>       type="com.bricsnet.space.web.actions.ajax.request.PropertySpaceRequestOccupantPresentationAction"
+>       unknown="false"
+>       validate="false"
+>     >
+>     </action>
+>     <action
+>       path="/AttachSpaceRequestAssetLoad"
+>       type="com.bricsnet.space.web.actions.AttachSpaceRequestAssetLoadAction"
+>       name="AttachSpaceRequestAssetForm"
+>       scope="session"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/AttachSpaceRequestAssetPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/CostCentersCollectionsDifferenceCalculation"
+>       type="com.bricsnet.space.web.actions.ajax.costcenter.CostCentersCollectionsDifferenceCalculationAction"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/CostCentersPresentation.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyFloorCandidateSummaryStore"
+>       type="com.bricsnet.space.web.actions.PropertyFloorCandidateSummaryStoreAction"
+>       name="PropertyFloorCandidateSummaryForm"
+>       scope="session"
+>       input="/PropertyFloorCandidateSummary.jsp"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyFloorCandidateSummaryLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/AttachChildSpaceRequestStore"
+>       type="com.bricsnet.space.web.actions.AttachChildSpaceRequestStoreAction"
+>       name="AttachChildSpaceRequestForm"
+>       scope="session"
+>       input="/AttachChildSpaceRequest.jsp"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/CloseAndRefreshOpener.jsp"
+>         redirect="true"
+>       />
+>       <forward
+>         name="attachSuccess"
+>         path="/AttachChildSpaceRequestStoreResponse.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="loadSuccess"
+>         path="/AttachChildSpaceRequestLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertySpaceLoad"
+>       type="com.bricsnet.space.web.actions.PropertySpaceLoadAction"
+>       name="PropertySpaceForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySpace.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertySpaceRequestDetailPopupLoad"
+>       type="com.bricsnet.space.web.actions.PropertySpaceRequestDetailPopupLoadAction"
+>       name="PropertySpaceRequestDetailForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySpaceRequestDetailPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertySpaceRequestContextListLoad"
+>       type="com.bricsnet.space.web.actions.PropertySpaceRequestContextListLoadAction"
+>       name="PropertySpaceRequestListForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySpaceRequestList.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="advancedSuccess"
+>         path="/PropertySpaceRequestAdvancedSearch.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyFloorDrawingLayoutLoad"
+>       type="com.bricsnet.space.web.actions.PropertyFloorDrawingLayoutLoadAction"
+>       name="PropertyFloorDrawingSpaceLayoutForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyFloorDrawingLayout.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertySpaceAssetPopupLoad"
+>       type="com.bricsnet.space.web.actions.PropertySpaceAssetPopupLoadAction"
+>       name="PropertySpaceAssetPopupForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySpaceAssetPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/AttachSpaceRequestAssetStore"
+>       type="com.bricsnet.space.web.actions.AttachSpaceRequestAssetStoreAction"
+>       name="AttachSpaceRequestAssetForm"
+>       scope="session"
+>       input="/AttachSpaceRequestAsset.jsp"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/CloseAndRefreshOpener.jsp"
+>         redirect="true"
+>       />
+>       <forward
+>         name="attachSuccess"
+>         path="/AttachSpaceRequestAssetStoreResponse.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="loadSuccess"
+>         path="/AttachSpaceRequestAssetLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyFloorCandidateSummaryLoad"
+>       type="com.bricsnet.space.web.actions.PropertyFloorCandidateSummaryLoadAction"
+>       name="PropertyFloorCandidateSummaryForm"
+>       scope="session"
+>       input="/PropertyFloorCandidateSummary.jsp"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyFloorCandidateSummary.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyAllocationLoad"
+>       type="com.bricsnet.space.web.actions.PropertyAllocationLoadAction"
+>       name="PropertyAllocationForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyAllocation.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertySpaceStore"
+>       type="com.bricsnet.space.web.actions.PropertySpaceStoreAction"
+>       name="PropertySpaceForm"
+>       scope="session"
+>       input="/PropertySpace.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySpaceSummaryLoad.do"
+>         redirect="true"
+>       />
+>       <forward
+>         name="newSuccess"
+>         path="/PropertyFloorSummaryLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/SpaceRequestImportResultListLoad"
+>       type="com.bricsnet.space.web.actions.SpaceRequestImportResultListLoadAction"
+>       name="SpaceRequestImportResultListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/SpaceRequestImportResultList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertySpaceRequestWorkOrderStore"
+>       type="com.bricsnet.space.web.actions.PropertySpaceRequestWorkOrderStoreAction"
+>       name="WorkOrderDatasheetForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/CloseRefreshParent.jsp"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/DetachSpaceAssetStore"
+>       type="com.bricsnet.space.web.actions.DetachSpaceAssetStoreAction"
+>       name="PropertySpaceForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySpaceSummaryLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyAllocationProjectionNewPopupLoad"
+>       type="com.bricsnet.space.web.actions.PropertyAllocationProjectionNewPopupLoadAction"
+>       name="PropertyAllocationProjectionForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyAllocationProjectionPopupLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyFloorNewLoad"
+>       type="com.bricsnet.space.web.actions.PropertyFloorNewLoadAction"
+>       name="PropertyFloorForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyFloorLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/RoomAvailabilityListLoad"
+>       type="com.bricsnet.space.web.actions.RoomAvailabilityListLoadAction"
+>       name="RoomAvailabliltyListForm"
+>       scope="request"
+>       input="/RoomAvailabilityList.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/RoomAvailabilityList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+60d2129
+<     <!-- $Id: struts-message-resources.xml 40267 2010-10-08 12:14:33Z rkumar $ -->
+65,68d2133
+<     <message-resources parameter="Header" key="core.header" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+<     <message-resources parameter="navigation" key="core.navigation" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+71c2136,2137
+<     <message-resources parameter="Error"  key="error"  null="false"
+---
+> <message-resources parameter="navigation" key="core.navigation"
+>     null="false"
+73c2139
+<     <message-resources parameter="warning"  key="warning"  null="false"
+---
+> <message-resources parameter="Error" key="error" null="false"
+79,86d2144
+<     <message-resources parameter="currency_code" key="currency_code" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="unit" key="unit" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="month" key="month" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="businessRole" key="businessRole" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+89,102c2147
+<     <message-resources parameter="module" key="module" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+<     <message-resources parameter="person-status" key="person-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+<     <message-resources parameter="ObjectType-short" key="ObjectType-short" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+< 
+<     <message-resources parameter="generalLedgerCode-type" key="generalLedgerCode-type" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="schedule-status" key="core.schedule-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="task-status" key="task-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="task-periodStatus" key="task-periodStatus" null="false"
+---
+> <message-resources parameter="unit" key="unit" null="false"
+104c2149,2150
+<     <message-resources parameter="task-priority" key="task-priority" null="false"
+---
+> <message-resources parameter="planningPeriodType"
+>     key="planningPeriodType" null="false"
+107,108c2153,2155
+<     <!-- Classification externalized descriptions -->
+<     <message-resources parameter="classification_name" key="classification_name" null="false"
+---
+> <!-- Classification externalizated descriptions -->
+> <message-resources parameter="classification_name"
+>     key="classification_name" null="false"
+110c2157,2158
+<     <message-resources parameter="classification_desc" key="classification_desc" null="false"
+---
+> <message-resources parameter="classification_desc"
+>     key="classification_desc" null="false"
+112c2160,2161
+<     <message-resources parameter="classification_code" key="classification_code" null="false"
+---
+> <message-resources parameter="classification_code"
+>     key="classification_code" null="false"
+115,120c2164,2165
+<     <!-- from other modules -->
+<     <message-resources parameter="docmanager.doc-status"  key="doc-status"  null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="docmanager.search-options"  key="search-options"  null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="property.property-status" key="property-status" null="false"
+---
+> <!-- Standard Space resources -->
+> <message-resources parameter="warning" key="warning" null="false"
+122,124c2167
+< 
+<     <!-- Standard resources -->
+<     <message-resources parameter="project.label"  null="false"
+---
+> <message-resources parameter="space.label" null="false"
+126c2169
+<     <message-resources parameter="project.label"  key="label"  null="false"
+---
+> <message-resources parameter="space.label" key="label" null="false"
+128c2171
+<     <message-resources parameter="project.header" key="header" null="false"
+---
+> <message-resources parameter="space.header" key="header" null="false"
+130c2173
+<     <message-resources parameter="project.action"  key="action"  null="false"
+---
+> <message-resources parameter="space.action" key="action" null="false"
+132c2175,2176
+<     <message-resources parameter="project.navigation" key="navigation" null="false"
+---
+> <message-resources parameter="space.navigation" key="navigation"
+>     null="false"
+136,139c2180
+<     <message-resources parameter="project.project-status"
+<         key="project-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.project-type" key="project-type"
+---
+> <message-resources parameter="space.space-status" key="space-status"
+142,152c2183,2184
+<     <message-resources parameter="project.project-geographicScope"
+<         key="project-geographicScope" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.project-riskRating"
+<         key="project-riskRating" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.project-revenueType"
+<         key="project-revenueType" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.project-clientStatus"
+<         key="project-clientStatus" null="false"
+---
+> <message-resources parameter="space.space-costAllocType"
+>     key="space-costAllocType" null="false"
+154,155c2186,2187
+<     <message-resources parameter="project.account-type"
+<         key="account-type" null="false"
+---
+> <message-resources parameter="space.space-occupancyStatus"
+>     key="space-occupancyStatus" null="false"
+157,161c2189,2190
+<     <message-resources parameter="project.budget-type"
+<         key="budget-type" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.budget-status"
+<         key="budget-status" null="false"
+---
+> <message-resources parameter="space.space-type" key="space-type"
+>     null="false"
+163,164c2192,2193
+<     <message-resources parameter="project.commitment-status"
+<         key="commitment-status" null="false"
+---
+> <message-resources parameter="space.space-typeGroup"
+>     key="space-typeGroup" null="false"
+166,167c2195,2196
+<     <message-resources parameter="project.commitment-type"
+<         key="commitment-type" null="false"
+---
+> <message-resources parameter="space.space-grade" key="space-grade"
+>     null="false"
+169,170c2198,2199
+<     <message-resources parameter="project.invoice-status"
+<         key="invoice-status" null="false"
+---
+> <message-resources parameter="space.space-usageType"
+>     key="space-usageType" null="false"
+172,173c2201,2202
+<     <message-resources parameter="project.invoice-disputecategory"
+<         key="invoice-disputecategory" null="false"
+---
+> <message-resources parameter="space.space-usageTypeGroup"
+>     key="space-usageTypeGroup" null="false"
+175,176c2204,2205
+<     <message-resources parameter="project.invoice-type"
+<         key="invoice-type" null="false"
+---
+> <message-resources parameter="space.space-condition"
+>     key="space-condition" null="false"
+178,179c2207,2208
+<     <message-resources parameter="project.overstock-status"
+<         key="overstock-status" null="false"
+---
+> <message-resources parameter="space.space-chargeRateType"
+>     key="space-chargeRateType" null="false"
+181,182c2210,2211
+<     <message-resources parameter="project.overstock-unit"
+<         key="overstock-unit" null="false"
+---
+> <message-resources parameter="space.space-Color" key="space-Color"
+>     null="false"
+184,185c2213,2214
+<     <message-resources parameter="project.training-status"
+<         key="training-status" null="false"
+---
+> <message-resources parameter="space.space-utilization"
+>     key="space-utilization" null="false"
+187,188c2216,2218
+<     <message-resources parameter="project.training-type"
+<         key="training-type" null="false"
+---
+> <!-- Resources which are enums for a history property -->
+> <message-resources parameter="space.space-occupancyStatus"
+>     key="propertySpace-occupancyStatus" null="false"
+190,191c2220,2221
+<     <message-resources parameter="project.payment-status"
+<         key="payment-status" null="false"
+---
+> <message-resources parameter="space.space-status"
+>     key="propertySpace-status" null="false"
+193,194c2223,2224
+<     <message-resources parameter="project.payment-type"
+<         key="payment-type" null="false"
+---
+> <message-resources parameter="space.space-costAllocType"
+>     key="propertySpace-costAllocType" null="false"
+196,197c2226,2227
+<     <message-resources parameter="payment-paymentMethod"
+<         key="payment-paymentMethod" null="false"
+---
+> <message-resources parameter="space.space-type" key="propertySpace-type"
+>     null="false"
+199,200c2229,2230
+<     <message-resources parameter="payment-creditCardType"
+<         key="payment-creditCardType" null="false"
+---
+> <message-resources parameter="space.space-grade"
+>     key="propertySpace-grade" null="false"
+202,203c2232,2233
+<     <message-resources parameter="project.rfp-status"
+<         key="rfp-status" null="false"
+---
+> <message-resources parameter="space.space-usageType"
+>     key="propertySpace-actualUse" null="false"
+205,206c2235,2236
+<     <message-resources parameter="project.bid-type"
+<         key="bid-type" null="false"
+---
+> <message-resources parameter="space.space-usageType"
+>     key="propertySpace-designUse" null="false"
+208,209c2238,2239
+<     <message-resources parameter="project.bid-status"
+<         key="bid-status" null="false"
+---
+> <message-resources parameter="space.space-condition"
+>     key="propertySpace-condition" null="false"
+211,212c2241,2242
+<     <message-resources parameter="project.project-scorecard"
+<         key="project-scorecard" null="false"
+---
+> <message-resources parameter="space.space-chargeRateType"
+>     key="propertySpace-chargeRateType" null="false"
+214,215c2244,2246
+<     <message-resources parameter="project.spendYear-isDraft"
+<         key="spendYear-isDraft" null="false"
+---
+> <!-- Standard PropertyFloor resources -->
+> <message-resources parameter="space.propertyFloor-type"
+>     key="propertyFloor-type" null="false"
+217,218c2248,2249
+<     <message-resources parameter="project.projectInspection-status"
+<         key="projectInspection-status" null="false"
+---
+> <message-resources parameter="unit" key="propertyFloor-unit"
+>     null="false"
+220,221c2251,2252
+<     <message-resources parameter="project.projectInspectionRemediation-status"
+<         key="projectInspectionRemediation-status" null="false"
+---
+> <message-resources parameter="space.propertyFloor-status"
+>     key="propertyFloor-status" null="false"
+223,224c2254,2256
+<     <message-resources parameter="project.projectSubmittal-status"
+<         key="projectSubmittal-status" null="false"
+---
+> <!-- Standard PropertySpaceRequest resources -->
+> <message-resources parameter="space.propertySpaceRequest-status"
+>     key="propertySpaceRequest-status" null="false"
+226,227c2258,2259
+<     <message-resources parameter="project.projectSubmittal-status"
+<         key="projectSubmittalPackage-status" null="false"
+---
+> <message-resources parameter="space.propertySpaceRequest-type"
+>     key="propertySpaceRequest-type" null="false"
+229,230c2261,2262
+<     <message-resources parameter="project.projectSubmittalApprover-status"
+<         key="projectSubmittalApprover-status" null="false"
+---
+> <message-resources parameter="space.propertySpaceRequestItem-type"
+>     key="propertySpaceRequestItem-type" null="false"
+232,233c2264,2265
+<     <message-resources parameter="project.projectCommitmentApprover-status"
+<         key="projectCommitmentApprover-status" null="false"
+---
+> <message-resources parameter="space.propertySpaceRequestItem-type"
+>     key="propertySpaceRequestOccupant-type" null="false"
+235,236c2267,2268
+<     <message-resources parameter="project.discipline"
+<         key="discipline" null="false"
+---
+> <message-resources parameter="space.propertySpaceRequestItem-type"
+>     key="propertySpaceRequestAsset-type" null="false"
+238,239c2270,2271
+<     <message-resources parameter="project.discipline"
+<         key="projectSubmittal-disciplineId" null="false"
+---
+> <message-resources parameter="space.propertySpaceRequestOccupant-status"
+>     key="propertySpaceRequestOccupant-status" null="false"
+241,242c2273,2274
+<     <message-resources parameter="project.discipline"
+<         key="projectSubmittalPackage-disciplineId" null="false"
+---
+> <message-resources parameter="space.propertySpaceRequestAsset-status"
+>     key="propertySpaceRequestAsset-status" null="false"
+244,245c2276,2277
+<     <message-resources parameter="project.projectRequirement-type"
+<         key="projectRequirement-type" null="false"
+---
+> <message-resources parameter="space.propertySpaceRequest-requestAction"
+>     key="propertySpaceRequestOwner-requestAction" null="false"
+247,248c2279,2280
+<     <message-resources parameter="project.projectRequirement-status"
+<         key="projectRequirement-status" null="false"
+---
+> <message-resources parameter="space.propertySpaceRequest-requestAction"
+>     key="propertySpaceRequest-requestAction" null="false"
+250,251c2282,2284
+<     <message-resources parameter="project.projectDamage-status"
+<         key="projectDamage-status" null="false"
+---
+> <!-- Standard PropertyAllocation resources -->
+> <message-resources parameter="space.propertyAllocation-measureType"
+>     key="propertyAllocation-measureType" null="false"
+253,254c2286,2287
+<     <message-resources parameter="project.projectDamage-resolutionType"
+<         key="projectDamage-resolutionType" null="false"
+---
+> <message-resources parameter="space.propertyAllocation-measureType"
+>     key="propertyAllocation-allocationMeasureType" null="false"
+256,260c2289,2291
+< 
+<     <!-- Issue Module -->
+<     <message-resources parameter="project.issue-status"
+<                        key="issue-status"
+<                        null="false"
+---
+> <message-resources
+>     parameter="space.propertyAllocation-spaceResidualAllocationType"
+>     key="propertyAllocation-spaceResidualAllocationType" null="false"
+262,265c2293,2294
+< 
+<     <message-resources parameter="project.issue-type"
+<                        key="issue-type"
+<                        null="false"
+---
+> <message-resources parameter="space.propertyAllocation-spaceRateType"
+>     key="propertyAllocation-spaceRateType" null="false"
+267,270c2296,2297
+< 
+<     <message-resources parameter="project.issueeventaction-type"
+<                        key="issueeventaction-type"
+<                        null="false"
+---
+> <message-resources parameter="space.propertyAllocation-spaceRateType"
+>     key="propertyAllocation-spaceAllocationRateType" null="false"
+272,275c2299
+< 
+<     <message-resources parameter="project.issueevent-type"
+<                        key="issueevent-type"
+<                        null="false"
+---
+> <message-resources parameter="unit" key="unit" null="false"
+277,280c2301
+< 
+<     <!-- Contract Module -->
+<     <message-resources parameter="project.contract-status"
+<                        key="contract-status"
+---
+> <message-resources parameter="adhoc-footer" key="core.adhoc-footer"
+283,286c2304
+< 
+<     <!-- Ad Hoc Bundles -->
+<     <message-resources parameter="adhoc-footer"
+<                        key="core.adhoc-footer"
+---
+> <message-resources parameter="adhoc-sort" key="core.adhoc-sort"
+289,292c2307
+< 
+<     <message-resources parameter="adhoc-sort"
+<                        key="core.adhoc-sort"
+<                        null="false"
+---
+> <message-resources parameter="Action" key="core.action" null="false"
+295,296c2310,2311
+<     <message-resources parameter="Action"
+<                        key="core.action"
+---
+> <!-- from other modules -->
+> <message-resources parameter="docmanager.doc-status" key="doc-status"
+299,302c2314,2315
+< 
+<     <message-resources parameter="space.propertySpaceRequest-status"
+<                        key="propertySpaceRequest-status"
+<                        null="false"
+---
+> <message-resources parameter="docmanager.search-options"
+>     key="search-options" null="false"
+304,307c2317,2319
+< 
+<     <message-resources parameter="space.propertySpaceRequest-type"
+<                        key="propertySpaceRequest-type"
+<                        null="false"
+---
+> <!--  Property resources -->
+> <message-resources parameter="property.property-status"
+>     key="property-status" null="false"
+309,312c2321,2322
+< 
+<     <message-resources parameter="txmanager.tx-status"
+<                        key="tx-status"
+<                        null="false"
+---
+> <message-resources parameter="property.property-type"
+>     key="property-type" null="false"
+314,316c2324,2325
+<     <message-resources parameter="txmanager.tx-type"
+<                        key="tx-type"
+<                        null="false"
+---
+> <message-resources parameter="property.property-useType"
+>     key="property-useType" null="false"
+318,320c2327,2328
+<     <message-resources parameter="pipeline.opportunity-type"
+<                        key="opportunity-type"
+<                        null="false"
+---
+> <message-resources parameter="property.property-ownershipType"
+>     key="property-ownershipType" null="false"
+322,324c2330,2331
+<     <message-resources parameter="pipeline.opportunity-status"
+<                        key="opportunity-status"
+<                        null="false"
+---
+> <message-resources parameter="property.property-constructionType"
+>     key="property-constructionType" null="false"
+326,328c2333,2334
+< 	<message-resources parameter="priority-rating"
+<                        key="priority-factor-ratings"
+<                        null="false"
+---
+> <message-resources parameter="property.property-zoning"
+>     key="property-zoning" null="false"
+330,332c2336,2337
+<     <message-resources parameter="project.schedulevalue-status"
+<                        key="schedulevalue-status"
+<                        null="false"
+---
+> <message-resources parameter="property.property-buildingClass"
+>     key="property-buildingClass" null="false"
+334,336c2339,2340
+<    <message-resources parameter="project.schedule-earningrule"
+<                        key="schedule-earningrule"
+<                        null="false"
+---
+> <message-resources parameter="property.property-landType"
+>     key="property-landType" null="false"
+339,343d2342
+<       <!--  plugins 
+<     <plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+<         <set-property property="pathnames" value="/WEB-INF/validator-rules.xml"/>
+<     </plug-in>
+<     -->

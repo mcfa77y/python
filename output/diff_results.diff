@@ -1,0 +1,324 @@
+struts-plugins.xml
+	diff -wEb c:/projects/trunk/bc/apps/program/xdoclet/web/struts-plugins.xml c:/projects/trunk/bc/apps/wizard/xdoclet/web/struts-plugins.xml
+b'0a1,5
+>     <!--  plugins \r
+>     <plug-in className="org.apache.struts.validator.ValidatorPlugIn">\r
+>         <set-property property="pathnames" value="/WEB-INF/validator-rules.xml"/>\r
+>     </plug-in>\r
+>     -->\r
+2a8
+> \r
+'
+
+
+struts-message-resources.xml
+	diff -wEb c:/projects/trunk/bc/apps/program/xdoclet/web/struts-message-resources.xml c:/projects/trunk/bc/apps/wizard/xdoclet/web/struts-message-resources.xml
+b'1a2
+>     <!-- $Id: struts-message-resources.xml 40267 2010-10-08 12:14:33Z rkumar $ -->\r
+4,20c5,63
+<     <message-resources parameter="Label" key="core.label" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />\r
+<     <message-resources parameter="Header" key="core.Header" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />\r
+<     <message-resources parameter="navigation" key="core.navigation" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />\r
+<     <message-resources parameter="Error"  key="error"  null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />\r
+<     <message-resources parameter="boolean" key="boolean" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />\r
+<     <message-resources parameter="country" key="country" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />\r
+<     <message-resources parameter="currency" key="currency" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />\r
+<     <message-resources parameter="unit" key="unit" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />\r
+<     <message-resources parameter="task-status" key="task-status" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />\r
+<     <message-resources parameter="task-periodStatus" key="task-periodStatus" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />\r
+<     <message-resources parameter="task-priority" key="task-priority" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />\r
+<     <message-resources parameter="schedule-status" key="schedule-status" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />\r
+< \r
+<     <!-- Classification externalizated descriptions -->\r
+<     <message-resources parameter="classification_name" key="classification_name" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />\r
+<     <message-resources parameter="classification_desc" key="classification_desc" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />\r
+<     <message-resources parameter="classification_code" key="classification_code" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />\r
+---
+>     <message-resources parameter="Label" key="core.label" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="Header" key="core.header" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />\r
+>     <message-resources parameter="navigation" key="core.navigation" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />\r
+>     <message-resources parameter="Header" key="core.Header" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="Error"  key="error"  null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="warning"  key="warning"  null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="boolean" key="boolean" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="country" key="country" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="currency_code" key="currency_code" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="unit" key="unit" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="month" key="month" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="businessRole" key="businessRole" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="currency" key="currency" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />\r
+>     <message-resources parameter="module" key="module" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />\r
+>     <message-resources parameter="person-status" key="person-status" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />\r
+>     <message-resources parameter="ObjectType-short" key="ObjectType-short" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />\r
+> \r
+>     <message-resources parameter="generalLedgerCode-type" key="generalLedgerCode-type" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="schedule-status" key="core.schedule-status" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="task-status" key="task-status" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="task-periodStatus" key="task-periodStatus" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="task-priority" key="task-priority" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+> \r
+>     <!-- Classification externalized descriptions -->\r
+>     <message-resources parameter="classification_name" key="classification_name" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="classification_desc" key="classification_desc" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="classification_code" key="classification_code" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+> \r
+>     <!-- from other modules -->\r
+>     <message-resources parameter="docmanager.doc-status"  key="doc-status"  null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="docmanager.search-options"  key="search-options"  null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="property.property-status" key="property-status" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+23,27c66,75
+<     <message-resources parameter="program.label" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />\r
+<     <message-resources parameter="program.label"  key="label"  null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />\r
+<     <message-resources parameter="program.header" key="header" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />\r
+<     <message-resources parameter="program.action"  key="action"  null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />\r
+<     <message-resources parameter="program.navigation" key="navigation" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />\r
+---
+>     <message-resources parameter="project.label"  null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="project.label"  key="label"  null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="project.header" key="header" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="project.action"  key="action"  null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="project.navigation" key="navigation" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+30,32c78,208
+<     <message-resources parameter="txmanager.tx-status" key="tx-status" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />\r
+<     <message-resources parameter="txmanager.tx-type" key="tx-type" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />\r
+<     <message-resources parameter="businessRole" key="businessRole" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />\r
+---
+>     <message-resources parameter="project.project-status"\r
+>         key="project-status" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="project.project-type" key="project-type"\r
+>         null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="project.project-geographicScope"\r
+>         key="project-geographicScope" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="project.project-riskRating"\r
+>         key="project-riskRating" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="project.project-revenueType"\r
+>         key="project-revenueType" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="project.project-clientStatus"\r
+>         key="project-clientStatus" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="project.account-type"\r
+>         key="account-type" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="project.budget-type"\r
+>         key="budget-type" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="project.budget-status"\r
+>         key="budget-status" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="project.commitment-status"\r
+>         key="commitment-status" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="project.commitment-type"\r
+>         key="commitment-type" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="project.invoice-status"\r
+>         key="invoice-status" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="project.invoice-disputecategory"\r
+>         key="invoice-disputecategory" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="project.invoice-type"\r
+>         key="invoice-type" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="project.overstock-status"\r
+>         key="overstock-status" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="project.overstock-unit"\r
+>         key="overstock-unit" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="project.training-status"\r
+>         key="training-status" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="project.training-type"\r
+>         key="training-type" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="project.payment-status"\r
+>         key="payment-status" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="project.payment-type"\r
+>         key="payment-type" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="payment-paymentMethod"\r
+>         key="payment-paymentMethod" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="payment-creditCardType"\r
+>         key="payment-creditCardType" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="project.rfp-status"\r
+>         key="rfp-status" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="project.bid-type"\r
+>         key="bid-type" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="project.bid-status"\r
+>         key="bid-status" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="project.project-scorecard"\r
+>         key="project-scorecard" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="project.spendYear-isDraft"\r
+>         key="spendYear-isDraft" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="project.projectInspection-status"\r
+>         key="projectInspection-status" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="project.projectInspectionRemediation-status"\r
+>         key="projectInspectionRemediation-status" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="project.projectSubmittal-status"\r
+>         key="projectSubmittal-status" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="project.projectSubmittal-status"\r
+>         key="projectSubmittalPackage-status" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="project.projectSubmittalApprover-status"\r
+>         key="projectSubmittalApprover-status" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="project.projectCommitmentApprover-status"\r
+>         key="projectCommitmentApprover-status" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="project.discipline"\r
+>         key="discipline" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="project.discipline"\r
+>         key="projectSubmittal-disciplineId" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="project.discipline"\r
+>         key="projectSubmittalPackage-disciplineId" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="project.projectRequirement-type"\r
+>         key="projectRequirement-type" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="project.projectRequirement-status"\r
+>         key="projectRequirement-status" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="project.projectDamage-status"\r
+>         key="projectDamage-status" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+>     <message-resources parameter="project.projectDamage-resolutionType"\r
+>         key="projectDamage-resolutionType" null="false"\r
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>\r
+> \r
+>     <!-- Issue Module -->\r
+>     <message-resources parameter="project.issue-status"\r
+>                        key="issue-status"\r
+>                        null="false"\r
+>                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />\r
+> \r
+>     <message-resources parameter="project.issue-type"\r
+>                        key="issue-type"\r
+>                        null="false"\r
+>                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />\r
+34,36c210,224
+<     <message-resources parameter="adhoc-footer" key="core.adhoc-footer" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />\r
+<     <message-resources parameter="adhoc-sort" key="core.adhoc-sort" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />\r
+<     <message-resources parameter="Action" key="core.action" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />\r
+---
+>     <message-resources parameter="project.issueeventaction-type"\r
+>                        key="issueeventaction-type"\r
+>                        null="false"\r
+>                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />\r
+> \r
+>     <message-resources parameter="project.issueevent-type"\r
+>                        key="issueevent-type"\r
+>                        null="false"\r
+>                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />\r
+> \r
+>     <!-- Contract Module -->\r
+>     <message-resources parameter="project.contract-status"\r
+>                        key="contract-status"\r
+>                        null="false"\r
+>                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />\r
+37a226,230
+>     <!-- Ad Hoc Bundles -->\r
+>     <message-resources parameter="adhoc-footer"\r
+>                        key="core.adhoc-footer"\r
+>                        null="false"\r
+>                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />\r
+39,40c232,233
+<     <message-resources parameter="program.program-type"\r
+<                        key="program-type"\r
+---
+>     <message-resources parameter="adhoc-sort"\r
+>                        key="core.adhoc-sort"\r
+44,45c237,238
+<     <message-resources parameter="program.program-status"\r
+<                        key="program-status"\r
+---
+>     <message-resources parameter="Action"\r
+>                        key="core.action"\r
+48a242,259
+>     <message-resources parameter="space.propertySpaceRequest-status"\r
+>                        key="propertySpaceRequest-status"\r
+>                        null="false"\r
+>                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />\r
+> \r
+>     <message-resources parameter="space.propertySpaceRequest-type"\r
+>                        key="propertySpaceRequest-type"\r
+>                        null="false"\r
+>                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />\r
+> \r
+>     <message-resources parameter="txmanager.tx-status"\r
+>                        key="tx-status"\r
+>                        null="false"\r
+>                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />\r
+>     <message-resources parameter="txmanager.tx-type"\r
+>                        key="tx-type"\r
+>                        null="false"\r
+>                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />\r
+53d263
+< \r
+57a268,271
+> \t<message-resources parameter="priority-rating"\r
+>                        key="priority-factor-ratings"\r
+>                        null="false"\r
+>                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />            \r
+58a273,280
+>     <message-resources parameter="project.schedulevalue-status"\r
+>                        key="schedulevalue-status"\r
+>                        null="false"\r
+>                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />\r
+>    <message-resources parameter="project.schedule-earningrule"\r
+>                        key="schedule-earningrule"\r
+>                        null="false"\r
+>                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />             \r
+'
+
+

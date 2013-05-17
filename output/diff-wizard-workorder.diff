@@ -1,0 +1,1002 @@
+14a15,42
+>     <form-bean
+>       name="GenerateWorkOrderForm"
+>       type="com.bricsnet.workorder.web.forms.GenerateWorkOrderForm"
+>     />
+>     <form-bean
+>       name="RequestDatasheetForm"
+>       type="com.bricsnet.workorder.web.forms.RequestDatasheetForm"
+>     />
+>     <form-bean
+>       name="WorkOrderDatasheetForm"
+>       type="com.bricsnet.workorder.web.forms.WorkOrderDatasheetForm"
+>     />
+>     <form-bean
+>       name="WorkOrderListForm"
+>       type="com.bricsnet.workorder.web.forms.WorkOrderListForm"
+>     />
+>     <form-bean
+>       name="WorkOrderInfoPopupForm"
+>       type="com.bricsnet.workorder.web.forms.WorkOrderInfoPopupForm"
+>     />
+>     <form-bean
+>       name="RequestListForm"
+>       type="com.bricsnet.workorder.web.forms.RequestListForm"
+>     />
+>     <form-bean
+>       name="MaintHistoryListForm"
+>       type="com.bricsnet.workorder.web.forms.MaintHistoryListForm"
+>     />
+29a58,65
+>     <form-bean
+>         name="WorkOrderListForm"
+>         type="com.bricsnet.workorder.web.forms.WorkOrderListForm"/>
+> 
+>     <form-bean
+>         name="RequestListForm"
+>         type="com.bricsnet.workorder.web.forms.RequestListForm"/>
+> 
+48a85,631
+>     <action
+>       path="/RejectPopupStore"
+>       type="com.bricsnet.workorder.web.actions.RejectPopupStoreAction"
+>       name="RequestDatasheetForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/CloseRefreshParent.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/RequestDatasheetStore"
+>       type="com.bricsnet.workorder.web.actions.RequestDatasheetStoreAction"
+>       name="RequestDatasheetForm"
+>       scope="session"
+>       input="/RequestDatasheet.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/RequestListLoad.do"
+>         redirect="true"
+>       />
+>       <forward
+>         name="success-add-to-new-workorder"
+>         path="/RequestDatasheetCreateWorkOrderStore.do"
+>         redirect="true"
+>       />
+>       <forward
+>         name="success-workorder-details"
+>         path="/WorkOrderDatasheetLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/WorkOrderSelectPopupLoad"
+>       type="com.bricsnet.workorder.web.actions.WorkOrderSelectPopupLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/WorkOrderSelectPopup.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="error"
+>         path="/WorkOrderSelectPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/DeclineWorkOrderLoad"
+>       type="com.bricsnet.workorder.web.actions.DeclineWorkOrderLoadAction"
+>       name="WorkOrderDatasheetForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/DeclineWorkOrder.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/GenerateWorkOrderStore"
+>       type="com.bricsnet.workorder.web.actions.GenerateWorkOrderStoreAction"
+>       name="GenerateWorkOrderForm"
+>       scope="request"
+>       input="/GenerateWorkOrder.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/WorkOrderListLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/WorkOrderInfoPopupLoad"
+>       type="com.bricsnet.workorder.web.actions.WorkOrderInfoPopupLoadAction"
+>       name="WorkOrderInfoPopupForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/WorkOrderInfoPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/WorkAcknowledgedStore"
+>       type="com.bricsnet.workorder.web.actions.WorkAcknowledgedStoreAction"
+>       name="WorkOrderDatasheetForm"
+>       scope="session"
+>       input="/WorkAcknowledged.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/CloseRefreshParent.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/CompleteWorkOrderStore"
+>       type="com.bricsnet.workorder.web.actions.CompleteWorkOrderStoreAction"
+>       name="WorkOrderDatasheetForm"
+>       scope="session"
+>       input="/WorkOrderDatasheetLoad.do"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/WorkOrderListLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/RejectPopupLoad"
+>       type="com.bricsnet.workorder.web.actions.RejectPopupLoadAction"
+>       name="RequestDatasheetForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/RejectPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/CostsPopupLoad"
+>       type="com.bricsnet.workorder.web.actions.CostsPopupLoadAction"
+>       name="RequestDatasheetForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/CostsPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/CloseWorkOrderLoad"
+>       type="com.bricsnet.workorder.web.actions.CloseWorkOrderLoadAction"
+>       name="WorkOrderDatasheetForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/CloseWorkOrder.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/WorkOrderDatasheetLoad"
+>       type="com.bricsnet.workorder.web.actions.WorkOrderDatasheetLoadAction"
+>       name="WorkOrderDatasheetForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/WorkOrderDatasheet.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/WorkOrderDatasheetStore"
+>       type="com.bricsnet.workorder.web.actions.WorkOrderDatasheetStoreAction"
+>       name="WorkOrderDatasheetForm"
+>       scope="session"
+>       input="/WorkOrderDatasheet.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/WorkOrderDatasheetLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/WorkOrderListLoad"
+>       type="com.bricsnet.workorder.web.actions.WorkOrderListLoadAction"
+>       name="WorkOrderListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/WorkOrderList.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success_advanced_search"
+>         path="/AdvancedSearch.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/WorkAcknowledgedLoad"
+>       type="com.bricsnet.workorder.web.actions.WorkAcknowledgedLoadAction"
+>       name="WorkOrderDatasheetForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/WorkAcknowledged.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/WOContractSelectPopupLoad"
+>       type="com.bricsnet.workorder.web.actions.WOContractSelectPopupLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/WOContractSelectPopup.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="error"
+>         path="/WOContractSelectPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/DelayWorkOrderLoad"
+>       type="com.bricsnet.workorder.web.actions.DelayWorkOrderLoadAction"
+>       name="WorkOrderDatasheetForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/DelayWorkOrder.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/CloseWorkOrderStore"
+>       type="com.bricsnet.workorder.web.actions.CloseWorkOrderStoreAction"
+>       name="WorkOrderDatasheetForm"
+>       scope="session"
+>       input="/CloseWorkOrder.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/CloseRefreshParent.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/MaintHistoryListLoad"
+>       type="com.bricsnet.workorder.web.actions.MaintHistoryListLoadAction"
+>       name="MaintHistoryListForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/MaintHistoryList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/RequestDatasheetCreateWorkOrderStore"
+>       type="com.bricsnet.workorder.web.actions.RequestDatasheetCreateWorkOrderStoreAction"
+>       name="RequestDatasheetForm"
+>       scope="session"
+>       input="/RequestDatasheet.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/RequestListLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/RequestAreaListStore"
+>       type="com.bricsnet.workorder.web.actions.RequestAreaListStoreAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/RequestAreaListLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/RequestAreaListLoad"
+>       type="com.bricsnet.workorder.web.actions.RequestAreaListLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/RequestAreaList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/RequestListAjaxLoad"
+>       type="com.bricsnet.workorder.web.actions.RequestListAjaxLoadAction"
+>       name="RequestListForm"
+>       scope="request"
+>       input="/RequestListAjax.jsp"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/RequestListAjax.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success_advanced_search"
+>         path="/RequestListAjax.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/NewWorkOrderLoad"
+>       type="com.bricsnet.workorder.web.actions.NewWorkOrderLoadAction"
+>       name="WorkOrderDatasheetForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/NewWorkOrder.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="popup"
+>         path="/NewWorkOrderPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/RequestListLoad"
+>       type="com.bricsnet.workorder.web.actions.RequestListLoadAction"
+>       name="RequestListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/RequestList.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success_advanced_search"
+>         path="/RequestAdvancedSearch.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/WorkOrderListAjaxLoad"
+>       type="com.bricsnet.workorder.web.actions.WorkOrderListAjaxLoadAction"
+>       name="WorkOrderListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/WorkOrderListAjax.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/AdhocLoad"
+>       type="com.bricsnet.workorder.web.actions.AdhocLoadAction"
+>       name="AdhocForm"
+>       scope="session"
+>       input="/Adhoc.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success-workorder"
+>         path="/Adhoc.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success-request"
+>         path="/RequestAdhoc.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         contextRelative="false"
+>         module="/"
+>         name="failure"
+>         path="/AdhocListLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/GenerateWorkOrderLoad"
+>       type="com.bricsnet.workorder.web.actions.GenerateWorkOrderLoadAction"
+>       name="GenerateWorkOrderForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/GenerateWorkOrder.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/RequestDatasheetLoad"
+>       type="com.bricsnet.workorder.web.actions.RequestDatasheetLoadAction"
+>       name="RequestDatasheetForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/RequestDatasheet.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/DelayWorkOrderStore"
+>       type="com.bricsnet.workorder.web.actions.DelayWorkOrderStoreAction"
+>       name="WorkOrderDatasheetForm"
+>       scope="session"
+>       input="/DelayWorkOrder.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/CloseRefreshParent.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/NewWorkOrderStore"
+>       type="com.bricsnet.workorder.web.actions.NewWorkOrderStoreAction"
+>       name="WorkOrderDatasheetForm"
+>       scope="session"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/WorkOrderListLoad.do"
+>         redirect="true"
+>       />
+>       <forward
+>         name="popup"
+>         path="/NewWorkOrderPopupDone.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/CostsPopupStore"
+>       type="com.bricsnet.workorder.web.actions.CostsPopupStoreAction"
+>       name="RequestDatasheetForm"
+>       scope="session"
+>       input="/CostsPopup.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/CloseRefreshParent.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/DeclineWorkOrderStore"
+>       type="com.bricsnet.workorder.web.actions.DeclineWorkOrderStoreAction"
+>       name="WorkOrderDatasheetForm"
+>       scope="session"
+>       input="/DeclineWorkOrder.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/CloseRefreshParent.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/DispatchReportLoad"
+>       type="com.bricsnet.workorder.web.actions.DispatchReportLoadAction"
+>       name="WorkOrderDatasheetForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         contextRelative="false"
+>         module="/"
+>         name="success"
+>         path="/BIRTReportLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+60d642
+<     <!-- $Id: struts-message-resources.xml 40267 2010-10-08 12:14:33Z rkumar $ -->
+62,102c644,647
+<     <!-- Resources from the core directory -->
+<     <message-resources parameter="Label" key="core.label" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="Header" key="core.header" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+<     <message-resources parameter="navigation" key="core.navigation" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+<     <message-resources parameter="Header" key="core.Header" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="Error"  key="error"  null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="warning"  key="warning"  null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="boolean" key="boolean" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="country" key="country" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="currency_code" key="currency_code" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="unit" key="unit" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="month" key="month" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="businessRole" key="businessRole" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="currency" key="currency" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+<     <message-resources parameter="module" key="module" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+<     <message-resources parameter="person-status" key="person-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+<     <message-resources parameter="ObjectType-short" key="ObjectType-short" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+< 
+<     <message-resources parameter="generalLedgerCode-type" key="generalLedgerCode-type" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="schedule-status" key="core.schedule-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="task-status" key="task-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="task-periodStatus" key="task-periodStatus" null="false"
+---
+>     <!-- Resources from legacy -->
+>     <message-resources parameter="legacy.fieldvaluelabels"
+>                        key="legacy.fieldvaluelabels"
+>                        null="false"
+104c649,651
+<     <message-resources parameter="task-priority" key="task-priority" null="false"
+---
+>     <message-resources parameter="legacy.labels"
+>                        key="legacy.labels"
+>                        null="false"
+107,112c654,657
+<     <!-- Classification externalized descriptions -->
+<     <message-resources parameter="classification_name" key="classification_name" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="classification_desc" key="classification_desc" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="classification_code" key="classification_code" null="false"
+---
+>     <!-- Resources from the core directory -->
+>     <message-resources parameter="Error"
+>                        key="error"
+>                        null="false"
+114,116c659,661
+< 
+<     <!-- from other modules -->
+<     <message-resources parameter="docmanager.doc-status"  key="doc-status"  null="false"
+---
+>     <message-resources parameter="Header"
+>                        key="core.Header"
+>                        null="false"
+118c663,665
+<     <message-resources parameter="docmanager.search-options"  key="search-options"  null="false"
+---
+>     <message-resources parameter="navigation"
+>                        key="core.navigation"
+>                        null="false"
+120c667,669
+<     <message-resources parameter="property.property-status" key="property-status" null="false"
+---
+>     <message-resources parameter="Action"
+>                        key="core.action"
+>                        null="false"
+124c673,674
+<     <message-resources parameter="project.label"  null="false"
+---
+>     <message-resources parameter="workorder.label"
+>                        null="false"
+126c676,678
+<     <message-resources parameter="project.label"  key="label"  null="false"
+---
+>     <message-resources parameter="workorder.label"
+>                        key="label"
+>                        null="false"
+128c680,682
+<     <message-resources parameter="project.header" key="header" null="false"
+---
+>     <message-resources parameter="workorder.header"
+>                        key="header"
+>                        null="false"
+130c684,686
+<     <message-resources parameter="project.action"  key="action"  null="false"
+---
+>     <message-resources parameter="workorder.action"
+>                        key="action"
+>                        null="false"
+132c688,690
+<     <message-resources parameter="project.navigation" key="navigation" null="false"
+---
+>     <message-resources parameter="workorder.navigation"
+>                        key="navigation"
+>                        null="false"
+135,139c693,695
+<     <!-- Resources which are enums for a specific column -->
+<     <message-resources parameter="project.project-status"
+<         key="project-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.project-type" key="project-type"
+---
+>     <!-- Classification externalizated descriptions -->
+>     <message-resources parameter="classification_name"
+>                        key="classification_name"
+142,200c698,700
+<     <message-resources parameter="project.project-geographicScope"
+<         key="project-geographicScope" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.project-riskRating"
+<         key="project-riskRating" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.project-revenueType"
+<         key="project-revenueType" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.project-clientStatus"
+<         key="project-clientStatus" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.account-type"
+<         key="account-type" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.budget-type"
+<         key="budget-type" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.budget-status"
+<         key="budget-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.commitment-status"
+<         key="commitment-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.commitment-type"
+<         key="commitment-type" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.invoice-status"
+<         key="invoice-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.invoice-disputecategory"
+<         key="invoice-disputecategory" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.invoice-type"
+<         key="invoice-type" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.overstock-status"
+<         key="overstock-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.overstock-unit"
+<         key="overstock-unit" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.training-status"
+<         key="training-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.training-type"
+<         key="training-type" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.payment-status"
+<         key="payment-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.payment-type"
+<         key="payment-type" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="payment-paymentMethod"
+<         key="payment-paymentMethod" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="payment-creditCardType"
+<         key="payment-creditCardType" null="false"
+---
+>     <message-resources parameter="classification_desc"
+>                        key="classification_desc"
+>                        null="false"
+202,203c702,704
+<     <message-resources parameter="project.rfp-status"
+<         key="rfp-status" null="false"
+---
+>     <message-resources parameter="classification_code"
+>                        key="classification_code"
+>                        null="false"
+205,206c706,710
+<     <message-resources parameter="project.bid-type"
+<         key="bid-type" null="false"
+---
+> 
+>     <!-- Enumeration bundles (status/type) -->
+>     <message-resources parameter="workorder.workOrder-generateType"
+>                        key="workOrder-generateType"
+>                        null="false"
+208,209c712,715
+<     <message-resources parameter="project.bid-status"
+<         key="bid-status" null="false"
+---
+> 
+>     <message-resources parameter="workorder.workOrder-status"
+>                        key="workOrder-status"
+>                        null="false"
+211,212c717,719
+<     <message-resources parameter="project.project-scorecard"
+<         key="project-scorecard" null="false"
+---
+>     <message-resources parameter="workorder.workOrder-maintenanceType"
+>                        key="workOrder-maintenanceType"
+>                        null="false"
+214,215c721,723
+<     <message-resources parameter="project.spendYear-isDraft"
+<         key="spendYear-isDraft" null="false"
+---
+>     <message-resources parameter="workorder.priorityLevel"
+>                        key="request-priorityLevel"
+>                        null="false"
+217,218c725,727
+<     <message-resources parameter="project.projectInspection-status"
+<         key="projectInspection-status" null="false"
+---
+>     <message-resources parameter="workorder.priorityLevel"
+>                        key="workOrder-priorityLevel"
+>                        null="false"
+220,221c729,731
+<     <message-resources parameter="project.projectInspectionRemediation-status"
+<         key="projectInspectionRemediation-status" null="false"
+---
+>     <message-resources parameter="workorder.workOrder-landlordResponsibility"
+>                        key="workOrder-landlordResponsibility"
+>                        null="false"
+223,224c733,735
+<     <message-resources parameter="project.projectSubmittal-status"
+<         key="projectSubmittal-status" null="false"
+---
+>     <message-resources parameter="workorder.workOrder-certification"
+>                        key="workOrder-certification"
+>                        null="false"
+226,227c737,739
+<     <message-resources parameter="project.projectSubmittal-status"
+<         key="projectSubmittalPackage-status" null="false"
+---
+>     <message-resources parameter="workorder.workOrder-laborGroup"
+>                        key="workOrder-laborGroup"
+>                        null="false"
+229,230c741,743
+<     <message-resources parameter="project.projectSubmittalApprover-status"
+<         key="projectSubmittalApprover-status" null="false"
+---
+>     <message-resources parameter="workorder.workOrder-requestSeverity"
+>                        key="workOrder-requestSeverity"
+>                        null="false"
+232,233c745,747
+<     <message-resources parameter="project.projectCommitmentApprover-status"
+<         key="projectCommitmentApprover-status" null="false"
+---
+>     <message-resources parameter="workorder.workOrder-responsibility"
+>                        key="workOrder-responsibility"
+>                        null="false"
+235,236c749,751
+<     <message-resources parameter="project.discipline"
+<         key="discipline" null="false"
+---
+>     <message-resources parameter="workorder.workOrder-skillRequired"
+>                        key="workOrder-skillRequired"
+>                        null="false"
+238,239c753,755
+<     <message-resources parameter="project.discipline"
+<         key="projectSubmittal-disciplineId" null="false"
+---
+>     <message-resources parameter="workorder.workOrder-timeConstraints"
+>                        key="workOrder-timeConstraints"
+>                        null="false"
+241,242c757,759
+<     <message-resources parameter="project.discipline"
+<         key="projectSubmittalPackage-disciplineId" null="false"
+---
+>     <message-resources parameter="workorder.workOrder-workType"
+>                        key="workOrder-workType"
+>                        null="false"
+244,245c761,763
+<     <message-resources parameter="project.projectRequirement-type"
+<         key="projectRequirement-type" null="false"
+---
+>     <message-resources parameter="workorder.workOrder-delayReason"
+>                        key="workOrder-delayReason"
+>                        null="false"
+247,248c765,767
+<     <message-resources parameter="project.projectRequirement-status"
+<         key="projectRequirement-status" null="false"
+---
+>     <message-resources parameter="workorder.workOrder-declineReason"
+>                        key="workOrder-declineReason"
+>                        null="false"
+250,251c769,771
+<     <message-resources parameter="project.projectDamage-status"
+<         key="projectDamage-status" null="false"
+---
+>     <message-resources parameter="workorder.request-severity"
+>                        key="request-severity"
+>                        null="false"
+253,254c773,775
+<     <message-resources parameter="project.projectDamage-resolutionType"
+<         key="projectDamage-resolutionType" null="false"
+---
+>     <message-resources parameter="workorder.request-status"
+>                        key="request-status"
+>                        null="false"
+256,259c777,778
+< 
+<     <!-- Issue Module -->
+<     <message-resources parameter="project.issue-status"
+<                        key="issue-status"
+---
+>     <message-resources parameter="workorder.request-rejectionReason"
+>                        key="request-rejectionReason"
+262,264c781,782
+< 
+<     <message-resources parameter="project.issue-type"
+<                        key="issue-type"
+---
+>     <message-resources parameter="workorder.request-reason"
+>                        key="request-reason"
+267,269c785,786
+< 
+<     <message-resources parameter="project.issueeventaction-type"
+<                        key="issueeventaction-type"
+---
+>     <message-resources parameter="workorder.workOrder-faultCode"
+>                        key="workOrder-faultCode"
+272,274c789,790
+< 
+<     <message-resources parameter="project.issueevent-type"
+<                        key="issueevent-type"
+---
+>     <message-resources parameter="workorder.workOrder-ratingType"
+>                        key="workOrder-ratingType"
+277,280c793,794
+< 
+<     <!-- Contract Module -->
+<     <message-resources parameter="project.contract-status"
+<                        key="contract-status"
+---
+>     <message-resources parameter="workorder.workOrder-closeType"
+>                        key="workOrder-closeType"
+283,284d796
+< 
+<     <!-- Ad Hoc Bundles -->
+289d800
+< 
+295,306c806
+<     <message-resources parameter="Action"
+<                        key="core.action"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+< 
+<     <message-resources parameter="space.propertySpaceRequest-status"
+<                        key="propertySpaceRequest-status"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+< 
+<     <message-resources parameter="space.propertySpaceRequest-type"
+<                        key="propertySpaceRequest-type"
+---
+>     <message-resources parameter="space.space-type" key="space-type"
+310,311c810,812
+<     <message-resources parameter="txmanager.tx-status"
+<                        key="tx-status"
+---
+>     <!-- Aliases (i.e., enforcing naming coincidences) -->
+>     <message-resources parameter="currency"
+>                        key="workOrder-currencyId"
+314,315c815,816
+<     <message-resources parameter="txmanager.tx-type"
+<                        key="tx-type"
+---
+>     <message-resources parameter="workorder.workOrder-workType"
+>                        key="workOrder-workTypeId"
+318,319c819,820
+<     <message-resources parameter="pipeline.opportunity-type"
+<                        key="opportunity-type"
+---
+>     <message-resources parameter="property.property-buildingClass"
+>                        key="property-buildingClass"
+322,332c823,824
+<     <message-resources parameter="pipeline.opportunity-status"
+<                        key="opportunity-status"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+< 	<message-resources parameter="priority-rating"
+<                        key="priority-factor-ratings"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />            
+<     <message-resources parameter="project.schedulevalue-status"
+<                        key="schedulevalue-status"
+<                        null="false"
+---
+> 
+>     <message-resources parameter="Label" key="core.label" null="false"
+334,335c826,827
+<    <message-resources parameter="project.schedule-earningrule"
+<                        key="schedule-earningrule"
+---
+>     <message-resources parameter="space.space-usageType"
+>     				   key="space-usageType" 

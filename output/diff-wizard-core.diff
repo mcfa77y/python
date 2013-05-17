@@ -1,0 +1,4532 @@
+14a15,290
+>     <form-bean
+>       name="GeneralLedgerChartForm"
+>       type="com.bricsnet.core.web.forms.GeneralLedgerChartForm"
+>     />
+>     <form-bean
+>       name="AttribGroupListForm"
+>       type="com.bricsnet.core.web.forms.AttribGroupListForm"
+>     />
+>     <form-bean
+>       name="ListConfigPopupForm"
+>       type="com.bricsnet.core.web.forms.ListConfigPopupForm"
+>     />
+>     <form-bean
+>       name="TeamListForm"
+>       type="com.bricsnet.core.web.forms.TeamListForm"
+>     />
+>     <form-bean
+>       name="CostCenterForm"
+>       type="com.bricsnet.core.web.forms.CostCenterForm"
+>     />
+>     <form-bean
+>       name="ApplicationExportForm"
+>       type="com.bricsnet.core.web.forms.ApplicationExportForm"
+>     />
+>     <form-bean
+>       name="TeamMemberForm"
+>       type="com.bricsnet.core.web.forms.TeamMemberForm"
+>     />
+>     <form-bean
+>       name="StandardReportAddForm"
+>       type="com.bricsnet.core.web.forms.StandardReportAddForm"
+>     />
+>     <form-bean
+>       name="GeneralLedgerChartInfoForm"
+>       type="com.bricsnet.core.web.forms.GeneralLedgerChartInfoForm"
+>     />
+>     <form-bean
+>       name="PriorityDimensionForm"
+>       type="com.bricsnet.core.web.forms.PriorityDimensionForm"
+>     />
+>     <form-bean
+>       name="ChargeTypeForm"
+>       type="com.bricsnet.core.web.forms.ChargeTypeForm"
+>     />
+>     <form-bean
+>       name="CustomLayoutForm"
+>       type="com.bricsnet.core.web.forms.CustomLayoutForm"
+>     />
+>     <form-bean
+>       name="PriorityDimensionFactorForm"
+>       type="com.bricsnet.core.web.forms.PriorityDimensionFactorForm"
+>     />
+>     <form-bean
+>       name="PriorityDimensionRefForm"
+>       type="com.bricsnet.core.web.forms.PriorityDimensionRefForm"
+>     />
+>     <form-bean
+>       name="ProcessDefAdminForm"
+>       type="com.bricsnet.core.web.forms.ProcessDefAdminForm"
+>     />
+>     <form-bean
+>       name="LocalizationForm"
+>       type="com.bricsnet.core.web.forms.LocalizationForm"
+>     />
+>     <form-bean
+>       name="BenchmarkAdminForm"
+>       type="com.bricsnet.core.web.forms.BenchmarkAdminForm"
+>     />
+>     <form-bean
+>       name="PriorityListForm"
+>       type="com.bricsnet.core.web.forms.PriorityListForm"
+>     />
+>     <form-bean
+>       name="SpaceFillByForm"
+>       type="com.bricsnet.core.web.forms.SpaceFillByForm"
+>     />
+>     <form-bean
+>       name="KpiSettingForm"
+>       type="com.bricsnet.core.web.forms.KpiSettingForm"
+>     />
+>     <form-bean
+>       name="MailPopupForm"
+>       type="com.bricsnet.core.web.forms.MailPopupForm"
+>     />
+>     <form-bean
+>       name="GeneralLedgerImportForm"
+>       type="com.bricsnet.core.web.forms.GeneralLedgerImportForm"
+>     />
+>     <form-bean
+>       name="LoginForm"
+>       type="com.bricsnet.web.login.LoginForm"
+>     />
+>     <form-bean
+>       name="TaskGroupForm"
+>       type="com.bricsnet.core.web.forms.TaskGroupForm"
+>     />
+>     <form-bean
+>       name="BIRTReportForm"
+>       type="com.bricsnet.core.web.forms.BIRTReportForm"
+>     />
+>     <form-bean
+>       name="PersonForm"
+>       type="com.bricsnet.core.web.forms.PersonForm"
+>     />
+>     <form-bean
+>       name="SpaceTextByForm"
+>       type="com.bricsnet.core.web.forms.SpaceTextByForm"
+>     />
+>     <form-bean
+>       name="AdhocPopupForm"
+>       type="com.bricsnet.core.web.forms.AdhocPopupForm"
+>     />
+>     <form-bean
+>       name="TeamMailNewForm"
+>       type="com.bricsnet.core.web.forms.TeamMailNewForm"
+>     />
+>     <form-bean
+>       name="ChangePasswordForm"
+>       type="com.bricsnet.core.web.forms.ChangePasswordForm"
+>     />
+>     <form-bean
+>       name="SelectSkinForm"
+>       type="com.bricsnet.core.web.forms.SelectSkinForm"
+>     />
+>     <form-bean
+>       name="BundleMgtForm"
+>       type="com.bricsnet.core.web.forms.BundleMgtForm"
+>     />
+>     <form-bean
+>       name="AttribEnumForm"
+>       type="com.bricsnet.core.web.forms.AttribEnumForm"
+>     />
+>     <form-bean
+>       name="BenchmarkVectorAdminForm"
+>       type="com.bricsnet.core.web.forms.BenchmarkVectorAdminForm"
+>     />
+>     <form-bean
+>       name="PropertyTeamForm"
+>       type="com.bricsnet.core.web.forms.PropertyTeamForm"
+>     />
+>     <form-bean
+>       name="AttribForm"
+>       type="com.bricsnet.core.web.forms.AttribForm"
+>     />
+>     <form-bean
+>       name="ScheduleTreeForm"
+>       type="com.bricsnet.core.web.forms.ScheduleTreeForm"
+>     />
+>     <form-bean
+>       name="WizardForm"
+>       type="com.bricsnet.core.web.forms.WizardForm"
+>     />
+>     <form-bean
+>       name="TaxGroupAdminForm"
+>       type="com.bricsnet.core.web.forms.TaxGroupAdminForm"
+>     />
+>     <form-bean
+>       name="DimensionObjectTypeForm"
+>       type="com.bricsnet.core.web.forms.DimensionObjectTypeForm"
+>     />
+>     <form-bean
+>       name="OrganizationForm"
+>       type="com.bricsnet.core.web.forms.OrganizationForm"
+>     />
+>     <form-bean
+>       name="DashboardSelectForm"
+>       type="com.bricsnet.core.web.forms.DashboardSelectForm"
+>     />
+>     <form-bean
+>       name="KpiLayoutForm"
+>       type="com.bricsnet.core.web.forms.KpiLayoutForm"
+>     />
+>     <form-bean
+>       name="ReportForm"
+>       type="com.bricsnet.core.web.forms.ReportForm"
+>     />
+>     <form-bean
+>       name="TeamMailLogForm"
+>       type="com.bricsnet.core.web.forms.TeamMailLogForm"
+>     />
+>     <form-bean
+>       name="CertificationForm"
+>       type="com.bricsnet.core.web.forms.CertificationForm"
+>     />
+>     <form-bean
+>       name="CriticalDateForm"
+>       type="com.bricsnet.core.web.forms.CriticalDateForm"
+>     />
+>     <form-bean
+>       name="ScheduleAppTaskForm"
+>       type="com.bricsnet.core.web.forms.ScheduleAppTaskForm"
+>     />
+>     <form-bean
+>       name="GMapInfoForm"
+>       type="com.bricsnet.core.web.forms.GMapInfoForm"
+>     />
+>     <form-bean
+>       name="PropertyForm"
+>       type="com.bricsnet.core.web.forms.PropertyForm"
+>     />
+>     <form-bean
+>       name="UserGroupsEditForm"
+>       type="com.bricsnet.core.web.forms.UserGroupsEditForm"
+>     />
+>     <form-bean
+>       name="UserGroupsForm"
+>       type="com.bricsnet.core.web.forms.UserGroupsForm"
+>     />
+>     <form-bean
+>       name="DirectoryForm"
+>       type="com.bricsnet.core.web.forms.DirectoryForm"
+>     />
+>     <form-bean
+>       name="SendMailForm"
+>       type="com.bricsnet.core.web.forms.SendMailForm"
+>     />
+>     <form-bean
+>       name="TaxAdminForm"
+>       type="com.bricsnet.core.web.forms.TaxAdminForm"
+>     />
+>     <form-bean
+>       name="ReportScheduleForm"
+>       type="com.bricsnet.core.web.forms.ReportScheduleForm"
+>     />
+>     <form-bean
+>       name="AttribObjectTypeListForm"
+>       type="com.bricsnet.core.web.forms.AttribObjectTypeListForm"
+>     />
+>     <form-bean
+>       name="AttribGroupRefForm"
+>       type="com.bricsnet.core.web.forms.AttribGroupRefForm"
+>     />
+>     <form-bean
+>       name="SystemAdministrationForm"
+>       type="com.bricsnet.core.web.forms.SystemAdministrationForm"
+>     />
+>     <form-bean
+>       name="TaxChargeTypeForm"
+>       type="com.bricsnet.core.web.forms.TaxChargeTypeForm"
+>     />
+>     <form-bean
+>       name="QuickAddForm"
+>       type="com.bricsnet.core.web.forms.QuickAddForm"
+>     />
+>     <form-bean
+>       name="ClassificationForm"
+>       type="com.bricsnet.core.web.forms.ClassificationForm"
+>     />
+>     <form-bean
+>       name="TaxGroupInfoForm"
+>       type="com.bricsnet.core.web.forms.TaxGroupInfoForm"
+>     />
+>     <form-bean
+>       name="ObjectSelectForm"
+>       type="com.bricsnet.core.web.forms.ObjectSelectForm"
+>     />
+>     <form-bean
+>       name="KpiAddForm"
+>       type="com.bricsnet.core.web.forms.KpiAddForm"
+>     />
+>     <form-bean
+>       name="ProblemCodeForm"
+>       type="com.bricsnet.core.web.forms.ProblemCodeForm"
+>     />
+>     <form-bean
+>       name="AttribObjectTypeForm"
+>       type="com.bricsnet.core.web.forms.AttribObjectTypeForm"
+>     />
+>     <form-bean
+>       name="AttribGroupForm"
+>       type="com.bricsnet.core.web.forms.AttribGroupForm"
+>     />
+>     <form-bean
+>       name="AutoGenerateConfigurationForm"
+>       type="com.bricsnet.core.web.forms.AutoGenerateConfigurationForm"
+>     />
+18a295,297
+>         name="DimensionObjectTypeListForm"
+>         type="com.bricsnet.core.web.forms.DimensionObjectTypeListForm"/>
+>     <form-bean
+23,24c302,327
+<         name="ClassificationForm"
+<         type="com.bricsnet.core.web.forms.ClassificationForm"/>
+---
+>         name="NoteListForm"
+>         type="com.bricsnet.core.web.forms.NoteListForm"/>
+> 
+>     <form-bean
+>         name="AreaListForm"
+>         type="com.bricsnet.core.web.forms.AreaListForm"/>
+> 
+>     <form-bean
+>         name="TaskListForm"
+>         type="com.bricsnet.core.web.forms.TaskListForm"/>
+> 
+>     <form-bean
+>         name="TimesheetListForm"
+>         type="com.bricsnet.core.web.forms.TimesheetListForm"/>
+> 
+>     <form-bean
+>         name="PaymentScheduleForm"
+>         type="com.bricsnet.core.web.forms.PaymentScheduleForm"/>
+> 
+>     <form-bean
+>         name="DashboardForm"
+>         type="com.bricsnet.core.web.forms.DashboardForm"/>
+> 
+>     <form-bean
+>         name="KpiViewForm"
+>         type="com.bricsnet.core.web.forms.KpiViewForm"/>
+29a333,382
+>    <form-bean
+>         name="AppTaskListForm"
+>         type="com.bricsnet.core.web.forms.AppTaskListForm"/>
+> 
+>     <form-bean
+>         name="AdhocListForm"
+>         type="com.bricsnet.core.web.forms.AdhocListForm"/>
+> 
+>     <form-bean
+>         name="WorkTypeSelectForm"
+>         type="com.bricsnet.core.web.forms.WorkTypeSelectForm"/>
+> 
+>      <form-bean
+>         name="ServiceCenterPropertiesListForm"
+>         type="com.bricsnet.core.web.forms.ServiceCenterPropertiesListForm"/>
+> 
+>      <form-bean
+>         name="ServiceCenterSelectPropertyPopupForm"
+>         type="com.bricsnet.core.web.forms.ServiceCenterSelectPropertyPopupForm"/>
+> 
+>      <form-bean
+>         name="TimesheetForm"
+>         type="com.bricsnet.core.web.forms.TimesheetForm" />
+> 
+>      <form-bean
+>         name="AddressForm"
+>         type="com.bricsnet.core.web.forms.AddressForm" />
+> 
+>     <form-bean
+>         name="SetPrimaryAddressForm"
+>         type="com.bricsnet.core.web.forms.SetPrimaryAddressForm" />
+> 
+>     <form-bean
+>         name="GMapForm"
+>         type="com.bricsnet.core.web.forms.GMapForm" />
+> 
+>     <form-bean
+>         name="GMapInfoForm"
+>         type="com.bricsnet.core.web.forms.GMapInfoForm" />
+> 
+>     <form-bean
+>         name="GMapDataForm"
+>         type="com.bricsnet.core.web.forms.GMapDataForm" />
+>     <form-bean
+>       name="ReportScheduleListForm"
+>       type="com.bricsnet.core.web.forms.ReportScheduleListForm"/>
+> 
+>     <form-bean
+>       name="ExchangeRateListForm"
+>       type="com.bricsnet.core.web.forms.ExchangeRateListForm"/>
+33a387
+> 
+34a389
+> 
+35a391
+> 
+36a393
+> 
+37a395
+> 
+38a397
+> 
+48a408,4026
+>     <action
+>       path="/ScheduleTreeStoreTracking"
+>       type="com.bricsnet.core.web.actions.ScheduleTreeStoreTrackingAction"
+>       name="ScheduleTreeForm"
+>       scope="session"
+>       input="/ScheduleTreeTracking.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/ScheduleTreeLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/AutoGenerateConfigurationLoad"
+>       type="com.bricsnet.core.web.actions.AutoGenerateConfigurationLoadAction"
+>       name="AutoGenerateConfigurationForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/AutoGenerateConfiguration.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ScheduleHistoryLoad"
+>       type="com.bricsnet.core.web.actions.ScheduleHistoryLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/ScheduleHistory.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/NoteListLoad"
+>       type="com.bricsnet.core.web.actions.NoteListLoadAction"
+>       name="NoteListForm"
+>       scope="session"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/NoteList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PaymentScheduleUpdateDate"
+>       type="com.bricsnet.core.web.actions.PaymentScheduleUpdateDateAction"
+>       name="PaymentScheduleForm"
+>       scope="session"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/PaymentSchedule.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/SearchNoteLoad"
+>       type="com.bricsnet.core.web.actions.SearchNoteLoadAction"
+>       name="NoteListForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/SearchNote.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success_advanced_note"
+>         path="/AdvancedNoteSearch.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/TaxGroupAdminLoad"
+>       type="com.bricsnet.core.web.actions.TaxGroupAdminLoadAction"
+>       name="TaxGroupAdminForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/TaxGroupAdmin.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PriorityDimensionListLoad"
+>       type="com.bricsnet.core.web.actions.PriorityDimensionListLoadAction"
+>       name="PriorityDimensionForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PriorityDimensionList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ParentOrganizationSelectPopupLoad"
+>       type="com.bricsnet.core.web.actions.ParentOrganizationSelectPopupLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/ParentOrganizationSelectPopup.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="error"
+>         path="/ParentOrganizationSelectPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/AdvancedSearchNoteStore"
+>       type="com.bricsnet.core.web.actions.AdvancedSearchNoteStoreAction"
+>       name="NoteListForm"
+>       scope="session"
+>       input="/AdvancedNoteSearch.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/SearchNoteLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/ClassificationPopupLoad"
+>       type="com.bricsnet.core.web.actions.ClassificationPopupLoadAction"
+>       name="ClassificationForm"
+>       scope="session"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/ClassificationPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/CriticalDateLoad"
+>       type="com.bricsnet.core.web.actions.CriticalDateLoadAction"
+>       name="CriticalDateForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/CriticalDate.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="error"
+>         path="/CriticalDateError.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ScheduleTreeMoveSubtreeInSession"
+>       type="com.bricsnet.core.web.actions.ScheduleTreeMoveSubtreeInSessionAction"
+>       name="ScheduleTreeForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>     </action>
+>     <action
+>       path="/BIRTReportLoad"
+>       type="com.bricsnet.core.web.actions.BIRTReportLoadAction"
+>       name="BIRTReportForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/BIRTReport.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ScheduleTreeUpdateTracking"
+>       type="com.bricsnet.core.web.actions.ScheduleTreeUpdateTrackingAction"
+>       name="ScheduleTreeForm"
+>       scope="session"
+>       input="/ScheduleTreeTracking.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success_planning"
+>         path="/ScheduleTree.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success_tracking"
+>         path="/ScheduleTreeTracking.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success_sorting"
+>         path="/ScheduleTreeSorting.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success_graph"
+>         path="/ScheduleTreeGraph.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/UserGroupsEditStore"
+>       type="com.bricsnet.core.web.actions.UserGroupsEditStoreAction"
+>       name="UserGroupsEditForm"
+>       scope="session"
+>       input="/UserGroupsEdit.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/UserGroupLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/TaskGroupLoad"
+>       type="com.bricsnet.core.web.actions.TaskGroupLoadAction"
+>       name="TaskGroupForm"
+>       scope="session"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/TaskGroup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/AttribObjectTypeStore"
+>       type="com.bricsnet.core.web.actions.AttribObjectTypeStoreAction"
+>       name="AttribObjectTypeForm"
+>       scope="session"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/AttribObjectTypeLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/MailPopupLoad"
+>       type="com.bricsnet.core.web.actions.MailPopupLoadAction"
+>       name="MailPopupForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/MailPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ProjectCloseoutOutstandingItemsReportLoad"
+>       type="com.bricsnet.core.web.actions.ProjectCloseoutOutstandingItemsReportLoadAction"
+>       name="BIRTReportForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/BIRTReport.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/AttribGroupListLoad"
+>       type="com.bricsnet.core.web.actions.AttribGroupListLoadAction"
+>       name="AttribGroupListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/AttribGroupList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/SpaceFillByLoad"
+>       type="com.bricsnet.core.web.actions.SpaceFillByLoadAction"
+>       name="SpaceFillByForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/SpaceFillBy.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertySelectPopupLoad"
+>       type="com.bricsnet.core.web.actions.PropertySelectPopupLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySelectPopup.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="error"
+>         path="/PropertySelectPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/AdhocPopupStore"
+>       type="com.bricsnet.core.web.actions.AdhocPopupStoreAction"
+>       name="AdhocPopupForm"
+>       scope="request"
+>       input="/AdhocPopup.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/AdhocPopupClose.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/TaxRateInfoLoad"
+>       type="com.bricsnet.core.web.actions.TaxRateInfoLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/TaxRateInfo.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ClassificationStore"
+>       type="com.bricsnet.core.web.actions.ClassificationStoreAction"
+>       name="ClassificationForm"
+>       scope="session"
+>       input="/ClassificationTree.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/ClassificationLoad.do?id={0,number,#}"
+>         redirect="false"
+>       />
+>       <forward
+>         name="sortRequest"
+>         path="/ClassificationTree.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/AddressDatasheetLoad"
+>       type="com.bricsnet.core.web.actions.AddressDatasheetLoadAction"
+>       name="AddressForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/AddressDatasheet.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ReportListRequestLoad"
+>       type="com.bricsnet.core.web.actions.ReportListRequestLoadAction"
+>       name="ReportForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/ReportList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/CertificationStore"
+>       type="com.bricsnet.core.web.actions.CertificationStoreAction"
+>       name="CertificationForm"
+>       scope="session"
+>       input="/Certification.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/CertificationListLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/AssociateCostCentersLoad"
+>       type="com.bricsnet.core.web.actions.AssociateCostCenterLoadBaseAction"
+>       name="CostCentersForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/AssociateCostCentersPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ScheduleTreeStoreSorting"
+>       type="com.bricsnet.core.web.actions.ScheduleTreeStoreSortingAction"
+>       name="ScheduleTreeForm"
+>       scope="session"
+>       input="/ScheduleTreeSorting.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/ScheduleTreeLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/DocumentMigration"
+>       type="com.bricsnet.core.web.actions.DocumentMigrationAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/TaskListLoad"
+>       type="com.bricsnet.core.web.actions.TaskListLoadAction"
+>       name="TaskListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/TaskList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyInfoLoad"
+>       type="com.bricsnet.core.web.actions.PropertyInfoLoadAction"
+>       name="PropertyForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyInfoPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/TaxAdminStore"
+>       type="com.bricsnet.core.web.actions.TaxAdminStoreAction"
+>       name="TaxAdminForm"
+>       scope="session"
+>       input="/TaxAdmin.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/TaxAdminLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/ServiceCenterSelectPropertyPopupLoad"
+>       type="com.bricsnet.core.web.actions.ServiceCenterSelectPropertyPopupLoadAction"
+>       name="ServiceCenterSelectPropertyPopupForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/ServiceCenterSelectPropertyPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ScheduleTreeLoad"
+>       type="com.bricsnet.core.web.actions.ScheduleTreeLoadAction"
+>       name="ScheduleTreeForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success_planning"
+>         path="/ScheduleTree.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success_tracking"
+>         path="/ScheduleTreeTracking.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success_sorting"
+>         path="/ScheduleTreeSorting.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success_template"
+>         path="/ScheduleTreeTemplate.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success_graph"
+>         path="/ScheduleTreeGraph.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ScheduleTreeGraphRefresh"
+>       type="com.bricsnet.core.web.actions.ScheduleTreeGraphRefreshAction"
+>       name="ScheduleTreeForm"
+>       scope="session"
+>       input="/ScheduleTreeGraph.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/ScheduleTreeLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/ClassificationCopy"
+>       type="com.bricsnet.core.web.actions.ClassificationCopyAction"
+>       name="ClassificationForm"
+>       scope="session"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/ClassificationListLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/DimensionFactorStore"
+>       type="com.bricsnet.core.web.actions.DimensionFactorStoreAction"
+>       name="PriorityDimensionFactorForm"
+>       scope="session"
+>       input="/PriorityDimensionFactorAddLoad.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/DimensionFactorLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ServiceCenterPropertiesListStore"
+>       type="com.bricsnet.core.web.actions.ServiceCenterPropertiesListStoreAction"
+>       name="ServiceCenterPropertiesListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/ServiceCenterPropertiesListLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/UserGroupLoad"
+>       type="com.bricsnet.core.web.actions.UserGroupsListLoadAction"
+>       name="UserGroupsForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/UserGroups.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ScheduleTaskPopupStore"
+>       type="com.bricsnet.core.web.actions.ScheduleTaskPopupStoreAction"
+>       name="ScheduleTreeForm"
+>       scope="session"
+>       input="/ScheduleTaskPopup.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/ClosePopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/AttribEnumStore"
+>       type="com.bricsnet.core.web.actions.AttribEnumStoreAction"
+>       name="AttribEnumForm"
+>       scope="session"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/AttribLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/SendMailStore"
+>       type="com.bricsnet.core.web.actions.SendMailStoreAction"
+>       name="SendMailForm"
+>       scope="session"
+>       input="/SendMail.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/ClosePopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ChangePasswordLoad"
+>       type="com.bricsnet.core.web.actions.ChangePasswordLoadAction"
+>       name="ChangePasswordForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/ChangePassword.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/DirectoryStore"
+>       type="com.bricsnet.core.web.actions.DirectoryStoreAction"
+>       name="DirectoryForm"
+>       scope="session"
+>       input="/Directory.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/TeamListLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/ProblemCodeFromPropertyLoad"
+>       type="com.bricsnet.core.web.actions.ProblemCodeFromPropertyLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/ProblemCodeFromPropertyPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/TeamMemberLoad"
+>       type="com.bricsnet.core.web.actions.TeamMemberLoadAction"
+>       name="TeamMemberForm"
+>       scope="session"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/TeamMember.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ClassificationLoad"
+>       type="com.bricsnet.core.web.actions.ClassificationLoadAction"
+>       name="ClassificationForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/ClassificationTree.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ScheduleTreeUpdate"
+>       type="com.bricsnet.core.web.actions.ScheduleTreeUpdateBaseAction"
+>       name="ScheduleTreeForm"
+>       scope="session"
+>       input="/ScheduleTree.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success_planning"
+>         path="/ScheduleTree.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success_tracking"
+>         path="/ScheduleTreeTracking.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success_sorting"
+>         path="/ScheduleTreeSorting.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success_graph"
+>         path="/ScheduleTreeGraph.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/QuickAddStore"
+>       type="com.bricsnet.core.web.actions.QuickAddStoreAction"
+>       name="QuickAddForm"
+>       scope="request"
+>       input="/QuickAdd.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/TeamListLoad.do"
+>         redirect="true"
+>       />
+>       <forward
+>         name="success-add-logon"
+>         path="/contacts/LogonDatasheetLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/TaxChargeTypeStore"
+>       type="com.bricsnet.core.web.actions.TaxChargeTypeStoreAction"
+>       name="TaxChargeTypeForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/CloseRefreshParent.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/SpaceTextByLoad"
+>       type="com.bricsnet.core.web.actions.SpaceTextByLoadAction"
+>       name="SpaceTextByForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/SpaceTextBy.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/KpiViewLoad"
+>       type="com.bricsnet.core.web.actions.KpiViewLoadAction"
+>       name="KpiViewForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/KpiView.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/WorkTypeSelectPopupLoad"
+>       type="com.bricsnet.core.web.actions.WorkTypeSelectPopupLoadAction"
+>       name="WorkTypeSelectForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/WorkTypeSelectPopup.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="error"
+>         path="/WorkTypeSelectPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/NoteListAjaxLoad"
+>       type="com.bricsnet.core.web.actions.NoteListAjaxLoadAction"
+>       name="NoteListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/NoteListAjax.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success_advanced_search"
+>         path="/NoteListAjax.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PriorityDimensionLoad"
+>       type="com.bricsnet.core.web.actions.PriorityDimensionLoadAction"
+>       name="PriorityDimensionForm"
+>       scope="session"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/PriorityDimension.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/SetPrimaryAddressStore"
+>       type="com.bricsnet.core.web.actions.SetPrimaryAddressStoreAction"
+>       name="SetPrimaryAddressForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success-address-list"
+>         path="/AddressListLoad.do"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success-organization-datasheet"
+>         path="/contacts/OrganizationDatasheetLoad.do"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success-person-datasheet"
+>         path="/contacts/PersonDatasheetLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/loginForm"
+>       type="com.bricsnet.web.login.LoginFormAction"
+>       name="LoginForm"
+>       scope="request"
+>       input="/loginForm.jsp"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="loginForm"
+>         path="/loginForm.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="login"
+>         path="/login.do"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success-changepwd"
+>         path="/ChangePasswordLoad.do?forced=true"
+>         redirect="true"
+>       />
+>       <forward
+>         name="error"
+>         path="/loginForm.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ScheduleTreeUpdateGraph"
+>       type="com.bricsnet.core.web.actions.ScheduleTreeUpdateGraphAction"
+>       name="ScheduleTreeForm"
+>       scope="session"
+>       input="/ScheduleTreeGraph.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success_planning"
+>         path="/ScheduleTree.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success_tracking"
+>         path="/ScheduleTreeTracking.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success_sorting"
+>         path="/ScheduleTreeSorting.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success_graph"
+>         path="/ScheduleTreeGraph.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/AttribStore"
+>       type="com.bricsnet.core.web.actions.AttribStoreAction"
+>       name="AttribForm"
+>       scope="session"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="attrib"
+>         path="/AttribLoad.do"
+>         redirect="false"
+>       />
+>       <forward
+>         name="group"
+>         path="/AttribGroupLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PersonSelectFromOrgLoad"
+>       type="com.bricsnet.core.web.actions.PersonSelectFromOrgLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/PersonSelectFromOrgPopup.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="error"
+>         path="/PersonSelectFromOrgPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ExchangeRateCurrencyListLoad"
+>       type="com.bricsnet.core.web.actions.ExchangeRateCurrencyListLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/ExchangeRateCurrencyList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/GeneralLedgerChartLoad"
+>       type="com.bricsnet.core.web.actions.GeneralLedgerChartLoadAction"
+>       name="GeneralLedgerChartForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/GeneralLedgerChart.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="failure"
+>         path="/NoLedgerCodes.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ScheduleAppTaskPopupStore"
+>       type="com.bricsnet.core.web.actions.ScheduleAppTaskPopupStoreAction"
+>       name="ScheduleAppTaskForm"
+>       scope="session"
+>       input="/ScheduleAppTaskPopup.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/ClosePopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/OrganizationSelectPopupLoad"
+>       type="com.bricsnet.core.web.actions.OrganizationSelectPopupLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/OrganizationSelectPopup.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="error"
+>         path="/OrganizationSelectPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/UserGroupsEditLoad"
+>       type="com.bricsnet.core.web.actions.UserGroupsEditLoadAction"
+>       name="UserGroupsEditForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/UserGroupsEdit.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/TeamMailLogLoad"
+>       type="com.bricsnet.core.web.actions.TeamMailLogLoadAction"
+>       name="TeamMailLogForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/TeamMailLog.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/TaskGroupStore"
+>       type="com.bricsnet.core.web.actions.TaskGroupStoreAction"
+>       name="TaskGroupForm"
+>       scope="session"
+>       input="/TaskGroup.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/CloseRefreshParent.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/SelectSkin"
+>       type="com.bricsnet.core.web.actions.SelectSkinAction"
+>       name="SelectSkinForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/SelectSkin.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ReportScheduleDatasheetLoad"
+>       type="com.bricsnet.core.web.actions.ReportScheduleDatasheetLoadAction"
+>       name="ReportScheduleForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/ReportScheduleDatasheet.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/frag/ReportScheduleNewRowLoad"
+>       type="com.bricsnet.core.web.actions.ReportScheduleNewRowLoadAction"
+>       name="ReportScheduleForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/ReportSchedule.frag.row.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/QuickAddLoad"
+>       type="com.bricsnet.core.web.actions.QuickAddLoadAction"
+>       name="QuickAddForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/QuickAdd.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PriorityDimensionRefLoad"
+>       type="com.bricsnet.core.web.actions.PriorityDimensionRefLoadAction"
+>       name="PriorityDimensionRefForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PriorityDimRef.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/GeneralLedgerImportStore"
+>       type="com.bricsnet.core.web.actions.GeneralLedgerImportStoreAction"
+>       name="GeneralLedgerImportForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/GeneralLedgerImport.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ProblemCodesForGivenProperty"
+>       type="com.bricsnet.core.web.actions.ProblemCodesForGivenPropertyLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/ProblemCodeFromPropertyPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/AdhocLoad"
+>       type="com.bricsnet.core.web.actions.AdhocLoadAction"
+>       name="AdhocForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         contextRelative="false"
+>         module="/lease"
+>         name="success_lease"
+>         path="/AdhocSearch.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         contextRelative="false"
+>         module="/property"
+>         name="success_property"
+>         path="/AdhocSearch.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         module="/project"
+>         name="success_project"
+>         path="/ProjectAdhocLoad.do"
+>         redirect="false"
+>       />
+>       <forward
+>         contextRelative="false"
+>         module="/txmanager"
+>         name="success_txmanager"
+>         path="/AdhocSearch.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PriorityDimensionStore"
+>       type="com.bricsnet.core.web.actions.PriorityDimensionStoreAction"
+>       name="PriorityDimensionForm"
+>       scope="session"
+>       input="/PriorityDimensionList.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/PriorityDimensionLoad.do"
+>         redirect="true"
+>       />
+>       <forward
+>         name="update"
+>         path="/PriorityDimensionListLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/GLCodeSelectPopupLoad"
+>       type="com.bricsnet.core.web.actions.GLCodeSelectPopupLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/GLCodeSelectPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ReportScheduleListAjaxLoad"
+>       type="com.bricsnet.core.web.actions.ReportScheduleAjaxListLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       input="/ReportScheduleListAjax.jsp"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/ReportScheduleListAjax.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ScheduleTreeUpdateSorting"
+>       type="com.bricsnet.core.web.actions.ScheduleTreeUpdateSortingAction"
+>       name="ScheduleTreeForm"
+>       scope="session"
+>       input="/ScheduleTreeSorting.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success_planning"
+>         path="/ScheduleTree.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success_tracking"
+>         path="/ScheduleTreeTracking.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success_sorting"
+>         path="/ScheduleTreeSorting.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success_graph"
+>         path="/ScheduleTreeGraph.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ClassificationPopupStore"
+>       type="com.bricsnet.core.web.actions.ClassificationPopupStoreAction"
+>       name="ClassificationForm"
+>       scope="session"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/CloseRefreshParent.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ClassTeamLoad"
+>       type="com.bricsnet.core.web.actions.ClassTeamLoadAction"
+>       name="ClassificationForm"
+>       scope="session"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="team"
+>         path="/ClassificationTeam.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="store"
+>         path="/CloseSubmitParent.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ClassificationListLoad"
+>       type="com.bricsnet.core.web.actions.ClassificationListLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/ClassificationList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/DimensionObjectTypeListLoad"
+>       type="com.bricsnet.core.web.actions.DimensionObjectTypeListLoadAction"
+>       name="DimensionObjectTypeListForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/DimensionObjectTypeList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyTeamListLoad"
+>       type="com.bricsnet.core.web.actions.PropertyTeamListLoadAction"
+>       name="PropertyTeamForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyTeamList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/BenchmarkAdminStore"
+>       type="com.bricsnet.core.web.actions.BenchmarkAdminStoreAction"
+>       name="BenchmarkAdminForm"
+>       scope="request"
+>       input="/BenchmarkAdmin.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/BenchmarkAdminLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/logout"
+>       type="com.bricsnet.web.login.LogoutAction"
+>       name="LoginForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/index.jsp"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/GMapLoad"
+>       type="com.bricsnet.core.web.actions.GMapLoadAction"
+>       name="GMapForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/GMap.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/BIRTScheduleReportLoad"
+>       type="com.bricsnet.core.web.actions.BIRTScheduleReportLoadAction"
+>       name="BIRTReportForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/BIRTReport.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ApplicationExportStore"
+>       type="com.bricsnet.core.web.actions.ApplicationExportStoreAction"
+>       name="ApplicationExportForm"
+>       scope="session"
+>       input="ApplicationExport.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/secure/nocache/ApplicationExportServlet"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ScheduleTreeUpdatePlanning"
+>       type="com.bricsnet.core.web.actions.ScheduleTreeUpdatePlanningAction"
+>       name="ScheduleTreeForm"
+>       scope="session"
+>       input="/ScheduleTree.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success_planning"
+>         path="/ScheduleTree.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success_tracking"
+>         path="/ScheduleTreeTracking.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success_sorting"
+>         path="/ScheduleTreeSorting.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success_graph"
+>         path="/ScheduleTreeGraph.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/KpiSubscriptionLoad"
+>       type="com.bricsnet.core.web.actions.KpiSubscriptionLoadAction"
+>       name="DashboardForm"
+>       scope="session"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/KpiSubscription.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ScheduleSelectPopupLoad"
+>       type="com.bricsnet.core.web.actions.ScheduleSelectPopupLoadAction"
+>       name="ListForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/ScheduleSelectPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/TaskListStore"
+>       type="com.bricsnet.core.web.actions.TaskListStoreAction"
+>       name="TaskListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/TaskListLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/UserGroupsNewLoad"
+>       type="com.bricsnet.core.web.actions.UserGroupsNewLoadAction"
+>       name="UserGroupsEditForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/UserGroupsEdit.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ScheduleTreeStorePlanning"
+>       type="com.bricsnet.core.web.actions.ScheduleTreeStorePlanningAction"
+>       name="ScheduleTreeForm"
+>       scope="session"
+>       input="/ScheduleTree.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/ScheduleTreeLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/BundleMgtLoad"
+>       type="com.bricsnet.core.web.actions.BundleMgtLoadAction"
+>       name="BundleMgtForm"
+>       scope="session"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="edit"
+>         path="/BundleEdit.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="choose"
+>         path="/BundleMgt.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/GMapInfoLoad"
+>       type="com.bricsnet.core.web.actions.GMapInfoLoadAction"
+>       name="GMapInfoForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>     </action>
+>     <action
+>       path="/TaxAdminModify"
+>       type="com.bricsnet.core.web.actions.TaxAdminModifyAction"
+>       name="TaxAdminForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/TaxAdmin.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/GeneralLedgerChartInfoLoad"
+>       type="com.bricsnet.core.web.actions.GeneralLedgerChartInfoLoadAction"
+>       name="GeneralLedgerChartInfoForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/GeneralLedgerChartInfo.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/AttribGroupDelete"
+>       type="com.bricsnet.core.web.actions.AttribGroupDeleteAction"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/AttribGroupListLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/StandardReportAddStore"
+>       type="com.bricsnet.core.web.actions.StandardReportAddStoreAction"
+>       name="StandardReportAddForm"
+>       scope="session"
+>       input="/StandardReportAdd.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/StandardReportListLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ScheduleTreeStoreGraph"
+>       type="com.bricsnet.core.web.actions.ScheduleTreeStoreGraphAction"
+>       name="ScheduleTreeForm"
+>       scope="session"
+>       input="/ScheduleTreeGraph.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/ScheduleTreeLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/BIRTLeaseAgingReportLoad"
+>       type="com.bricsnet.core.web.actions.BIRTLeaseAgingReportLoadAction"
+>       name="BIRTReportForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/BIRTReport.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/KpiSubscriptionStore"
+>       type="com.bricsnet.core.web.actions.KpiSubscriptionStoreAction"
+>       name="DashboardForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success_sub"
+>         path="/KpiSubscriptionLoad.do"
+>         redirect="true"
+>       />
+>       <forward
+>         name="success_dash"
+>         path="/DashboardLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/ChargeTypeLoad"
+>       type="com.bricsnet.core.web.actions.ChargeTypeLoadAction"
+>       name="ChargeTypeForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/ChargeType.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/AttribGroupLoad"
+>       type="com.bricsnet.core.web.actions.AttribGroupLoadAction"
+>       name="AttribGroupForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="edit"
+>         path="/AttribGroupEdit.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="create"
+>         path="/AttribGroupCreate.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ResourceCategoryPopupStore"
+>       type="com.bricsnet.core.web.actions.ResourceCategoryPopupStoreAction"
+>       name="ScheduleTreeForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/ResourceCategoryPopupLoad.do"
+>         redirect="true"
+>       />
+>       <forward
+>         name="close-refresh"
+>         path="/CloseRefreshSchedule.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ClassificationListDelete"
+>       type="com.bricsnet.core.web.actions.ClassificationListDeleteAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/ClassificationListLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PriorityDimRefStore"
+>       type="com.bricsnet.core.web.actions.PriorityDimRefStoreAction"
+>       name="DimensionObjectTypeForm"
+>       scope="session"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/DimensionObjectTypeLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/AddressDatasheetStore"
+>       type="com.bricsnet.core.web.actions.AddressDatasheetStoreAction"
+>       name="AddressForm"
+>       scope="session"
+>       input="/AddressDatasheet.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/AddressListLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/ScheduleAppTaskPopupLoad"
+>       type="com.bricsnet.core.web.actions.ScheduleAppTaskPopupLoadAction"
+>       name="ScheduleAppTaskForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/ScheduleAppTaskPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/TimesheetListLoad"
+>       type="com.bricsnet.core.web.actions.TimesheetListLoadAction"
+>       name="TimesheetListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/TimesheetList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/frag/ScheduleTreeNewRowLoad"
+>       type="com.bricsnet.core.web.actions.ScheduleTreeNewRowLoadAction"
+>       name="ScheduleTreeForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/ScheduleTreeNewRow.frag.tree.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/TimesheetBatchUpdateStore"
+>       type="com.bricsnet.core.web.actions.TimesheetBatchUpdateStoreAction"
+>       name="TimesheetListForm"
+>       scope="session"
+>       input="/TimesheetList.jsp"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/TimesheetListLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/ScheduleTreeDeleteRowFromSession"
+>       type="com.bricsnet.core.web.actions.ScheduleTreeDeleteRowFromSessionAction"
+>       name="ScheduleTreeForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>     </action>
+>     <action
+>       path="/ResourceCategoryPopupLoad"
+>       type="com.bricsnet.core.web.actions.ResourceCategoryPopupLoadAction"
+>       name="ScheduleTreeForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/ResourceCategoryPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/AreaSelectFromPropertyLoad"
+>       type="com.bricsnet.core.web.actions.AreaSelectFromPropertyLoadAction"
+>       name="AreaListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/AreaSelectFromPropertyPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/UserGroupsListDelete"
+>       type="com.bricsnet.core.web.actions.UserGroupsListDeleteAction"
+>       name="UserGroupsEditForm"
+>       scope="request"
+>       input="/UserGroups.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/UserGroupLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/LocalizationStore"
+>       type="com.bricsnet.core.web.actions.LocalizationStoreAction"
+>       name="LocalizationForm"
+>       scope="session"
+>       input="/Localization.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/LocalizationLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/AttribObjectTypeListLoad"
+>       type="com.bricsnet.core.web.actions.AttribObjectTypeListLoadAction"
+>       name="AttribObjectTypeListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/AttribObjectTypeList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/TimesheetDatasheetStore"
+>       type="com.bricsnet.core.web.actions.TimesheetDatasheetStoreAction"
+>       name="TimesheetForm"
+>       scope="session"
+>       input="/TimesheetDatasheet.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/TimesheetListLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/BenchmarkVectorAdminLoad"
+>       type="com.bricsnet.core.web.actions.BenchmarkVectorAdminLoadAction"
+>       name="BenchmarkVectorAdminForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/BenchmarkVectorAdmin.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/AttribEnumLoad"
+>       type="com.bricsnet.core.web.actions.AttribEnumLoadAction"
+>       name="AttribEnumForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="create"
+>         path="/AttribEnumCreate.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="edit"
+>         path="/AttribEnumEdit.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/DirectoryLoad"
+>       type="com.bricsnet.core.web.actions.DirectoryLoadAction"
+>       name="DirectoryForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/Directory.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/TeamListLoad"
+>       type="com.bricsnet.core.web.actions.TeamListLoadAction"
+>       name="TeamListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/TeamList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/BundleMgtStore"
+>       type="com.bricsnet.core.web.actions.BundleMgtStoreAction"
+>       name="BundleMgtForm"
+>       scope="session"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="edit"
+>         path="/BundleEdit.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="choose"
+>         path="/BundleMgtLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ExchangeRateStore"
+>       type="com.bricsnet.core.web.actions.ExchangeRateStoreAction"
+>       name="ExchangeRateListForm"
+>       scope="session"
+>       input="/ExchangeRate.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/ExchangeRate.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="exchangeRate"
+>         path="/ExchangeRateListLoad.do?action=reload"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/AdhocListLoad"
+>       type="com.bricsnet.core.web.actions.AdhocListLoadAction"
+>       name="AdhocListForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/AdhocList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/DashboardLoad"
+>       type="com.bricsnet.core.web.actions.DashboardLoadAction"
+>       name="DashboardForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/dashboard/Dashboard.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/SpaceTextByAddOptions"
+>       type="com.bricsnet.core.web.actions.SpaceTextByAddOptionsAction"
+>       name="SpaceTextByForm"
+>       scope="session"
+>       input="/SpaceTextBy.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/SpaceTextByLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/ChangePasswordStore"
+>       type="com.bricsnet.core.web.actions.ChangePasswordStoreAction"
+>       name="ChangePasswordForm"
+>       scope="request"
+>       input="/ChangePassword.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/index.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/TimesheetDatasheetLoad"
+>       type="com.bricsnet.core.web.actions.TimesheetDatasheetLoadAction"
+>       name="TimesheetForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/TimesheetDatasheet.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/frag/GeneralLedgerChartNewRowLoad"
+>       type="com.bricsnet.core.web.actions.GeneralLedgerChartNewRowLoadAction"
+>       name="GeneralLedgerChartForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/GeneralLedgerChart.frag.row.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/OrganizationInfoLoad"
+>       type="com.bricsnet.core.web.actions.OrganizationInfoLoadAction"
+>       name="OrganizationForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/OrganizationInfoPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/TeamListStore"
+>       type="com.bricsnet.core.web.actions.TeamListStoreAction"
+>       name="TeamListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/TeamListLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/ScheduleTaskPopupLoad"
+>       type="com.bricsnet.core.web.actions.ScheduleTaskPopupLoadAction"
+>       name="ScheduleTreeForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/ScheduleTaskPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ProcessDefAdminLoad"
+>       type="com.bricsnet.core.web.actions.ProcessDefAdminLoadAction"
+>       name="ProcessDefAdminForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/ProcessDefAdmin.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ClassificationSelectLoad"
+>       type="com.bricsnet.core.web.actions.ClassificationSelectLoadAction"
+>       name="ClassificationForm"
+>       scope="session"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/ClassificationSelectPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/SpaceAllocReportLoad"
+>       type="com.bricsnet.core.web.actions.SpaceAllocReportLoadAction"
+>       name="BIRTReportForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/BIRTReport.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/AdhocPopupLoad"
+>       type="com.bricsnet.core.web.actions.AdhocPopupLoadAction"
+>       name="AdhocPopupForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/AdhocPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ApplicationExportLoad"
+>       type="com.bricsnet.core.web.actions.ApplicationExportLoadAction"
+>       name="ApplicationExportForm"
+>       scope="session"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/ApplicationExport.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PasswordReset"
+>       type="com.bricsnet.web.login.PasswordResetAction"
+>       name="LoginForm"
+>       scope="request"
+>       input="/PasswordRequest.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="start"
+>         path="/PasswordRequest.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success"
+>         path="/PasswordNotify.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="reset"
+>         path="/PasswordReset.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="invalid"
+>         path="/PasswordInvalidRequest.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="complete"
+>         path="/index.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/BenchmarkVectorAdminStore"
+>       type="com.bricsnet.core.web.actions.BenchmarkVectorAdminStoreAction"
+>       name="BenchmarkVectorAdminForm"
+>       scope="session"
+>       input="/BenchmarkVectorAdmin.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/BenchmarkVectorAdminLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/DimensionFactorLoad"
+>       type="com.bricsnet.core.web.actions.DimensionFactorLoadAction"
+>       name="PriorityDimensionFactorForm"
+>       scope="session"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/PriorityDimensionFactorAddLoad.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/AddressListLoad"
+>       type="com.bricsnet.core.web.actions.AddressListLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/AddressList.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success_advanced_search"
+>         path="/AddressAdvancedSearch.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/StandardReportAddLoad"
+>       type="com.bricsnet.core.web.actions.StandardReportAddLoadAction"
+>       name="StandardReportAddForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/StandardReportAdd.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/GMapDataLoad"
+>       type="com.bricsnet.core.web.actions.GMapDataLoadAction"
+>       name="GMapDataForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/GMapData.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/AttribObjectTypeLoad"
+>       type="com.bricsnet.core.web.actions.AttribObjectTypeLoadAction"
+>       name="AttribObjectTypeForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/AttribObjectType.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/CriticalDateStore"
+>       type="com.bricsnet.core.web.actions.CriticalDateStoreAction"
+>       name="CriticalDateForm"
+>       scope="session"
+>       input="/CriticalDate.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/CloseRefreshParent.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="email"
+>         path="/CriticalDateLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/TaxAdminLoad"
+>       type="com.bricsnet.core.web.actions.TaxAdminLoadAction"
+>       name="TaxAdminForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/TaxAdmin.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/BenchmarkAdminLoad"
+>       type="com.bricsnet.core.web.actions.BenchmarkAdminLoadAction"
+>       name="BenchmarkAdminForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/BenchmarkAdmin.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/CustomLayoutLoad"
+>       type="com.bricsnet.core.web.actions.CustomLayoutLoadAction"
+>       name="CustomLayoutForm"
+>       scope="session"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/CustomLayout.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/AttribLoad"
+>       type="com.bricsnet.core.web.actions.AttribLoadAction"
+>       name="AttribForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/Attrib.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/CostCenterInfoLoad"
+>       type="com.bricsnet.core.web.actions.CostCenterInfoLoadAction"
+>       name="CostCenterForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/CostCenterInfoPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/LocalizationLoad"
+>       type="com.bricsnet.core.web.actions.LocalizationLoadAction"
+>       name="LocalizationForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/Localization.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/RelatedTransactionListLoad"
+>       type="com.bricsnet.core.web.actions.RelatedTransactionListLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="core"
+>         path="/RelatedTransactionList.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="lease"
+>         path="/lease/RelatedTransactionList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/AttribGroupRefStore"
+>       type="com.bricsnet.core.web.actions.AttribGroupRefStoreAction"
+>       name="AttribGroupRefForm"
+>       scope="session"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/AttribObjectTypeLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/SendMailLoad"
+>       type="com.bricsnet.core.web.actions.SendMailLoadAction"
+>       name="SendMailForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/SendMail.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PriorityDimensionRefStore"
+>       type="com.bricsnet.core.web.actions.PriorityDimensionRefStoreAction"
+>       name="PriorityDimensionRefForm"
+>       scope="session"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/DimensionObjectTypeLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PersonInfoLoad"
+>       type="com.bricsnet.core.web.actions.PersonInfoLoadAction"
+>       name="PersonForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PersonInfoPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/KpiAddStore"
+>       type="com.bricsnet.core.web.actions.KpiAddStoreAction"
+>       name="KpiAddForm"
+>       scope="session"
+>       input="/KpiAdd.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/KpiListLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/TaxChargeTypeLoad"
+>       type="com.bricsnet.core.web.actions.TaxChargeTypeLoadAction"
+>       name="TaxChargeTypeForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/TaxChargeType.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ExchangeRateListLoad"
+>       type="com.bricsnet.core.web.actions.ExchangeRateListLoadAction"
+>       name="ExchangeRateListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/ExchangeRateList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/KpiListLoad"
+>       type="com.bricsnet.core.web.actions.KpiListLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/KpiList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/DashboardSelectLoad"
+>       type="com.bricsnet.core.web.actions.DashboardSelectLoadAction"
+>       name="DashboardSelectForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/dashboard/DashboardSelect.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/BenchmarkVectorAdminModify"
+>       type="com.bricsnet.core.web.actions.BenchmarkVectorAdminModifyAction"
+>       name="BenchmarkVectorAdminForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/BenchmarkVectorAdmin.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/AddressSelectPopupLoad"
+>       type="com.bricsnet.core.web.actions.AddressSelectPopupLoadAction"
+>       name="ListForm"
+>       scope="session"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/AddressSelectPopup.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="error"
+>         path="/AddressSelectPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/LeaseSelectPopupLoad"
+>       type="com.bricsnet.core.web.actions.LeaseSelectPopupLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/LeaseSelectPopup.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="error"
+>         path="/LeaseSelectPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/SystemAdminLoad"
+>       type="com.bricsnet.core.web.actions.SystemAdminLoadAction"
+>       name="SystemAdministrationForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/SystemAdmin.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/AjaxTestLoad"
+>       type="com.bricsnet.core.web.actions.AjaxTestLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/AjaxTestLoad.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ServiceCenterSelectPopupLoad"
+>       type="com.bricsnet.core.web.actions.ServiceCenterSelectPopupLoadAction"
+>       name="ListForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/ServiceCenterSelectPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/CertificationListLoad"
+>       type="com.bricsnet.core.web.actions.CertificationListLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/CertificationList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/TaxGroupInfoLoad"
+>       type="com.bricsnet.core.web.actions.TaxGroupInfoLoadAction"
+>       name="TaxGroupInfoForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/TaxGroupInfo.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/AppTaskListLoad"
+>       type="com.bricsnet.core.web.actions.AppTaskListLoadAction"
+>       name="AppTaskListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/AppTaskList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/TaskAssignmentPopupLoad"
+>       type="com.bricsnet.core.web.actions.TaskAssignmentPopupLoadAction"
+>       name="ScheduleTreeForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/TaskAssignmentPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/UnitListLoad"
+>       type="com.bricsnet.core.web.actions.UnitListLoadAction"
+>       name="ListForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/UnitList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/GeneralLedgerChartListLoad"
+>       type="com.bricsnet.core.web.actions.GeneralLedgerChartListLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/GeneralLedgerChartList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/StandardReportListLoad"
+>       type="com.bricsnet.core.web.actions.StandardReportListLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/StandardReportList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/TeamMailNewLoad"
+>       type="com.bricsnet.core.web.actions.TeamMailNewLoadAction"
+>       name="TeamMailNewForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/TeamMailNew.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/NoteListStore"
+>       type="com.bricsnet.core.web.actions.NoteListStoreAction"
+>       name="NoteListForm"
+>       scope="session"
+>       input="/NoteList.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/NoteListLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/ReportScheduleListLoad"
+>       type="com.bricsnet.core.web.actions.ReportScheduleListLoadAction"
+>       name="ReportScheduleListForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/ReportScheduleList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ProblemCodeInfoLoad"
+>       type="com.bricsnet.core.web.actions.ProblemCodeInfoLoadAction"
+>       name="ProblemCodeForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/ProblemCodeInfoPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PersonSelectPopupLoad"
+>       type="com.bricsnet.core.web.actions.PersonSelectPopupLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/PersonSelectPopup.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="error"
+>         path="/PersonSelectPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ServiceCenterPropertiesListLoad"
+>       type="com.bricsnet.core.web.actions.ServiceCenterPropertiesListLoadAction"
+>       name="ServiceCenterPropertiesListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/ServiceCenterPropertiesList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/AdminLoad"
+>       type="com.bricsnet.core.web.actions.AdminLoadAction"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/Admin.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/AddressSummaryLoad"
+>       type="com.bricsnet.core.web.actions.AddressSummaryLoadAction"
+>       name="AddressForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/AddressSummary.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/UserGroupsNewStore"
+>       type="com.bricsnet.core.web.actions.UserGroupsNewStoreAction"
+>       name="UserGroupsEditForm"
+>       scope="session"
+>       input="/UserGroupsEdit.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/UserGroupLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/CertificationLoad"
+>       type="com.bricsnet.core.web.actions.CertificationLoadAction"
+>       name="CertificationForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/Certification.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/AutoGenerateConfigurationStore"
+>       type="com.bricsnet.core.web.actions.AutoGenerateConfigurationStoreAction"
+>       name="AutoGenerateConfigurationForm"
+>       scope="session"
+>       input="/AutoGenerateConfiguration.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/AutoGenerateConfigurationLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/ProcessDefAdminStore"
+>       type="com.bricsnet.core.web.actions.ProcessDefAdminStoreAction"
+>       name="ProcessDefAdminForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/ProcessDefAdminLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/login"
+>       type="com.bricsnet.web.login.LoginAction"
+>       name="LoginForm"
+>       scope="request"
+>       input="/login.jsp"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="login"
+>         path="/login.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success"
+>         path="/index.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success-changepwd"
+>         path="/ChangePasswordLoad.do?forced=true"
+>         redirect="true"
+>       />
+>       <forward
+>         name="error"
+>         path="/login.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/GeneralLedgerChartStore"
+>       type="com.bricsnet.core.web.actions.GeneralLedgerChartStoreAction"
+>       name="GeneralLedgerChartForm"
+>       scope="session"
+>       input="/GeneralLedgerChart.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/GeneralLedgerChartListLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/AdhocStandardExport"
+>       type="com.bricsnet.core.web.actions.AdhocStandardExportAction"
+>       name="AdhocForm"
+>       scope="session"
+>       input="/Adhoc.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/AdhocListLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/AddressInfoLoad"
+>       type="com.bricsnet.core.web.actions.AddressInfoLoadAction"
+>       name="AddressForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/AddressInfoPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ReportListWorkOrderLoad"
+>       type="com.bricsnet.core.web.actions.ReportListWorkOrderLoadAction"
+>       name="ReportForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/ReportList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ReportListLoad"
+>       type="com.bricsnet.core.web.actions.ReportListLoadAction"
+>       name="ReportForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/ReportList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PriorityListDatasheet"
+>       type="com.bricsnet.core.web.actions.PriorityListDatasheetAction"
+>       name="PriorityListForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PriorityListDatasheet.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="update"
+>         path="/PriorityListDatasheet.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PriorityListLoad"
+>       type="com.bricsnet.core.web.actions.PriorityListLoadAction"
+>       name="PriorityListForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PriorityList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/AttribGroupStore"
+>       type="com.bricsnet.core.web.actions.AttribGroupStoreAction"
+>       name="AttribGroupForm"
+>       scope="session"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="edit"
+>         path="/AttribGroupLoad.do"
+>         redirect="false"
+>       />
+>       <forward
+>         name="list"
+>         path="/AttribGroupListLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/AdhocListStore"
+>       type="com.bricsnet.core.web.actions.AdhocListStoreAction"
+>       name="AdhocListForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success-delete"
+>         path="/AdhocListLoad.do"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success-store"
+>         path="/AdhocLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ChargeTypeStore"
+>       type="com.bricsnet.core.web.actions.ChargeTypeStoreAction"
+>       name="ChargeTypeForm"
+>       scope="session"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/ChargeTypeLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/ListConfigPopupLoad"
+>       type="com.bricsnet.core.web.actions.ListConfigPopupLoadAction"
+>       name="ListConfigPopupForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/ListConfigPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/TeamMemberStore"
+>       type="com.bricsnet.core.web.actions.TeamMemberStoreAction"
+>       name="TeamMemberForm"
+>       scope="session"
+>       input="/TeamMember.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/TeamListLoad.do"
+>         redirect="true"
+>       />
+>       <forward
+>         name="success_quickAdd"
+>         path="/QuickAddLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/AttribGroupRefLoad"
+>       type="com.bricsnet.core.web.actions.AttribGroupRefLoadAction"
+>       name="AttribGroupRefForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/AttribGroupRef.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/KpiAddLoad"
+>       type="com.bricsnet.core.web.actions.KpiAddLoadAction"
+>       name="KpiAddForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/KpiAdd.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/TaskAssignmentPopupStore"
+>       type="com.bricsnet.core.web.actions.TaskAssignmentPopupStoreAction"
+>       name="ScheduleTreeForm"
+>       scope="session"
+>       input="/TaskAssignmentPopup.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/TaskAssignmentPopupLoad.do"
+>         redirect="true"
+>       />
+>       <forward
+>         name="close-refresh"
+>         path="/CloseRefreshSchedule.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ScheduleImportStore"
+>       type="com.bricsnet.core.web.actions.ScheduleImportStoreAction"
+>       name="ScheduleTreeForm"
+>       scope="session"
+>       input="/SchedulePreview.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/ScheduleTreeLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/CustomLayoutStore"
+>       type="com.bricsnet.core.web.actions.CustomLayoutStoreAction"
+>       name="CustomLayoutForm"
+>       scope="session"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/CustomLayoutLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/ServiceCenterSelectPropertyPopupStore"
+>       type="com.bricsnet.core.web.actions.ServiceCenterSelectPropertyPopupStoreAction"
+>       name="ServiceCenterSelectPropertyPopupForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/CloseRefreshParent.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ReportScheduleDatasheetStore"
+>       type="com.bricsnet.core.web.actions.ReportScheduleDatasheetStoreAction"
+>       name="ReportScheduleForm"
+>       scope="session"
+>       input="/ReportScheduleDatasheet.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/ClosePopup.jsp"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/TeamMailNewStore"
+>       type="com.bricsnet.core.web.actions.TeamMailNewStoreAction"
+>       name="TeamMailNewForm"
+>       scope="session"
+>       input="/TeamMailNew.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/TeamListLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/GeneralLedgerExport"
+>       type="com.bricsnet.core.web.actions.GeneralLedgerExportAction"
+>       name="GeneralLedgerImportForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/GeneralLedgerImport.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/DimensionObjectTypeLoad"
+>       type="com.bricsnet.core.web.actions.DimensionObjectTypeLoadAction"
+>       name="DimensionObjectTypeForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/DimensionObjectType.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/MailPopupStore"
+>       type="com.bricsnet.core.web.actions.MailPopupStoreAction"
+>       name="MailPopupForm"
+>       scope="session"
+>       input="/MailPopup.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/ClosePopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ObjectSelectPopupLoad"
+>       type="com.bricsnet.core.web.actions.ObjectSelectPopupLoadAction"
+>       name="ObjectSelectForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="successProperty"
+>         path="/PropertySelectPopup.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="successCostCenter"
+>         path="/CostCenterSelectPopup.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="successGLGroup"
+>         path="/GLGroupSelectPopup.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="successPropertySC"
+>         path="/PropertySelectPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ScheduleImportStepOne"
+>       type="com.bricsnet.core.web.actions.ScheduleImportStepOneAction"
+>       name="ScheduleTreeForm"
+>       scope="session"
+>       input="/ScheduleTree.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/SchedulePreview.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success_tracking"
+>         path="/ScheduleTrackingPreview.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/TaxGroupAdminStore"
+>       type="com.bricsnet.core.web.actions.TaxGroupAdminStoreAction"
+>       name="TaxGroupAdminForm"
+>       scope="session"
+>       input="/TaxGroupAdmin.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/TaxGroupAdminLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/SpaceFillByAddOptions"
+>       type="com.bricsnet.core.web.actions.SpaceFillByAddOptionsAction"
+>       name="SpaceFillByForm"
+>       scope="session"
+>       input="/SpaceFillBy.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/SpaceFillByLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/PaymentScheduleStore"
+>       type="com.bricsnet.core.web.actions.PaymentScheduleStoreAction"
+>       name="PaymentScheduleForm"
+>       scope="session"
+>       input="/PaymentSchedule.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/PaymentScheduleLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/SearchNoteStore"
+>       type="com.bricsnet.core.web.actions.SearchNoteStoreAction"
+>       name="NoteListForm"
+>       scope="session"
+>       input="/SearchNote.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/SearchNoteLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/UnitConversionListLoad"
+>       type="com.bricsnet.core.web.actions.UnitConversionListLoadAction"
+>       name="ListForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/UnitConversionList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/KpiLayoutStore"
+>       type="com.bricsnet.core.web.actions.KpiLayoutStoreAction"
+>       name="KpiLayoutForm"
+>       scope="session"
+>       input="/Dashboard.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/ajax/AjaxResponse.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PaymentScheduleLoad"
+>       type="com.bricsnet.core.web.actions.PaymentScheduleLoadAction"
+>       name="PaymentScheduleForm"
+>       scope="session"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/PaymentSchedule.jsp"
+>         redirect="false"
+>       />
+>     </action>
+> 
+>      <!-- ========== Action Mapping Definitions From Merge File ============ -->
+>     <action
+>       path="/frag/ClassificationFragLoad"
+>       type="com.bricsnet.core.web.actions.ClassificationFragLoadAction"
+>       name="ClassificationForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/ClassificationTree.frag.tree.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/frag/ClassificationSelectFragLoad"
+>       type="com.bricsnet.core.web.actions.ClassificationSelectFragLoadAction"
+>       name="ClassificationForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/ClassificationSelectPopup.frag.tree.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/frag/ClassificationPopupFragLoad"
+>       type="com.bricsnet.core.web.actions.ClassificationPopupFragLoadAction"
+>       name="ClassificationForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/ClassificationPopup.frag.tree.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/frag/GeneralLedgerChartInfoFragLoad"
+>       type="com.bricsnet.core.web.actions.GeneralLedgerChartInfoFragLoadAction"
+>       name="GeneralLedgerChartInfoForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/GeneralLedgerChartInfo.frag.tree.jsp"
+>         redirect="false"
+>       />
+>     </action>
+50d4027
+<     <!-- If you have non XDoclet actions, define them in a file called struts-actions.xml and place it in your merge directory. -->
+59,60c4036,4071
+<       <!-- ========== Message Resources Definitions From Merge File ============ -->
+<     <!-- $Id: struts-message-resources.xml 40267 2010-10-08 12:14:33Z rkumar $ -->
+---
+>     <message-resources parameter="Label"  null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="Label"  key="label"  null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="Label"  key="core.label"  null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="bundle-mgt-options" key="bundle-mgt-options" null="true" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="taglib" key="taglib" null="true" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="list" key="list" null="true" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="report" key="report" null="true" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="Error"  key="error"  null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="warning"  key="warning"  null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="Action"  key="action"  null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="Header" key="header" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="Header" key="core.header" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="navigation" key="navigation" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="navigation" key="core.navigation" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="common-action" key="common-action" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="common-navigation" key="common-navigation" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="boolean" key="boolean" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="month" key="month" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="month-short" key="month-short" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="language" key="language" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="country" key="country" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="timezone" key="timezone" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="currency" key="currency" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="currency_code" key="currency_code" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="unit" key="unit" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="ObjectType" key="objectType" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="ObjectType-short" key="objectType-short" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="apptask-datefilter" key="apptask-datefilter" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="module" key="module" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="charge-type" key="charge-type" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="lease.lease-status" key="lease-status" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+>     <message-resources parameter="lease.lease-type" key="lease-type" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+>     <message-resources parameter="lease.lease-category" key="lease-category" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+>     <message-resources parameter="lease.lease-position" key="lease-position" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+>     <message-resources parameter="txmanager.tx-status" key="tx-status" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="txmanager.tx-type" key="tx-type" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+62,94c4073,4080
+<     <!-- Resources from the core directory -->
+<     <message-resources parameter="Label" key="core.label" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="Header" key="core.header" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+<     <message-resources parameter="navigation" key="core.navigation" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+<     <message-resources parameter="Header" key="core.Header" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="Error"  key="error"  null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="warning"  key="warning"  null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="boolean" key="boolean" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="country" key="country" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="currency_code" key="currency_code" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="unit" key="unit" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="month" key="month" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="businessRole" key="businessRole" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="currency" key="currency" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+<     <message-resources parameter="module" key="module" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+<     <message-resources parameter="person-status" key="person-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+<     <message-resources parameter="ObjectType-short" key="ObjectType-short" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+---
+>     <message-resources parameter="element-elementType" key="element-elementType" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="element-roofType" key="element-roofType" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="element-elevatorType" key="element-elevatorType" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="element-parkingType" key="element-parkingType" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="asset-ownershipType" key="asset-ownershipType" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="asset-locationStatus" key="asset-locationStatus" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="note-type" key="note-type" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="exchangerate-type" key="exchangerate-type" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+96,105c4082,4085
+<     <message-resources parameter="generalLedgerCode-type" key="generalLedgerCode-type" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="schedule-status" key="core.schedule-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="task-status" key="task-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="task-periodStatus" key="task-periodStatus" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="task-priority" key="task-priority" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+---
+>     <!-- Classification externalizated descriptions -->
+>     <message-resources parameter="classification_name" key="classification_name" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="classification_desc" key="classification_desc" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="classification_code" key="classification_code" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+107,113c4087,4094
+<     <!-- Classification externalized descriptions -->
+<     <message-resources parameter="classification_name" key="classification_name" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="classification_desc" key="classification_desc" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="classification_code" key="classification_code" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+---
+>     <!-- message-resources for custom attributes.  attrib-type is static but
+>     the other 4 are modified by the custom attrib admin pages.  -->
+>     <message-resources parameter="attrib-type" key="attrib-type" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="attrib-format" key="attrib-format" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="attrib" key="attrib" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="attrib-group" key="attrib-group" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="attrib-group-ref" key="attrib-group-ref" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="attrib-enum" key="attrib-enum" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+115,121c4096,4109
+<     <!-- from other modules -->
+<     <message-resources parameter="docmanager.doc-status"  key="doc-status"  null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="docmanager.search-options"  key="search-options"  null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="property.property-status" key="property-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+---
+>     <message-resources parameter="businessRole" key="businessRole" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="person-status" key="person-status" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="organization-typeId" key="organization-typeId" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="generalLedgerCode-type" key="generalLedgerCode-type" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="t_time_intervals" key="t_time_intervals" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="workorder.workOrder-responsibility" key="workOrder-responsibility" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="workorder.workOrder-skillRequired" key="workOrder-skillRequired" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="workorder.workOrder-laborGroup" key="workOrder-laborGroup" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="workorder.workOrder-certification" key="workOrder-certification" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="workorder.workOrder-status" key="workOrder-status" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="workorder.workOrder-maintenanceType" key="workOrder-maintenanceType" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="workorder.workOrder-priorityLevel" key="workOrder-priorityLevel" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="workorder.workOrder-timeConstraints" key="workOrder-timeConstraints" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="workorder.workOrder-requestSeverity" key="workOrder-requestSeverity" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+123,133c4111
+<     <!-- Standard resources -->
+<     <message-resources parameter="project.label"  null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.label"  key="label"  null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.header" key="header" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.action"  key="action"  null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.navigation" key="navigation" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+---
+>     <message-resources parameter="workorder.workOrder-generateType" key="workOrder-generateType" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+135,139c4113,4128
+<     <!-- Resources which are enums for a specific column -->
+<     <message-resources parameter="project.project-status"
+<         key="project-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.project-type" key="project-type"
+---
+>     <message-resources parameter="workorder.request-status" key="request-status" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="workorder.request-severity" key="request-severity" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+> 
+>     <message-resources parameter="space.propertyFloor-type" key="propertyFloor-type" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="space.space-usageType" key="propertySpace-actualUse" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="space.space-grade" key="space-grade" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="space.space-type" key="propertySpace-type" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="space.propertySpaceRequestOccupant-status" key="propertySpaceRequestOccupant-status" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+> 	<message-resources parameter="space.propertySpaceRequest-status" key="propertySpaceRequest-status" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+> 	<message-resources parameter="space.propertySpaceRequest-type" key="propertySpaceRequest-type" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="project.project-type" key="project-type" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="project.project-status" key="project-status" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="project.project-geographicScope" key="project-geographicScope" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+> 
+>     <message-resources parameter="property.property-constructionType"
+>                        key="property-constructionType"
+142,188c4131,4133
+<     <message-resources parameter="project.project-geographicScope"
+<         key="project-geographicScope" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.project-riskRating"
+<         key="project-riskRating" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.project-revenueType"
+<         key="project-revenueType" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.project-clientStatus"
+<         key="project-clientStatus" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.account-type"
+<         key="account-type" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.budget-type"
+<         key="budget-type" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.budget-status"
+<         key="budget-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.commitment-status"
+<         key="commitment-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.commitment-type"
+<         key="commitment-type" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.invoice-status"
+<         key="invoice-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.invoice-disputecategory"
+<         key="invoice-disputecategory" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.invoice-type"
+<         key="invoice-type" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.overstock-status"
+<         key="overstock-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.overstock-unit"
+<         key="overstock-unit" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.training-status"
+<         key="training-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.training-type"
+<         key="training-type" null="false"
+---
+>     <message-resources parameter="property.property-ownershipType"
+>                        key="property-ownershipType"
+>                        null="false"
+190,191c4135,4137
+<     <message-resources parameter="project.payment-status"
+<         key="payment-status" null="false"
+---
+>     <message-resources parameter="property.property-status"
+>                        key="property-status"
+>                        null="false"
+193,194c4139,4141
+<     <message-resources parameter="project.payment-type"
+<         key="payment-type" null="false"
+---
+>     <message-resources parameter="property.property-type"
+>                        key="property-type"
+>                        null="false"
+196,197c4143,4145
+<     <message-resources parameter="payment-paymentMethod"
+<         key="payment-paymentMethod" null="false"
+---
+>     <message-resources parameter="property.property-useType"
+>                        key="property-useType"
+>                        null="false"
+199,200c4147,4149
+<     <message-resources parameter="payment-creditCardType"
+<         key="payment-creditCardType" null="false"
+---
+>     <message-resources parameter="property.property-zoning"
+>                        key="property-zoning"
+>                        null="false"
+202,203c4151,4153
+<     <message-resources parameter="project.rfp-status"
+<         key="rfp-status" null="false"
+---
+>     <message-resources parameter="property.property-type"
+>                        key="property.property-type"
+>                        null="false"
+205,206c4155,4157
+<     <message-resources parameter="project.bid-type"
+<         key="bid-type" null="false"
+---
+>     <message-resources parameter="property.property-useType"
+>                        key="property.property-useType"
+>                        null="false"
+208,209c4159,4161
+<     <message-resources parameter="project.bid-status"
+<         key="bid-status" null="false"
+---
+>     <message-resources parameter="property.property-ownershipType"
+>                        key="property.property-ownershipType"
+>                        null="false"
+211,212c4163,4165
+<     <message-resources parameter="project.project-scorecard"
+<         key="project-scorecard" null="false"
+---
+>     <message-resources parameter="property.property-status"
+>                        key="property.property-status"
+>                        null="false"
+214,215c4167,4169
+<     <message-resources parameter="project.spendYear-isDraft"
+<         key="spendYear-isDraft" null="false"
+---
+>     <message-resources parameter="property.label"
+>                        key="property.label"
+>                        null="false"
+217,218c4171,4175
+<     <message-resources parameter="project.projectInspection-status"
+<         key="projectInspection-status" null="false"
+---
+> 
+>     <!-- Property Bundles -->
+>     <message-resources parameter="property.property-type"
+>                        key="property-type"
+>                        null="false"
+220,221c4177,4179
+<     <message-resources parameter="project.projectInspectionRemediation-status"
+<         key="projectInspectionRemediation-status" null="false"
+---
+>     <message-resources parameter="property.property-useTypeAgreement"
+>                          key="property-useTypeAgreement"
+>                          null="false"
+223,224c4181,4183
+<     <message-resources parameter="project.projectSubmittal-status"
+<         key="projectSubmittal-status" null="false"
+---
+>     <message-resources parameter="property.property-useTypeBuilding"
+>                        key="property-useTypeBuilding"
+>                        null="false"
+226,227c4185,4187
+<     <message-resources parameter="project.projectSubmittal-status"
+<         key="projectSubmittalPackage-status" null="false"
+---
+>     <message-resources parameter="property.property-buildingClass"
+>                        key="property-buildingClass"
+>                        null="false"
+229,230c4189,4191
+<     <message-resources parameter="project.projectSubmittalApprover-status"
+<         key="projectSubmittalApprover-status" null="false"
+---
+>     <message-resources parameter="property.property-useTypeLand"
+>                        key="property-useTypeLand"
+>                        null="false"
+232,233c4193,4195
+<     <message-resources parameter="project.projectCommitmentApprover-status"
+<         key="projectCommitmentApprover-status" null="false"
+---
+>     <message-resources parameter="property.property-spaceAllocationType"
+>                        key="property-spaceAllocationType"
+>                        null="false"
+235,236c4197,4199
+<     <message-resources parameter="project.discipline"
+<         key="discipline" null="false"
+---
+>     <message-resources parameter="property.property-spaceRateType"
+>                        key="property-spaceRateType"
+>                        null="false"
+238,239c4201,4203
+<     <message-resources parameter="project.discipline"
+<         key="projectSubmittal-disciplineId" null="false"
+---
+>     <message-resources parameter="property.property-spaceVarianceType"
+>                        key="property-spaceVarianceType"
+>                        null="false"
+241,242c4205,4218
+<     <message-resources parameter="project.discipline"
+<         key="projectSubmittalPackage-disciplineId" null="false"
+---
+> 
+>     <!-- app task list resources, shares critical date resources -->
+>     <message-resources parameter="apptask-periodStatus" key="apptask-periodStatus" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="ObjectType" key="ObjectType" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+> 
+>     <!-- critical date status resources -->
+>     <message-resources parameter="task-periodStatus" key="task-periodStatus" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="task-status" key="task-status" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="task-priority" key="task-priority" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+> 
+>     <!-- Schedule Bundles-->
+>     <message-resources parameter="schedule-status"
+>                        key="schedule-status"
+>                        null="false"
+244,245c4220,4223
+<     <message-resources parameter="project.projectRequirement-type"
+<         key="projectRequirement-type" null="false"
+---
+> 
+>     <message-resources parameter="schedule-priority"
+>                        key="schedule-priority"
+>                        null="false"
+247,248c4225,4228
+<     <message-resources parameter="project.projectRequirement-status"
+<         key="projectRequirement-status" null="false"
+---
+> 
+>     <message-resources parameter="schedule-resourceCategory"
+>                        key="schedule-resourceCategory"
+>                        null="false"
+250,251c4230,4234
+<     <message-resources parameter="project.projectDamage-status"
+<         key="projectDamage-status" null="false"
+---
+> 
+>     <!-- KPI Bundles -->
+>     <message-resources parameter="kpi.property-type"
+>                        key="kpi.property-type"
+>                        null="false"
+253,254c4236,4238
+<     <message-resources parameter="project.projectDamage-resolutionType"
+<         key="projectDamage-resolutionType" null="false"
+---
+>     <message-resources parameter="kpi.ExpensesBySquareFeet"
+>                        key="kpi.ExpensesBySquareFeet"
+>                        null="false"
+256,259c4240,4241
+< 
+<     <!-- Issue Module -->
+<     <message-resources parameter="project.issue-status"
+<                        key="issue-status"
+---
+>     <message-resources parameter="kpi.tx-status"
+>                        key="kpi.tx-status"
+262,264c4244,4245
+< 
+<     <message-resources parameter="project.issue-type"
+<                        key="issue-type"
+---
+>     <message-resources parameter="kpi.tx-type"
+>                        key="kpi.tx-type"
+267,269c4248,4249
+< 
+<     <message-resources parameter="project.issueeventaction-type"
+<                        key="issueeventaction-type"
+---
+>    <message-resources parameter="workOrderStatDivisions"
+>                        key="workOrderStatDivisions"
+273,274c4253,4255
+<     <message-resources parameter="project.issueevent-type"
+<                        key="issueevent-type"
+---
+>     <!-- AdHoc Bundles -->
+>     <message-resources parameter="adhoc-baseType"
+>                        key="adhoc-baseType"
+278,280c4259,4260
+<     <!-- Contract Module -->
+<     <message-resources parameter="project.contract-status"
+<                        key="contract-status"
+---
+>     <message-resources parameter="adhoc-sort"
+>                        key="core.adhoc-sort"
+284d4263
+<     <!-- Ad Hoc Bundles -->
+290,291c4269,4270
+<     <message-resources parameter="adhoc-sort"
+<                        key="core.adhoc-sort"
+---
+>     <message-resources parameter="adhoc-export"
+>                        key="core.adhoc-export"
+300,301c4279,4281
+<     <message-resources parameter="space.propertySpaceRequest-status"
+<                        key="propertySpaceRequest-status"
+---
+>     <!-- Legacy lookups needed for reports -->
+>     <message-resources parameter="assetRole-critical"
+>                        key="assetRole-critical"
+305,306c4285,4286
+<     <message-resources parameter="space.propertySpaceRequest-type"
+<                        key="propertySpaceRequest-type"
+---
+>     <message-resources parameter="area-areaStatus"
+>                        key="area-areaStatus"
+310,311c4290,4291
+<     <message-resources parameter="txmanager.tx-status"
+<                        key="tx-status"
+---
+>     <message-resources parameter="area-areaType"
+>                        key="area-areaType"
+314,315c4294,4302
+<     <message-resources parameter="txmanager.tx-type"
+<                        key="tx-type"
+---
+> 
+>     <!-- for Program  -->
+>     <message-resources parameter="program.program-type"
+>                        key="program-type"
+>                        null="false"
+>                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+> 
+>     <message-resources parameter="program.program-status"
+>                        key="program-status"
+317a4305,4306
+> 
+>     <!-- for pipeline -->
+321a4311
+> 
+326,327c4316,4332
+< 	<message-resources parameter="priority-rating"
+<                        key="priority-factor-ratings"
+---
+> 
+>     <message-resources parameter="certification-type"
+>                        key="certification-type"
+>                        null="false"
+>                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+> 
+>     <message-resources parameter="certification-status"
+>                        key="certification-status"
+>                        null="false"
+>                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+> 
+>     <message-resources parameter="docmanager.doc-status"  key="doc-status"  null="false"
+>                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+>       <message-resources parameter="docmanager.doc-fileType"  key="doc-fileType"  null="false"
+>                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+> 
+>    <message-resources parameter="space.space-type" key="space-type"
+330,331c4335,4347
+<     <message-resources parameter="project.schedulevalue-status"
+<                        key="schedulevalue-status"
+---
+> 
+>     <!-- General Ledger  -->
+>     <message-resources parameter="project.account-type"
+>         key="account-type" null="false"
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+> 
+>     <message-resources parameter="address-type"
+>                        key="address-type"
+>                        null="false"
+>                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+> 
+>     <message-resources parameter="timesheet-type"
+>                        key="timesheet-type"
+334,335c4350,4357
+<    <message-resources parameter="project.schedule-earningrule"
+<                        key="schedule-earningrule"
+---
+> 
+>     <message-resources parameter="timesheet-status"
+>                        key="timesheet-status"
+>                        null="false"
+>                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+> 
+>     <message-resources parameter="person-type"
+>                        key="person-type"
+339,343d4360
+<       <!--  plugins 
+<     <plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+<         <set-property property="pathnames" value="/WEB-INF/validator-rules.xml"/>
+<     </plug-in>
+<     -->

@@ -1,0 +1,181 @@
+package com.bricsnet.core.dal.costcenter;
+import com.bricsnet.core.util.model.ServiceException;
+import com.bricsnet.core.util.hibernate.ThreadUserPrincipal;
+
+import javax.ejb.CreateException;
+
+import javax.naming.NamingException;
+
+import com.bricsnet.core.dal.ccstructure.CostCenterStructureDTO;
+import com.bricsnet.core.util.Constants;
+import com.bricsnet.core.util.impl.service.AbstractTopObjectService;
+import com.bricsnet.core.util.model.ObjectNotFoundException;
+import com.bricsnet.core.util.model.type.BizObject;
+import com.bricsnet.core.util.security.policy.BricsnetPolicy;
+import com.bricsnet.core.util.security.principal.UserPrincipal;
+import com.bricsnet.core.util.struts.ValidationMethod;
+
+public class CostCenterService extends AbstractTopObjectService<CostCenterDTO> {
+
+    public CostCenterDTO findByName(String name) {
+        String hql = "from CostCenterDTO where name = ? and deleteStatus = 0";
+        try {
+            return queryForSingleResult(hql, name);
+        } catch (ObjectNotFoundException e) {
+            return null;
+        }
+    }
+
+    /**
+     * Creates a CostCenter. Uses the localization map to set properties in the
+     * bean, but if the map is empty it will not effect the bean.
+     *
+     * @param dto Contains the data to write to the database
+     *
+     * R_COST_CENTER cost_center_name is_leaf_node "0" client_sgt "1"
+     * cost_center_node_type "3401986"
+     *
+     * R_COST_CENTER_INDEX table_sgt_ccindex "4" is_owning_object "0"
+     * record_id_ccindex Foreign key to R_ORGANIZATION.org_id master_id_ccindex
+     * Foreign key to R_ORGANIZATION.org_id cost_center_id_ccindex Foreign key
+     * to R_COST_CENTER.cost_center_id
+     *
+     * R_COST_CENTER_STRUCTURE cost_center_id_parent Foreign key to
+     * R_COST_CENTER.cost_center_id cost_center_id_child Foreign key to
+     * R_COST_CENTER.cost_center_id
+     *
+
+
+     */
+    public BizObject create(BizObject c,
+                            ValidationMethod[] list,
+                            boolean extended) {
+
+        try {
+            CostCenterDTO dto = (CostCenterDTO) c;
+
+            UserPrincipal p = ThreadUserPrincipal.getUserPrincipal();
+            BricsnetPolicy.checkPermission(p, dto);
+
+            CostCenterLocalHome home = CostCenterUtil.getLocalHome();
+
+            Integer parentId = getParentId(dto);
+
+            dto.setClientId(ONE);
+
+            if (dto.getNodeType() == null) {
+                dto.setNodeType(CC_NODE_TYPE);
+            }
+            CostCenterDTO created = home.create(dto).getCostCenterDTO();
+
+            Integer ccId = created.getId();
+            createOrgReferences(dto, ccId);
+
+            if (parentId != null) {
+                CostCenterStructureServiceRemote structService = CostCenterStructureServiceUtil
+                        .getHome().create();
+                CostCenterStructureDTO struct = new CostCenterStructureDTO();
+                struct.setChildId(ccId);
+                struct.setParentId(parentId);
+                structService.create(struct);
+            }
+
+            return created;
+        } catch (ServiceException e) {
+            throw e;
+        } catch (Exception e) {
+            throw new ServiceException(e);
+        }
+    }
+
+    /**
+     * Create the specified organization references
+     */
+    private void createOrgReferences(CostCenterDTO dto, Integer ccId)
+            throws CreateException, NamingException, Exception {
+        if (dto.getOrganizationList() != null) {
+
+            CostCenterIndexServiceRemote idxService = CostCenterIndexServiceUtil
+                    .getHome().create();
+
+            idxService
+                    .createOrgReferences(dto.getOrganizationList(),
+                                         ccId,
+                                         Constants.OBJECT_TYPE_CONTACT_ORGANIZATION);
+        }
+    }
+
+    /**
+     * Updates a CostCenter.
+     *
+     * @param dto Contains the data to write to the database.
+     *
+
+
+     */
+    public void update(BizObject d, ValidationMethod[] list) throws ServiceException {
+        try {
+            CostCenterDTO dto = (CostCenterDTO) d;
+
+            CostCenterLocalHome home = CostCenterUtil.getLocalHome();
+            CostCenterLocal rmt = home.findByPrimaryKey(dto.getId());
+
+            UserPrincipal p = ThreadUserPrincipal.getUserPrincipal();
+
+            if (dto.getOrganizationList() != null) {
+                CostCenterIndexServiceRemote idxService = CostCenterIndexServiceUtil
+                        .getHome().create();
+                idxService.updateOrgRefs(dto.getOrganizationList(),
+                                         dto.getId(),
+                                         Constants.OBJECT_TYPE_COST_CENTER);
+            }
+            Integer parentId = getParentId(dto);
+
+            if (parentId != null) {
+                Integer ccId = dto.getId();
+
+                CostCenterStructureServiceRemote structService = CostCenterStructureServiceUtil
+                        .getHome().create();
+
+                CostCenterStructureDTO cStruct = structService.getByChild(ccId);
+
+                if (cStruct != null && !cStruct.getParentId().equals(parentId)) {
+
+                    structService.delete(cStruct.getParentId().intValue(),
+                                         ccId.intValue());
+
+                    structService.create(new CostCenterStructureDTO(parentId,
+                                                                    ccId,
+                                                                    0));
+
+                } else if (cStruct == null) {
+                    structService.create(new CostCenterStructureDTO(parentId,
+                                                                    ccId,
+                                                                    0));
+
+                }
+            } else {
+
+                // parent == null --> delete any existing relationship
+                Integer ccId = dto.getId();
+
+                CostCenterStructureServiceRemote structService = CostCenterStructureServiceUtil
+                        .getHome().create();
+
+                CostCenterStructureDTO cStruct = structService.getByChild(ccId);
+
+                if (cStruct != null) {
+                    structService.delete(cStruct.getPrimaryKey());
+                }
+
+            }
+
+            BricsnetPolicy.checkPermission(p, dto);
+            rmt.setCostCenterDTO(dto);
+        } catch (ServiceException e) {
+            throw e;
+        } catch (Exception e) {
+            throw new ServiceException(e);
+        }
+    }
+}

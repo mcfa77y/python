@@ -1,0 +1,879 @@
+14a15,46
+>     <form-bean
+>       name="DocumentRepositoryForm"
+>       type="com.bricsnet.docmanager.web.forms.DocumentRepositoryForm"
+>     />
+>     <form-bean
+>       name="DocumentVersionsListForm"
+>       type="com.bricsnet.docmanager.web.forms.DocumentVersionsListForm"
+>     />
+>     <form-bean
+>       name="DocumentListForm"
+>       type="com.bricsnet.docmanager.web.forms.DocumentListForm"
+>     />
+>     <form-bean
+>       name="DocumentForm"
+>       type="com.bricsnet.docmanager.web.forms.DocumentForm"
+>     />
+>     <form-bean
+>       name="AppDocumentListForm"
+>       type="com.bricsnet.docmanager.web.forms.AppDocumentListForm"
+>     />
+>     <form-bean
+>       name="DocumentUploadForm"
+>       type="com.bricsnet.docmanager.web.forms.DocumentUploadForm"
+>     />
+>     <form-bean
+>       name="DocumentHistoryListForm"
+>       type="com.bricsnet.docmanager.web.forms.DocumentHistoryListForm"
+>     />
+>     <form-bean
+>       name="DocumentViewForm"
+>       type="com.bricsnet.docmanager.web.forms.DocumentViewForm"
+>     />
+23,28c55,56
+<         name="ClassificationForm"
+<         type="com.bricsnet.core.web.forms.ClassificationForm"/>
+< 
+<     <form-bean
+<         name="AdhocForm"
+<         type="com.bricsnet.core.util.web.AdhocForm"/>
+---
+>         name="DocumentTreeForm"
+>         type="com.bricsnet.docmanager.util.web.DocumentTreeForm"/>
+33,39c61,64
+<   	<global-exceptions>
+< 		<exception 
+< 			bundle="error" 
+< 			handler="com.bricsnet.core.util.struts.ExceptionHandler" 
+< 			type="java.lang.Exception"
+< 			key="dummy"/>
+< 	</global-exceptions>
+---
+>   <!--
+>     Define your exceptions in a file called global-exceptions.xml and place
+>     it in your merge directory.
+>   -->
+48a74,587
+>     <action
+>       path="/TreelessDocuments"
+>       type="com.bricsnet.docmanager.web.actions.TreelessDocumentsAction"
+>       name="DocumentListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/TreelessDocuments.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/FolderDetailsStore"
+>       type="com.bricsnet.docmanager.web.actions.FolderDetailsStoreAction"
+>       name="DocumentForm"
+>       scope="session"
+>       input="/FolderDetails.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/FolderDetails.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="reload"
+>         path="/DetailsRefresh.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/Unlock"
+>       type="com.bricsnet.docmanager.web.actions.UnlockAction"
+>       name="Unlock"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>     </action>
+>     <action
+>       path="/AppDocumentListLoad"
+>       type="com.bricsnet.docmanager.web.actions.AppDocumentListLoadAction"
+>       name="AppDocumentListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/AppDocumentList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/DownloadMultiple"
+>       type="com.bricsnet.docmanager.web.actions.DownloadMultipleAction"
+>       name="DocumentTreeForm"
+>       scope="session"
+>       input="/DocumentTree.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>     </action>
+>     <action
+>       path="/PermissionLoad"
+>       type="com.bricsnet.docmanager.web.actions.PermissionLoadAction"
+>       name="DocumentTreeForm"
+>       scope="session"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/DocumentPermissions.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/DocumentRepositoryListLoad"
+>       type="com.bricsnet.docmanager.web.actions.DocumentRepositoryListLoadAction"
+>       name="DocumentTreeForm"
+>       scope="session"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/DocumentRepositoryList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/UploadOneFileLoad"
+>       type="com.bricsnet.docmanager.web.actions.UploadOneFileLoadAction"
+>       name="DocumentUploadForm"
+>       scope="session"
+>       input="/UploadOneFile.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/UploadOneFile.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/Checkout"
+>       type="com.bricsnet.docmanager.web.actions.CheckoutAction"
+>       name="Checkout"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>     </action>
+>     <action
+>       path="/UploadLoad"
+>       type="com.bricsnet.docmanager.web.actions.UploadLoadAction"
+>       name="DocumentUploadForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/Upload.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="drawing-success"
+>         path="/UploadDrawing.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/TreeStore"
+>       type="com.bricsnet.docmanager.web.actions.TreeStoreAction"
+>       name="DocumentTreeForm"
+>       scope="session"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/TreeLoad.do"
+>         redirect="false"
+>       />
+>       <forward
+>         name="get_multi_doc"
+>         path="/DownloadMultiple.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/Subscribe"
+>       type="com.bricsnet.docmanager.web.actions.SubscribeAction"
+>       name="Subscribe"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>     </action>
+>     <action
+>       path="/Delete"
+>       type="com.bricsnet.docmanager.web.actions.DeleteAction"
+>       name="Delete"
+>       scope="session"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/TreeLoad.do"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success_repo"
+>         path="/DocumentRepositoryListLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/TreeLoad"
+>       type="com.bricsnet.docmanager.web.actions.TreeLoadAction"
+>       name="DocumentTreeForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/DocumentTree.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/MoveStore"
+>       type="com.bricsnet.docmanager.web.actions.MoveStoreAction"
+>       name="DocumentTreeForm"
+>       scope="session"
+>       input="DocumentSelectionTree.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/DocumentSelectionTree.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/DetailsStore"
+>       type="com.bricsnet.docmanager.web.actions.DetailsStoreAction"
+>       name="DocumentForm"
+>       scope="session"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/DocumentDetails.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/DocumentRepositorySelectPopupLoad"
+>       type="com.bricsnet.docmanager.web.actions.DocumentRepositorySelectPopupLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/DocumentRepositorySelectPopup.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="error"
+>         path="/DocumentRepositorySelectPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/HistoryLoad"
+>       type="com.bricsnet.docmanager.web.actions.HistoryLoadAction"
+>       name="DocumentHistoryListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/DocumentHistory.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/DetailsRefresh"
+>       type="com.bricsnet.docmanager.web.actions.DetailsRefreshAction"
+>       name="DocumentForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success_doc"
+>         path="/DocumentDetails.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success_folder"
+>         path="/FolderDetails.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success_repository"
+>         path="/RepositoryFolderDetails.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/VersionsLoad"
+>       type="com.bricsnet.docmanager.web.actions.VersionsLoadAction"
+>       name="DocumentVersionsListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/DocumentVersions.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/Search"
+>       type="com.bricsnet.docmanager.web.actions.SearchAction"
+>       name="DocumentTreeForm"
+>       scope="session"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/TreeStore.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/DetailsLoad"
+>       type="com.bricsnet.docmanager.web.actions.DetailsLoadAction"
+>       name="DocumentForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success_doc"
+>         path="/DocumentDetails.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success_folder"
+>         path="/FolderDetails.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success_repository"
+>         path="/RepositoryFolderDetails.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/MoveLoad"
+>       type="com.bricsnet.docmanager.web.actions.MoveLoadAction"
+>       name="DocumentTreeForm"
+>       scope="session"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/DocumentSelectionTree.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/DocumentRepositoryLoad"
+>       type="com.bricsnet.docmanager.web.actions.DocumentRepositoryLoadAction"
+>       name="DocumentRepositoryForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/DocumentRepository.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PermissionStore"
+>       type="com.bricsnet.docmanager.web.actions.PermissionStoreAction"
+>       name="DocumentTreeForm"
+>       scope="session"
+>       input="/DocumentPermissions.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/DocumentPermissions.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ObjectSearchStore"
+>       type="com.bricsnet.docmanager.web.actions.ObjectSearchStoreAction"
+>       name="DocumentTreeForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/ObjectSearchLoad.do"
+>         redirect="false"
+>       />
+>       <forward
+>         name="get_multi_doc"
+>         path="/DownloadMultipleSearch.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/AppDocumentListStore"
+>       type="com.bricsnet.docmanager.web.actions.AppDocumentListStoreAction"
+>       name="AppDocumentListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/AppDocumentListLoad.do"
+>         redirect="false"
+>       />
+>       <forward
+>         name="get_multi_doc"
+>         path="/DownloadMultiple.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/DownloadMultipleSearch"
+>       type="com.bricsnet.docmanager.web.actions.DownloadMultipleSearchAction"
+>       name="DocumentTreeForm"
+>       scope="session"
+>       input="/DocumentTreeSearch.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>     </action>
+>     <action
+>       path="/DownloadMultiple"
+>       type="com.bricsnet.docmanager.web.actions.DownloadMultipleSearchAction"
+>       name="DocumentTreeForm"
+>       scope="session"
+>       input="/DocumentTree.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>     </action>
+>     <action
+>       path="/ObjectSearchLoad"
+>       type="com.bricsnet.docmanager.web.actions.ObjectSearchLoadAction"
+>       name="DocumentTreeForm"
+>       scope="session"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/DocumentTreeSearch.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/DocumentRepositoryListStore"
+>       type="com.bricsnet.docmanager.web.actions.DocumentRepositoryListStoreAction"
+>       name="DocumentTreeForm"
+>       scope="session"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/DocumentRepositoryListLoad.do"
+>         redirect="false"
+>       />
+>       <forward
+>         name="get_multi_doc"
+>         path="/DownloadMultiple.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/Download"
+>       type="com.bricsnet.docmanager.web.actions.DownloadAction"
+>       name="Download"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>     </action>
+>     <action
+>       path="/View"
+>       type="com.bricsnet.docmanager.web.actions.ViewAction"
+>       name="DocumentViewForm"
+>       scope="session"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success_brava4"
+>         path="/DocumentView.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success_brava3"
+>         path="/DocumentView3.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/DocumentRepositoryStore"
+>       type="com.bricsnet.docmanager.web.actions.DocumentRepositoryStoreAction"
+>       name="DocumentRepositoryForm"
+>       scope="request"
+>       input="/DocumentRepository.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/CloseRefreshParent.jsp"
+>         redirect="true"
+>       />
+>     </action>
+60c599
+<     <!-- $Id: struts-message-resources.xml 40267 2010-10-08 12:14:33Z rkumar $ -->
+---
+>     <!-- $Id: struts-message-resources.xml 36572 2009-03-25 16:27:01Z patriceg $ -->
+62,70d600
+<     <!-- Resources from the core directory -->
+<     <message-resources parameter="Label" key="core.label" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="Header" key="core.header" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+<     <message-resources parameter="navigation" key="core.navigation" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+<     <message-resources parameter="Header" key="core.Header" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+73,98c603,617
+<     <message-resources parameter="warning"  key="warning"  null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="boolean" key="boolean" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="country" key="country" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="currency_code" key="currency_code" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="unit" key="unit" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="month" key="month" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="businessRole" key="businessRole" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="currency" key="currency" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+<     <message-resources parameter="module" key="module" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+<     <message-resources parameter="person-status" key="person-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+<     <message-resources parameter="ObjectType-short" key="ObjectType-short" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+< 
+<     <message-resources parameter="generalLedgerCode-type" key="generalLedgerCode-type" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="schedule-status" key="core.schedule-status" null="false"
+---
+>     <message-resources parameter="docmanager.label" key="label" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="docmanager.label"             null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="navigation" key="navigation" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="docmanager.header" key="header" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="docmanager.action"  key="action"  null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="docmanager.doc-status"  key="doc-status"  null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="docmanager.doc-refObjectType"  key="doc-refObjectType"  null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="docmanager.doc-fileType"  key="doc-fileType"  null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="docmanager.doc-action"  key="doc-action"  null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="docmanager.search-options"  key="search-options"  null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="businessRole" key="businessRole" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+> 
+>     <!-- Labels for the PropertyIdBar.jspf -->
+>     <message-resources parameter="property.label" key="property.label" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+>     <message-resources parameter="property.property-ownershipType" key="property.property-ownershipType" null="false"
+100c619
+<     <message-resources parameter="task-status" key="task-status" null="false"
+---
+>     <message-resources parameter="property.property-type" key="property.property-type" null="false"
+102c621
+<     <message-resources parameter="task-periodStatus" key="task-periodStatus" null="false"
+---
+>     <message-resources parameter="property.property-status" key="property.property-status" null="false"
+104c623
+<     <message-resources parameter="task-priority" key="task-priority" null="false"
+---
+>     <message-resources parameter="property.property-useType" key="property.property-useType" null="false"
+107,344d625
+<     <!-- Classification externalized descriptions -->
+<     <message-resources parameter="classification_name" key="classification_name" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="classification_desc" key="classification_desc" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="classification_code" key="classification_code" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+< 
+<     <!-- from other modules -->
+<     <message-resources parameter="docmanager.doc-status"  key="doc-status"  null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="docmanager.search-options"  key="search-options"  null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="property.property-status" key="property-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+< 
+<     <!-- Standard resources -->
+<     <message-resources parameter="project.label"  null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.label"  key="label"  null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.header" key="header" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.action"  key="action"  null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.navigation" key="navigation" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+< 
+<     <!-- Resources which are enums for a specific column -->
+<     <message-resources parameter="project.project-status"
+<         key="project-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.project-type" key="project-type"
+<         null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.project-geographicScope"
+<         key="project-geographicScope" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.project-riskRating"
+<         key="project-riskRating" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.project-revenueType"
+<         key="project-revenueType" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.project-clientStatus"
+<         key="project-clientStatus" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.account-type"
+<         key="account-type" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.budget-type"
+<         key="budget-type" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.budget-status"
+<         key="budget-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.commitment-status"
+<         key="commitment-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.commitment-type"
+<         key="commitment-type" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.invoice-status"
+<         key="invoice-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.invoice-disputecategory"
+<         key="invoice-disputecategory" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.invoice-type"
+<         key="invoice-type" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.overstock-status"
+<         key="overstock-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.overstock-unit"
+<         key="overstock-unit" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.training-status"
+<         key="training-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.training-type"
+<         key="training-type" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.payment-status"
+<         key="payment-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.payment-type"
+<         key="payment-type" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="payment-paymentMethod"
+<         key="payment-paymentMethod" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="payment-creditCardType"
+<         key="payment-creditCardType" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.rfp-status"
+<         key="rfp-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.bid-type"
+<         key="bid-type" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.bid-status"
+<         key="bid-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.project-scorecard"
+<         key="project-scorecard" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.spendYear-isDraft"
+<         key="spendYear-isDraft" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.projectInspection-status"
+<         key="projectInspection-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.projectInspectionRemediation-status"
+<         key="projectInspectionRemediation-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.projectSubmittal-status"
+<         key="projectSubmittal-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.projectSubmittal-status"
+<         key="projectSubmittalPackage-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.projectSubmittalApprover-status"
+<         key="projectSubmittalApprover-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.projectCommitmentApprover-status"
+<         key="projectCommitmentApprover-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.discipline"
+<         key="discipline" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.discipline"
+<         key="projectSubmittal-disciplineId" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.discipline"
+<         key="projectSubmittalPackage-disciplineId" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.projectRequirement-type"
+<         key="projectRequirement-type" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.projectRequirement-status"
+<         key="projectRequirement-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.projectDamage-status"
+<         key="projectDamage-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.projectDamage-resolutionType"
+<         key="projectDamage-resolutionType" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+< 
+<     <!-- Issue Module -->
+<     <message-resources parameter="project.issue-status"
+<                        key="issue-status"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+< 
+<     <message-resources parameter="project.issue-type"
+<                        key="issue-type"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+< 
+<     <message-resources parameter="project.issueeventaction-type"
+<                        key="issueeventaction-type"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+< 
+<     <message-resources parameter="project.issueevent-type"
+<                        key="issueevent-type"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+< 
+<     <!-- Contract Module -->
+<     <message-resources parameter="project.contract-status"
+<                        key="contract-status"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+< 
+<     <!-- Ad Hoc Bundles -->
+<     <message-resources parameter="adhoc-footer"
+<                        key="core.adhoc-footer"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+< 
+<     <message-resources parameter="adhoc-sort"
+<                        key="core.adhoc-sort"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+< 
+<     <message-resources parameter="Action"
+<                        key="core.action"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+< 
+<     <message-resources parameter="space.propertySpaceRequest-status"
+<                        key="propertySpaceRequest-status"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+< 
+<     <message-resources parameter="space.propertySpaceRequest-type"
+<                        key="propertySpaceRequest-type"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+< 
+<     <message-resources parameter="txmanager.tx-status"
+<                        key="tx-status"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+<     <message-resources parameter="txmanager.tx-type"
+<                        key="tx-type"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+<     <message-resources parameter="pipeline.opportunity-type"
+<                        key="opportunity-type"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+<     <message-resources parameter="pipeline.opportunity-status"
+<                        key="opportunity-status"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+< 	<message-resources parameter="priority-rating"
+<                        key="priority-factor-ratings"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />            
+<     <message-resources parameter="project.schedulevalue-status"
+<                        key="schedulevalue-status"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+<    <message-resources parameter="project.schedule-earningrule"
+<                        key="schedule-earningrule"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />             
+< 
+<       <!--  plugins 
+<     <plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+<         <set-property property="pathnames" value="/WEB-INF/validator-rules.xml"/>
+<     </plug-in>
+<     -->
+<     <!--  plugins -->

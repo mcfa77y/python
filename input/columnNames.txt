@@ -1,0 +1,17 @@
+addr_city
+addr_country
+addr_county
+addr_email
+addr_fax
+addr_id
+addr_line1
+addr_line2
+addr_phone1
+addr_phone2
+addr_postal_code
+addr_state_province
+client_sgt
+country_id_addr
+delete_status
+org_id
+orig_org_id

@@ -1,0 +1,2610 @@
+14a15,170
+>     <form-bean
+>       name="RentPaymentDatasheetForm"
+>       type="com.bricsnet.lease.web.forms.RentPaymentDatasheetForm"
+>     />
+>     <form-bean
+>       name="AssetTypeForm"
+>       type="com.bricsnet.lease.web.forms.AssetTypeForm"
+>     />
+>     <form-bean
+>       name="LeaseSummaryForm"
+>       type="com.bricsnet.lease.web.forms.LeaseSummaryForm"
+>     />
+>     <form-bean
+>       name="RentCopyForm"
+>       type="com.bricsnet.lease.web.forms.RentCopyForm"
+>     />
+>     <form-bean
+>       name="RentCamForm"
+>       type="com.bricsnet.lease.web.forms.RentCamForm"
+>     />
+>     <form-bean
+>       name="RentDatasheetForm"
+>       type="com.bricsnet.lease.web.forms.RentDatasheetForm"
+>     />
+>     <form-bean
+>       name="SalesCategoryForm"
+>       type="com.bricsnet.lease.web.forms.SalesCategoryForm"
+>     />
+>     <form-bean
+>       name="RecInvoiceItemPopupForm"
+>       type="com.bricsnet.lease.web.forms.RecInvoiceItemPopupForm"
+>     />
+>     <form-bean
+>       name="SalesCategoryAccountForm"
+>       type="com.bricsnet.lease.web.forms.SalesCategoryAccountForm"
+>     />
+>     <form-bean
+>       name="LeaseRecCategoryForm"
+>       type="com.bricsnet.lease.web.forms.LeaseRecCategoryForm"
+>     />
+>     <form-bean
+>       name="LeaseForm"
+>       type="com.bricsnet.lease.web.forms.LeaseForm"
+>     />
+>     <form-bean
+>       name="SecurityDepositDatasheetForm"
+>       type="com.bricsnet.lease.web.forms.SecurityDepositDatasheetForm"
+>     />
+>     <form-bean
+>       name="SalesAccountForm"
+>       type="com.bricsnet.lease.web.forms.SalesAccountForm"
+>     />
+>     <form-bean
+>       name="Fasb13Form"
+>       type="com.bricsnet.lease.web.forms.Fasb13Form"
+>     />
+>     <form-bean
+>       name="LeaseDatasheetForm"
+>       type="com.bricsnet.lease.web.forms.LeaseDatasheetForm"
+>     />
+>     <form-bean
+>       name="ClauseDatasheetForm"
+>       type="com.bricsnet.lease.web.forms.ClauseDatasheetForm"
+>     />
+>     <form-bean
+>       name="ImprovementDatasheetForm"
+>       type="com.bricsnet.lease.web.forms.ImprovementDatasheetForm"
+>     />
+>     <form-bean
+>       name="RentPercentDatasheetForm"
+>       type="com.bricsnet.lease.web.forms.RentPercentDatasheetForm"
+>     />
+>     <form-bean
+>       name="LeaseHistoryForm"
+>       type="com.bricsnet.lease.web.forms.LeaseHistoryForm"
+>     />
+>     <form-bean
+>       name="WorkTypeForm"
+>       type="com.bricsnet.lease.web.forms.WorkTypeForm"
+>     />
+>     <form-bean
+>       name="InvoiceItemForm"
+>       type="com.bricsnet.lease.web.forms.InvoiceItemForm"
+>     />
+>     <form-bean
+>       name="MasterLeaseDatasheetForm"
+>       type="com.bricsnet.lease.web.forms.MasterLeaseDatasheetForm"
+>     />
+>     <form-bean
+>       name="RentPercentGeneratePaymentListForm"
+>       type="com.bricsnet.lease.web.forms.RentPercentGeneratePaymentListForm"
+>     />
+>     <form-bean
+>       name="LeaseCopyForm"
+>       type="com.bricsnet.lease.web.forms.LeaseCopyForm"
+>     />
+>     <form-bean
+>       name="RentApprovalListForm"
+>       type="com.bricsnet.lease.web.forms.RentApprovalListForm"
+>     />
+>     <form-bean
+>       name="IndexAdminForm"
+>       type="com.bricsnet.lease.web.forms.IndexAdminForm"
+>     />
+>     <form-bean
+>       name="ReconciliationListForm"
+>       type="com.bricsnet.lease.web.forms.ReconciliationListForm"
+>     />
+>     <form-bean
+>       name="RentIndexPopupForm"
+>       type="com.bricsnet.lease.web.forms.RentIndexPopupForm"
+>     />
+>     <form-bean
+>       name="RecAddPaymentToRecForm"
+>       type="com.bricsnet.lease.web.forms.RecAddPaymentToRecForm"
+>     />
+>     <form-bean
+>       name="RentSummaryForm"
+>       type="com.bricsnet.lease.web.forms.RentSummaryForm"
+>     />
+>     <form-bean
+>       name="InsuranceDatasheetForm"
+>       type="com.bricsnet.lease.web.forms.InsuranceDatasheetForm"
+>     />
+>     <form-bean
+>       name="AmendmentListForm"
+>       type="com.bricsnet.lease.web.forms.AmendmentListForm"
+>     />
+>     <form-bean
+>       name="ReconciliationForm"
+>       type="com.bricsnet.lease.web.forms.ReconciliationForm"
+>     />
+>     <form-bean
+>       name="NewAmendmentForm"
+>       type="com.bricsnet.lease.web.forms.NewAmendmentForm"
+>     />
+>     <form-bean
+>       name="BatchForm"
+>       type="com.bricsnet.lease.web.forms.BatchForm"
+>     />
+>     <form-bean
+>       name="LeaseListForm"
+>       type="com.bricsnet.lease.web.forms.LeaseListForm"
+>     />
+>     <form-bean
+>       name="ResponsibilityDatasheetForm"
+>       type="com.bricsnet.lease.web.forms.ResponsibilityDatasheetForm"
+>     />
+>     <form-bean
+>       name="ImprovementTxDatasheetForm"
+>       type="com.bricsnet.lease.web.forms.ImprovementTxDatasheetForm"
+>     />
+>     <form-bean
+>       name="RentTermsListForm"
+>       type="com.bricsnet.lease.web.forms.RentTermsListForm"
+>     />
+33a190
+> 
+34a192
+> 
+35a194
+> 
+36a196
+> 
+37a198
+> 
+38a200
+> 
+48a211,2285
+>     <action
+>       path="/ImprovementListStore"
+>       type="com.bricsnet.lease.web.actions.ImprovementListStoreAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/ImprovementListLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/RentSummaryLoad"
+>       type="com.bricsnet.lease.web.actions.RentSummaryLoadAction"
+>       name="RentSummaryForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/RentSummary.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/RentCamStore"
+>       type="com.bricsnet.lease.web.actions.RentCamStoreAction"
+>       name="RentCamForm"
+>       scope="session"
+>       input="/RentCamLoad.do"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/RentCamLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ClauseNewLoad"
+>       type="com.bricsnet.lease.web.actions.ClauseNewLoadAction"
+>       name="ClauseDatasheetForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/ClauseNew.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/RecAddPaymentToRecStore"
+>       type="com.bricsnet.lease.web.actions.RecAddPaymentToRecStoreAction"
+>       name="RecAddPaymentToRecForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/CloseRefreshParent.jsp"
+>         redirect="true"
+>       />
+>       <forward
+>         name="error"
+>         path="/RecAddPaymentToRec.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/Red"
+>       type="com.bricsnet.lease.web.actions.RedAction"
+>       name="BaseForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>     </action>
+>     <action
+>       path="/AttachTransactionLoad"
+>       type="com.bricsnet.lease.web.actions.AttachTransactionLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/AttachTransaction.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="error"
+>         path="/AttachTransaction.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/RentPaymentDatasheetStore"
+>       type="com.bricsnet.lease.web.actions.RentPaymentDatasheetStoreAction"
+>       name="RentPaymentDatasheetForm"
+>       scope="session"
+>       input="/RentPaymentDatasheet.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="RentPaymentListLoad.do"
+>         redirect="true"
+>       />
+>       <forward
+>         name="EditExisting"
+>         path="/RentPaymentDatasheet.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="NewOneTime"
+>         path="/OneTimePayment.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="NewOneTimeFromRec"
+>         path="/ReconciliationLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/LeaseHistoryLoad"
+>       type="com.bricsnet.lease.web.actions.LeaseHistoryLoadAction"
+>       name="LeaseHistoryForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/LeaseHistory.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/RentTermsListLoad"
+>       type="com.bricsnet.lease.web.actions.RentTermsListLoadAction"
+>       name="RentTermsListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/RentTermsList.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success-rentpercent"
+>         path="/RentPercentList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/RentDatasheetStore"
+>       type="com.bricsnet.lease.web.actions.RentDatasheetStoreAction"
+>       name="RentDatasheetForm"
+>       scope="session"
+>       input="/RentDatasheet.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="successReload"
+>         path="RentDataSheetLoad.do"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success"
+>         path="RentTermsListLoad.do"
+>         redirect="true"
+>       />
+>       <forward
+>         name="success-preview"
+>         path="/LeaseRentPreview.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success-back"
+>         path="/RentDatasheet.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/WorkTypeSelectPopupLoad"
+>       type="com.bricsnet.lease.web.actions.WorkTypeSelectPopupLoadAction"
+>       name="WorkTypeForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/WorkTypeSelectPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/RentPaymentDatasheetLoad"
+>       type="com.bricsnet.lease.web.actions.RentPaymentDatasheetLoadAction"
+>       name="RentPaymentDatasheetForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="EditExisting"
+>         path="/RentPaymentDatasheet.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="NewOneTime"
+>         path="/OneTimePayment.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ReconciliationStore"
+>       type="com.bricsnet.lease.web.actions.ReconciliationStoreAction"
+>       name="ReconciliationForm"
+>       scope="session"
+>       input="/Reconciliation.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/ReconciliationListLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/LeaseRentPercentInfoLoad"
+>       type="com.bricsnet.lease.web.actions.LeaseRentPercentInfoLoadAction"
+>       name="RentPercentDatasheetForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/LeaseRentPercentInfo.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/InsuranceListLoad"
+>       type="com.bricsnet.lease.web.actions.InsuranceListLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/InsuranceList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/NewAmendmentStore"
+>       type="com.bricsnet.lease.web.actions.NewAmendmentStoreAction"
+>       name="NewAmendmentForm"
+>       scope="session"
+>       input="/NewAmendment.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="AmendmentListLoad.do"
+>         redirect="true"
+>       />
+>       <forward
+>         name="reload"
+>         path="NewAmendmentLoad.do"
+>         redirect="true"
+>       />
+>       <forward
+>         name="split"
+>         path="AmendmentSplitLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/RelatedProjectListStore"
+>       type="com.bricsnet.lease.web.actions.RelatedProjectListStoreAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/RelatedProjectListLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/RecInvoiceItemPopupLoad"
+>       type="com.bricsnet.lease.web.actions.RecInvoiceItemPopupLoadAction"
+>       name="RecInvoiceItemPopupForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/RecInvoiceItemPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/RentPaymentListLoad"
+>       type="com.bricsnet.lease.web.actions.RentPaymentListLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/RentPaymentList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/MasterLeasePopupLoad"
+>       type="com.bricsnet.lease.web.actions.MasterLeasePopupLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/MasterLeasePopup.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="error"
+>         path="/MasterLeasePopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ClassificationSearch"
+>       type="com.bricsnet.lease.web.actions.ClassificationSearchAction"
+>       name="ClassificationForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/ClassificationSearch.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/InsuranceListStore"
+>       type="com.bricsnet.lease.web.actions.InsuranceListStoreAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/InsuranceListLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/SubleaseListLoad"
+>       type="com.bricsnet.lease.web.actions.SubleaseListLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/SubleaseList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ResponsibilityDatasheetLoad"
+>       type="com.bricsnet.lease.web.actions.ResponsibilityDatasheetLoadAction"
+>       name="ResponsibilityDatasheetForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/ResponsibilityDatasheet.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/RentPercentPaymentListLoad"
+>       type="com.bricsnet.lease.web.actions.RentPercentPaymentListLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/RentPercentPaymentList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PaymentGroupInfoLoad"
+>       type="com.bricsnet.lease.web.actions.PaymentGroupInfoLoadAction"
+>       name="RentDatasheetForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PaymentGroupInfoList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/SecurityDepositDatasheetLoad"
+>       type="com.bricsnet.lease.web.actions.SecurityDepositDatasheetLoadAction"
+>       name="SecurityDepositDatasheetForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/SecurityDepositDatasheet.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/IndexAdminLoad"
+>       type="com.bricsnet.lease.web.actions.IndexAdminLoadAction"
+>       name="IndexAdminForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/IndexAdmin.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/RentCamLoad"
+>       type="com.bricsnet.lease.web.actions.RentCamLoadAction"
+>       name="RentCamForm"
+>       scope="session"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="successCAM"
+>         path="/RentCam.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="successTax"
+>         path="/RentTax.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/AmendmentSplitStore"
+>       type="com.bricsnet.lease.web.actions.AmendmentSplitStoreAction"
+>       name="NewAmendmentForm"
+>       scope="session"
+>       input="/AmendmentSplit.jsp"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="NewAmendmentLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/InsuranceDatasheetStore"
+>       type="com.bricsnet.lease.web.actions.InsuranceDatasheetStoreAction"
+>       name="InsuranceDatasheetForm"
+>       scope="session"
+>       input="/InsuranceDatasheet.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="InsuranceListLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/RentPercentOneTimePaymentLoad"
+>       type="com.bricsnet.lease.web.actions.RentPercentOneTimePaymentLoadAction"
+>       name="RentPaymentDatasheetForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/RentPercentOneTimePayment.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/RentIncPaymentGlobalListLoad"
+>       type="com.bricsnet.lease.web.actions.RentIncPaymentGlobalListLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/RentIncPaymentGlobalList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/SecurityDepositListStore"
+>       type="com.bricsnet.lease.web.actions.SecurityDepositListStoreAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/SecurityDepositListLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/RentPaymentTaxInfoLoad"
+>       type="com.bricsnet.lease.web.actions.RentPaymentTaxInfoLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/TaxInfoList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/InvoiceItemStore"
+>       type="com.bricsnet.lease.web.actions.InvoiceItemStoreAction"
+>       name="InvoiceItemForm"
+>       scope="session"
+>       input="/InvoiceItem.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/CloseRefreshParent.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="error"
+>         path="/InvoiceItem.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/IndexAdminStore"
+>       type="com.bricsnet.lease.web.actions.IndexAdminStoreAction"
+>       name="IndexAdminForm"
+>       scope="session"
+>       input="/IndexAdmin.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/IndexAdminLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/SubleaseListStore"
+>       type="com.bricsnet.lease.web.actions.SubleaseListStoreAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/SubleaseListLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/ImprovementDatasheetStore"
+>       type="com.bricsnet.lease.web.actions.ImprovementDatasheetStoreAction"
+>       name="ImprovementDatasheetForm"
+>       scope="session"
+>       input="/ImprovementDatasheet.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="ImprovementListLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/LeaseRecCategoryLoad"
+>       type="com.bricsnet.lease.web.actions.LeaseRecCategoryLoadAction"
+>       name="LeaseRecCategoryForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/LeaseRecCategory.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ReconciliationLoad"
+>       type="com.bricsnet.lease.web.actions.ReconciliationLoadAction"
+>       name="ReconciliationForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/Reconciliation.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/SecurityDepositListLoad"
+>       type="com.bricsnet.lease.web.actions.SecurityDepositListLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/SecurityDepositList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/LeaseRentIndexPopupLoad"
+>       type="com.bricsnet.lease.web.actions.LeaseRentIndexPopupLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/LeaseRentIndexPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/LeaseInfoLoad"
+>       type="com.bricsnet.lease.web.actions.LeaseInfoLoadAction"
+>       name="LeaseForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/LeaseInfoPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/RentSelectPopupLoad"
+>       type="com.bricsnet.lease.web.actions.RentSelectPopupLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/RentSelectPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/MasterLeaseInfoPopupLoad"
+>       type="com.bricsnet.lease.web.actions.MasterLeaseInfoPopupLoadAction"
+>       name="MasterLeaseDatasheetForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/MasterLeaseInfoPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/AmendmentSplitLoad"
+>       type="com.bricsnet.lease.web.actions.AmendmentSplitLoadAction"
+>       name="NewAmendmentForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/AmendmentSplit.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ClauseDatasheetStore"
+>       type="com.bricsnet.lease.web.actions.ClauseDatasheetStoreAction"
+>       name="ClauseDatasheetForm"
+>       scope="session"
+>       input="/ClauseDatasheet.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="ClauseListLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/LeaseSummaryLoad"
+>       type="com.bricsnet.lease.web.actions.LeaseSummaryLoadAction"
+>       name="LeaseSummaryForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/LeaseSummary.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/RentCopyLoad"
+>       type="com.bricsnet.lease.web.actions.RentCopyLoadAction"
+>       name="RentCopyForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/CopyRentPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/IndexAdminModify"
+>       type="com.bricsnet.lease.web.actions.IndexAdminModifyAction"
+>       name="IndexAdminForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/IndexAdmin.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/RentApprovalListLoad"
+>       type="com.bricsnet.lease.web.actions.RentApprovalListLoadAction"
+>       name="RentApprovalListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/RentApprovalList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/RelatedProjectListLoad"
+>       type="com.bricsnet.lease.web.actions.RelatedProjectListLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/RelatedProjectList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ChargePaymentScheduleLoad"
+>       type="com.bricsnet.lease.web.actions.ChargePaymentScheduleLoadAction"
+>       name="RentDatasheetForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/ChargePaymentScheduleList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/AttachProjectLoad"
+>       type="com.bricsnet.lease.web.actions.AttachProjectLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/AttachProject.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="error"
+>         path="/AttachProject.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/InsuranceLoad"
+>       type="com.bricsnet.lease.web.actions.InsuranceLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/InsuranceList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/RentCopyStore"
+>       type="com.bricsnet.lease.web.actions.RentCopyStoreAction"
+>       name="RentCopyForm"
+>       scope="session"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="successBack"
+>         path="/CopyRentPopup.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="successIndex"
+>         path="/CopyRentIndexPopup.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="successFinish"
+>         path="/CloseRefreshParent.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/AttachProjectStore"
+>       type="com.bricsnet.lease.web.actions.AttachProjectStoreAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/CloseRefreshParent.jsp"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/ResponsibilityWorkTypeListLoad"
+>       type="com.bricsnet.lease.web.actions.ResponsibilityWorkTypeListLoadAction"
+>       name="WorkTypeForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/ResponsibilityWorkTypeList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/AssetTypeSelectPopupLoad"
+>       type="com.bricsnet.lease.web.actions.AssetTypeSelectPopupLoadAction"
+>       name="AssetTypeForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/AssetTypeSelectPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/SecurityDepositLoad"
+>       type="com.bricsnet.lease.web.actions.SecurityDepositLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/SecurityDepositList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ResponsibilityAssetTypeListStore"
+>       type="com.bricsnet.lease.web.actions.ResponsibilityAssetTypeListStoreAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/ResponsibilityAssetTypeListLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/RecAddPaymentToRecLoad"
+>       type="com.bricsnet.lease.web.actions.RecAddPaymentToRecLoadAction"
+>       name="RecAddPaymentToRecForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/RecAddPaymentToRec.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropRelatedLeaseListLoad"
+>       type="com.bricsnet.lease.web.actions.PropRelatedLeaseListLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropRelatedLeaseList.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success_advanced_search"
+>         path="/AdvancedSearch.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/WorkTypeSelectPopupStore"
+>       type="com.bricsnet.lease.web.actions.WorkTypeSelectPopupStoreAction"
+>       name="WorkTypeForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/CloseRefreshParent.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PriorPeriodSelectPopupLoad"
+>       type="com.bricsnet.lease.web.actions.PriorPeriodSelectPopupLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/PriorPeriodSelectPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ClauseListLoad"
+>       type="com.bricsnet.lease.web.actions.ClauseListLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/ClauseList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ImprovementTxListStore"
+>       type="com.bricsnet.lease.web.actions.ImprovementTxListStoreAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/ImprovementTxListLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/LeaseDatasheetStore"
+>       type="com.bricsnet.lease.web.actions.LeaseDatasheetStoreAction"
+>       name="LeaseDatasheetForm"
+>       scope="session"
+>       input="/LeaseDatasheet.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="LeaseSummaryLoad.do"
+>         redirect="true"
+>       />
+>       <forward
+>         name="reload"
+>         path="LeaseDatasheetLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/ResponsibilityDatasheetStore"
+>       type="com.bricsnet.lease.web.actions.ResponsibilityDatasheetStoreAction"
+>       name="ResponsibilityDatasheetForm"
+>       scope="session"
+>       input="/ResponsibilityDatasheet.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="ResponsibilityListLoad.do"
+>         redirect="true"
+>       />
+>       <forward
+>         name="ViewWorkTypes"
+>         path="/ResponsibilityWorkTypeListLoad.do"
+>         redirect="true"
+>       />
+>       <forward
+>         name="ViewAssetTypes"
+>         path="/ResponsibilityAssetTypeListLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/AttachTransactionStore"
+>       type="com.bricsnet.lease.web.actions.AttachTransactionStoreAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/CloseRefreshParent.jsp"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/RentDatasheetLoad"
+>       type="com.bricsnet.lease.web.actions.RentDatasheetLoadAction"
+>       name="RentDatasheetForm"
+>       scope="session"
+>       input="/RentDatasheet.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success-preview"
+>         path="/LeaseRentPreview.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success"
+>         path="/RentDatasheet.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success-percent-rent"
+>         path="/PercentRentDatasheet.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ImprovementTxDatasheetLoad"
+>       type="com.bricsnet.lease.web.actions.ImprovementTxDatasheetLoadAction"
+>       name="ImprovementTxDatasheetForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/ImprovementTxDatasheet.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/SalesAccountLoad"
+>       type="com.bricsnet.lease.web.actions.SalesAccountLoadAction"
+>       name="SalesAccountForm"
+>       scope="session"
+>       input="/SalesAccount.jsp"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/SalesAccount.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ImprovementTxDatasheetStore"
+>       type="com.bricsnet.lease.web.actions.ImprovementTxDatasheetStoreAction"
+>       name="ImprovementTxDatasheetForm"
+>       scope="session"
+>       input="/ImprovementTxDatasheet.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="ImprovementTxListLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/ReportSelectPopupLoad"
+>       type="com.bricsnet.lease.web.actions.ReportSelectPopupLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/ReportSelectPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/RentSummaryStore"
+>       type="com.bricsnet.lease.web.actions.RentSummaryStoreAction"
+>       name="RentSummaryForm"
+>       scope="session"
+>       input="/RentSummary.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/RentSummaryLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/NewAmendmentAddCharge"
+>       type="com.bricsnet.lease.web.actions.NewAmendmentAddChargeAction"
+>       name="NewAmendmentForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/NewAmendmentLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/SalesCategoryAccountStore"
+>       type="com.bricsnet.lease.web.actions.SalesCategoryAccountStoreAction"
+>       name="SalesCategoryAccountForm"
+>       scope="session"
+>       input="/SalesCategoryAccount.jsp"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/CloseRefreshParent.jsp"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/AdhocLoad"
+>       type="com.bricsnet.lease.web.actions.AdhocLoadAction"
+>       name="AdhocForm"
+>       scope="session"
+>       input="/Adhoc.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/Adhoc.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success-payment"
+>         path="/AdhocPayment.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success-clause"
+>         path="/AdhocClause.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success-rent"
+>         path="/AdhocRent.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         contextRelative="false"
+>         module="/"
+>         name="failure"
+>         path="/AdhocListLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ResponsibilityWorkTypeListStore"
+>       type="com.bricsnet.lease.web.actions.ResponsibilityWorkTypeListStoreAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/ResponsibilityWorkTypeListLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/InsuranceDatasheetLoad"
+>       type="com.bricsnet.lease.web.actions.InsuranceDatasheetLoadAction"
+>       name="InsuranceDatasheetForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/InsuranceDatasheet.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/frag/ClassificationSearchFrag"
+>       type="com.bricsnet.lease.web.actions.ClassificationSearchFragAction"
+>       name="ClassificationForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/ClassificationSearch.frag.tree.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/InvoiceItemLoad"
+>       type="com.bricsnet.lease.web.actions.InvoiceItemLoadAction"
+>       name="InvoiceItemForm"
+>       scope="session"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/InvoiceItem.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ResponsibilityPopup"
+>       type="com.bricsnet.lease.web.actions.ResponsibilityPopupAction"
+>       name="ResponsibilityDatasheetForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="maintain"
+>         path="/ResponsibilityMaintainPopup.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="repair"
+>         path="/ResponsibilityRepairPopup.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="replace"
+>         path="/ResponsibilityReplacePopup.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="closePopup"
+>         path="/CloseRefreshParent.jsp?suppressRefresh=true"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/NewAmendmentStepOneStore"
+>       type="com.bricsnet.lease.web.actions.NewAmendmentStepOneStoreAction"
+>       name="NewAmendmentForm"
+>       scope="session"
+>       input="/NewAmendmentStepOne.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/NewAmendment.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/RentPercentDatasheetStore"
+>       type="com.bricsnet.lease.web.actions.RentPercentDatasheetStoreAction"
+>       name="RentPercentDatasheetForm"
+>       scope="session"
+>       input="/RentPercentDatasheet.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/RentTermsListLoad.do"
+>         redirect="false"
+>       />
+>       <forward
+>         name="successBreakpoint"
+>         path="/RentPercentDatasheet.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/SalesCategoryStore"
+>       type="com.bricsnet.lease.web.actions.SalesCategoryStoreAction"
+>       name="SalesCategoryForm"
+>       scope="session"
+>       input="/SalesCategory.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/SalesCategoryLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/ImprovementTxListLoad"
+>       type="com.bricsnet.lease.web.actions.ImprovementTxListLoadAction"
+>       name="ImprovementTxDatasheetForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/ImprovementTxList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/RecInvoiceItemPopupStore"
+>       type="com.bricsnet.lease.web.actions.RecInvoiceItemPopupStoreAction"
+>       name="RecInvoiceItemPopupForm"
+>       scope="session"
+>       input="/RecInvoiceItemPopup.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/CloseRefreshParent.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="error"
+>         path="/RecInvoiceItemPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/RelatedTransactionListStore"
+>       type="com.bricsnet.lease.web.actions.RelatedTransactionListStoreAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/../RelatedTransactionListLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/NewAmendmentStepOneLoad"
+>       type="com.bricsnet.lease.web.actions.NewAmendmentStepOneLoadAction"
+>       name="NewAmendmentForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/NewAmendmentStepOne.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success_edit"
+>         path="/NewAmendment.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/SalesAccountStore"
+>       type="com.bricsnet.lease.web.actions.SalesAccountStoreAction"
+>       name="SalesAccountForm"
+>       scope="session"
+>       input="/SalesAccount.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/SalesAccountLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/LeaseListAjaxLoad"
+>       type="com.bricsnet.lease.web.actions.LeaseListAjaxLoadAction"
+>       name="LeaseListForm"
+>       scope="request"
+>       input="/LeaseListAjax.jsp"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/LeaseListAjax.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success_advanced_search"
+>         path="/LeaseListAjax.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ResponsibilityListStore"
+>       type="com.bricsnet.lease.web.actions.ResponsibilityListStoreAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/ResponsibilityListLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/RentExpPaymentGlobalListLoad"
+>       type="com.bricsnet.lease.web.actions.RentExpPaymentGlobalListLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/RentExpPaymentGlobalList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/Fasb13PopupStore"
+>       type="com.bricsnet.lease.web.actions.Fasb13PopupStoreAction"
+>       name="Fasb13Form"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/Fasb13PopupClose.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="error"
+>         path="/Fasb13Popup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/RentPercentGeneratePaymentListLoad"
+>       type="com.bricsnet.lease.web.actions.RentPercentGeneratePaymentListLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/RentPercentGeneratePaymentList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/AttachSubleaseStore"
+>       type="com.bricsnet.lease.web.actions.AttachSubleaseStoreAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/CloseRefreshParent.jsp"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/LeaseListLoad"
+>       type="com.bricsnet.lease.web.actions.LeaseListLoadAction"
+>       name="LeaseListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/LeaseList.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success_advanced_search"
+>         path="/AdvancedSearch.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/AmendmentListLoad"
+>       type="com.bricsnet.lease.web.actions.AmendmentListLoadAction"
+>       name="AmendmentListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/AmendmentList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/LeaseCopyLoad"
+>       type="com.bricsnet.lease.web.actions.LeaseCopyLoadAction"
+>       name="LeaseCopyForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/LeaseCopy.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/LeaseDatasheetLoad"
+>       type="com.bricsnet.lease.web.actions.LeaseDatasheetLoadAction"
+>       name="LeaseDatasheetForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/LeaseDatasheet.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/SecurityDepositDatasheetStore"
+>       type="com.bricsnet.lease.web.actions.SecurityDepositDatasheetStoreAction"
+>       name="SecurityDepositDatasheetForm"
+>       scope="session"
+>       input="/SecurityDepositDatasheet.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="SecurityDepositListLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/RentTermsListStore"
+>       type="com.bricsnet.lease.web.actions.RentTermsListStoreAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/RentTermsListLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/RentPercentGeneratePaymentListStore"
+>       type="com.bricsnet.lease.web.actions.RentPercentGeneratePaymentListStoreAction"
+>       name="ListForm"
+>       scope="session"
+>       input="/RentPercentGeneratePaymentList.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="RentPercentGeneratePaymentListLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/ClauseLoad"
+>       type="com.bricsnet.lease.web.actions.ClauseLoadAction"
+>       name="ClauseDatasheetForm"
+>       scope="session"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="successContraction"
+>         path="/ClauseDatasheetContraction.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="successEarlyTerm"
+>         path="/ClauseDatasheetEarlyTerm.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="successExpansion"
+>         path="/ClauseDatasheetExpansion.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="successPurchase"
+>         path="/ClauseDatasheetPurchase.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="successRenew"
+>         path="/ClauseDatasheetRenew.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="successRentEsc"
+>         path="/ClauseDatasheetRentEsc.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success"
+>         path="/ClauseDatasheet.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/RentPercentOneTimePaymentStore"
+>       type="com.bricsnet.lease.web.actions.RentPercentOneTimePaymentStoreAction"
+>       name="RentPaymentDatasheetForm"
+>       scope="session"
+>       input="/RentPercentOneTimePayment.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="RentPercentGeneratePaymentListLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/LeaseCopyStore"
+>       type="com.bricsnet.lease.web.actions.LeaseCopyStoreAction"
+>       name="LeaseCopyForm"
+>       scope="request"
+>       input="/LeaseCopy.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/LeaseDatasheetLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/SalesCategoryAccountLoad"
+>       type="com.bricsnet.lease.web.actions.SalesCategoryAccountLoadAction"
+>       name="SalesCategoryAccountForm"
+>       scope="session"
+>       input="/SalesCategoryAccount.jsp"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/SalesCategoryAccount.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/BatchListLoad"
+>       type="com.bricsnet.lease.web.actions.BatchListLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/PaymentBatchList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/BatchLoad"
+>       type="com.bricsnet.lease.web.actions.BatchLoadAction"
+>       name="BatchForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/PaymentBatch.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/LeaseAllUpdate"
+>       type="com.bricsnet.lease.web.actions.LeaseAllUpdateAction"
+>       name="LeaseListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/LeaseAllUpdateSuccess.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ImprovementDatasheetLoad"
+>       type="com.bricsnet.lease.web.actions.ImprovementDatasheetLoadAction"
+>       name="ImprovementDatasheetForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/ImprovementDatasheet.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/LeaseRentInfoLoad"
+>       type="com.bricsnet.lease.web.actions.LeaseRentInfoLoadAction"
+>       name="RentDatasheetForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/LeaseRentInfoPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/RentPercentDatasheetLoad"
+>       type="com.bricsnet.lease.web.actions.RentPercentDatasheetLoadAction"
+>       name="RentPercentDatasheetForm"
+>       scope="session"
+>       input="/RentPercentDatasheet.jsp"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/RentPercentDatasheet.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/AttachSubleaseLoad"
+>       type="com.bricsnet.lease.web.actions.AttachSubleaseLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/AttachSublease.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ResponsibilityAssetTypeListLoad"
+>       type="com.bricsnet.lease.web.actions.ResponsibilityAssetTypeListLoadAction"
+>       name="AssetTypeForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/ResponsibilityAssetTypeList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/LeaseRecCategoryStore"
+>       type="com.bricsnet.lease.web.actions.LeaseRecCategoryStoreAction"
+>       name="LeaseRecCategoryForm"
+>       scope="session"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/LeaseRecCategoryLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/NewAmendmentLoad"
+>       type="com.bricsnet.lease.web.actions.NewAmendmentLoadAction"
+>       name="NewAmendmentForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/NewAmendment.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ImprovementListLoad"
+>       type="com.bricsnet.lease.web.actions.ImprovementListLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/ImprovementList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ReconciliationListLoad"
+>       type="com.bricsnet.lease.web.actions.ReconciliationListLoadAction"
+>       name="ReconciliationListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/ReconciliationList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/SalesCategoryLoad"
+>       type="com.bricsnet.lease.web.actions.SalesCategoryLoadAction"
+>       name="SalesCategoryForm"
+>       scope="session"
+>       input="/SalesCategory.jsp"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/SalesCategory.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ClauseListStore"
+>       type="com.bricsnet.lease.web.actions.ClauseListStoreAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/ClauseListLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/ResponsibilityListLoad"
+>       type="com.bricsnet.lease.web.actions.ResponsibilityListLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/ResponsibilityList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/Fasb13PopupLoad"
+>       type="com.bricsnet.lease.web.actions.Fasb13PopupLoadAction"
+>       name="Fasb13Form"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/Fasb13Popup.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="error"
+>         path="/Fasb13Popup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/AssetTypeSelectPopupStore"
+>       type="com.bricsnet.lease.web.actions.AssetTypeSelectPopupStoreAction"
+>       name="AssetTypeForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/CloseRefreshParent.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/RentIndexPopup"
+>       type="com.bricsnet.lease.web.actions.RentIndexPopupAction"
+>       name="RentIndexPopupForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/RentIndexPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/RentDatasheetEscalationStore"
+>       type="com.bricsnet.lease.web.actions.RentDatasheetEscalationStoreAction"
+>       name="RentDatasheetForm"
+>       scope="session"
+>       input="/LeaseRentPreview.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="successReload"
+>         path="RentDataSheetLoad.do"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success"
+>         path="RentTermsListLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+60d2296
+<     <!-- $Id: struts-message-resources.xml 40267 2010-10-08 12:14:33Z rkumar $ -->
+63,121c2299,2319
+<     <message-resources parameter="Label" key="core.label" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="Header" key="core.header" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+<     <message-resources parameter="navigation" key="core.navigation" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+<     <message-resources parameter="Header" key="core.Header" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="Error"  key="error"  null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="warning"  key="warning"  null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="boolean" key="boolean" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="country" key="country" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="currency_code" key="currency_code" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="unit" key="unit" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="month" key="month" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="businessRole" key="businessRole" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="currency" key="currency" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+<     <message-resources parameter="module" key="module" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+<     <message-resources parameter="person-status" key="person-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+<     <message-resources parameter="ObjectType-short" key="ObjectType-short" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+< 
+<     <message-resources parameter="generalLedgerCode-type" key="generalLedgerCode-type" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="schedule-status" key="core.schedule-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="task-status" key="task-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="task-periodStatus" key="task-periodStatus" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="task-priority" key="task-priority" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+< 
+<     <!-- Classification externalized descriptions -->
+<     <message-resources parameter="classification_name" key="classification_name" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="classification_desc" key="classification_desc" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="classification_code" key="classification_code" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+< 
+<     <!-- from other modules -->
+<     <message-resources parameter="docmanager.doc-status"  key="doc-status"  null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="docmanager.search-options"  key="search-options"  null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="property.property-status" key="property-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+---
+>     <message-resources parameter="Label" key="core.label" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="Header" key="core.header" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="navigation" key="core.navigation" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="Header" key="core.Header" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="Error"  key="error"  null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="boolean" key="boolean" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="country" key="country" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="currency" key="currency" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="currency_code" key="currency_code" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="month" key="month" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="unit" key="unit" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="task-status" key="task-status" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="task-periodStatus" key="task-periodStatus" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="task-priority" key="task-priority" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="ObjectType" key="objectType" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="person-status" key="person-status" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+> 
+>     <!-- Classification externalizated descriptions -->
+>     <message-resources parameter="classification_name" key="classification_name" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="classification_desc" key="classification_desc" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="classification_code" key="classification_code" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+124,133c2322,2326
+<     <message-resources parameter="project.label"  null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.label"  key="label"  null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.header" key="header" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.action"  key="action"  null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.navigation" key="navigation" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+---
+>     <message-resources parameter="lease.label"  null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="lease.label"  key="label"  null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="lease.header" key="header" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="lease.action"  key="action"  null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="lease.navigation" key="navigation" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+136,337c2329,2388
+<     <message-resources parameter="project.project-status"
+<         key="project-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.project-type" key="project-type"
+<         null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.project-geographicScope"
+<         key="project-geographicScope" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.project-riskRating"
+<         key="project-riskRating" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.project-revenueType"
+<         key="project-revenueType" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.project-clientStatus"
+<         key="project-clientStatus" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.account-type"
+<         key="account-type" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.budget-type"
+<         key="budget-type" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.budget-status"
+<         key="budget-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.commitment-status"
+<         key="commitment-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.commitment-type"
+<         key="commitment-type" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.invoice-status"
+<         key="invoice-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.invoice-disputecategory"
+<         key="invoice-disputecategory" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.invoice-type"
+<         key="invoice-type" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.overstock-status"
+<         key="overstock-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.overstock-unit"
+<         key="overstock-unit" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.training-status"
+<         key="training-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.training-type"
+<         key="training-type" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.payment-status"
+<         key="payment-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.payment-type"
+<         key="payment-type" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="payment-paymentMethod"
+<         key="payment-paymentMethod" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="payment-creditCardType"
+<         key="payment-creditCardType" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.rfp-status"
+<         key="rfp-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.bid-type"
+<         key="bid-type" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.bid-status"
+<         key="bid-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.project-scorecard"
+<         key="project-scorecard" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.spendYear-isDraft"
+<         key="spendYear-isDraft" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.projectInspection-status"
+<         key="projectInspection-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.projectInspectionRemediation-status"
+<         key="projectInspectionRemediation-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.projectSubmittal-status"
+<         key="projectSubmittal-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.projectSubmittal-status"
+<         key="projectSubmittalPackage-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.projectSubmittalApprover-status"
+<         key="projectSubmittalApprover-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.projectCommitmentApprover-status"
+<         key="projectCommitmentApprover-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.discipline"
+<         key="discipline" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.discipline"
+<         key="projectSubmittal-disciplineId" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.discipline"
+<         key="projectSubmittalPackage-disciplineId" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.projectRequirement-type"
+<         key="projectRequirement-type" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.projectRequirement-status"
+<         key="projectRequirement-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.projectDamage-status"
+<         key="projectDamage-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.projectDamage-resolutionType"
+<         key="projectDamage-resolutionType" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+< 
+<     <!-- Issue Module -->
+<     <message-resources parameter="project.issue-status"
+<                        key="issue-status"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+< 
+<     <message-resources parameter="project.issue-type"
+<                        key="issue-type"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+< 
+<     <message-resources parameter="project.issueeventaction-type"
+<                        key="issueeventaction-type"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+< 
+<     <message-resources parameter="project.issueevent-type"
+<                        key="issueevent-type"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+< 
+<     <!-- Contract Module -->
+<     <message-resources parameter="project.contract-status"
+<                        key="contract-status"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+< 
+<     <!-- Ad Hoc Bundles -->
+<     <message-resources parameter="adhoc-footer"
+<                        key="core.adhoc-footer"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+< 
+<     <message-resources parameter="adhoc-sort"
+<                        key="core.adhoc-sort"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+< 
+<     <message-resources parameter="Action"
+<                        key="core.action"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+< 
+<     <message-resources parameter="space.propertySpaceRequest-status"
+<                        key="propertySpaceRequest-status"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+< 
+<     <message-resources parameter="space.propertySpaceRequest-type"
+<                        key="propertySpaceRequest-type"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+< 
+<     <message-resources parameter="txmanager.tx-status"
+<                        key="tx-status"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+<     <message-resources parameter="txmanager.tx-type"
+<                        key="tx-type"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+<     <message-resources parameter="pipeline.opportunity-type"
+<                        key="opportunity-type"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+<     <message-resources parameter="pipeline.opportunity-status"
+<                        key="opportunity-status"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+< 	<message-resources parameter="priority-rating"
+<                        key="priority-factor-ratings"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />            
+<     <message-resources parameter="project.schedulevalue-status"
+<                        key="schedulevalue-status"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+<    <message-resources parameter="project.schedule-earningrule"
+<                        key="schedule-earningrule"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />             
+---
+>     <message-resources parameter="lease.lease-status" key="lease-status" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="lease.lease-type" key="lease-type" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="lease.lease-category" key="lease-category" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="lease.lease-fasbStatus" key="lease-fasbStatus" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="lease.lease-measureStandard" key="lease-measureStandard" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="lease.lease-occupancyStatus" key="lease-occupancyStatus" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="lease.leaseClause-type" key="leaseClause-type" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="lease.leaseClause-exerciseRights" key="leaseClause-exerciseRights" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="lease.leaseClause-status" key="leaseClause-status" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="lease.leaseClause-rentBasis" key="leaseClause-rentBasis" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="lease.leaseClause-purchasePriceBasis" key="leaseClause-purchasePriceBasis" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="lease.leaseImprovement-depreciationType" key="leaseImprovement-depreciationType" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="lease.leaseInsurance-type" key="leaseInsurance-type" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="lease.leaseInsurance-limits" key="leaseInsurance-limits" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="lease.leaseRent-frequencyMethod" key="leaseRent-frequencyMethod" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="lease.leaseRent-proRata" key="leaseRent-proRata" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="lease.leaseRent-proRataVar" key="leaseRent-proRataVar" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="charge-type" key="leaseRent-typeId" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="lease.leaseRent-status" key="leaseRent-status" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="lease.leaseRentPayment-status" key="leaseRentPayment-status" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="lease.leaseRentPayment-period" key="leaseRentPayment-period" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="payment-paymentMethod" key="leaseRentPayment-paymentMethod" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+>     <message-resources parameter="payment-creditCardType" key="leaseRentPayment-creditType" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+>     <message-resources parameter="lease.leaseResponsibility-maintenanceItem" key="leaseResponsibility-maintenanceItem" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="lease.leaseSecurityDeposit-purpose" key="leaseSecurityDeposit-purpose" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="lease.leaseSecurityDeposit-type" key="leaseSecurityDeposit-type" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="txmanager.tx-type" key="tx-type" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="txmanager.tx-status" key="tx-status" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="project.project-type" key="project-type" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="project.project-status" key="project-status" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="property.property-status" key="property-status" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="businessRole" key="businessRole" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="lease.leaseRec-amountPercent" key="leaseRec-amountPercent" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="lease.lease-auditType" key="lease-auditType" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="lease.leaseRec-status" key="leaseRec-status" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="lease.leaseRec-rowLabels" key="leaseRec-rowLabels" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="lease.leaseRecOpExClause-type" key="leaseRecOpExClause-type" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="lease.leaseRentPercent-breakpointType" key="leaseRentPercent-breakpointType" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="lease.leaseRentPercent-rateFormula" key="leaseRentPercent-rateFormula" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="lease.leaseRentPercent-reportFrequency" key="leaseRentPercent-reportFrequency" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+> 
+>     <!-- Resources where several keys match the same file -->
+>     <message-resources parameter="lease.lease-position" key="lease-position" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="lease.lease-party" key="leaseResponsibility-partyRepair" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="lease.lease-party" key="leaseResponsibility-partyReplace" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="lease.lease-party" key="leaseResponsibility-partyMaintained" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="lease.lease-party" key="leaseResponsibility-partyRepairReimbursement" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="lease.lease-party" key="leaseResponsibility-partyReplaceReimbursement" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="lease.lease-party" key="leaseResponsibility-partyMaintainedReimbursement" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="lease.leaseRent-wizard" key="leaseRent-baseUnit" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="lease.leaseRent-wizard" key="leaseRent-escalationType" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+> 
+>     <!-- naming exceptions -->
+>     <message-resources parameter="lease.lease-position" key="lease-lsePosition" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="lease.lease-fasbStatus" key="lease-convertedFasb" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="currency" key="lease-currencyId" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+> 
+>     <message-resources parameter="adhoc-footer" key="core.adhoc-footer" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="adhoc-sort" key="core.adhoc-sort" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>         <message-resources parameter="Action" key="core.action" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />

@@ -1,0 +1,103 @@
+public Integer getDoc_id_report() {
+		return getDocumentId();
+	}
+
+	public void setDoc_id_report(Integer docId) {
+		setDocumentId(docId);
+	}
+
+	public java.lang.String getReport_name() {
+		return getName();
+	}
+
+	public void setReport_name(java.lang.String name) {
+		setName(name);
+	}
+
+	public java.lang.Integer getClient_sgt() {
+		return getClientId();
+	}
+
+	public void setClient_sgt(java.lang.Integer clientId) {
+		setClientId(clientId);
+	}
+
+	public java.lang.Integer getSection_sgt_report() {
+		return getSectionId();
+	}
+
+	public void setSection_sgt_report(java.lang.Integer sectionId) {
+		setSectionId(sectionId);
+	}
+
+	public java.lang.Integer getReport_family_type() {
+		return getFamilyType();
+	}
+
+	public void setReport_family_type(java.lang.Integer familyType) {
+		setFamilyType(familyType);
+	}
+
+	public java.lang.Integer getReport_format_type() {
+		return getFormatType();
+	}
+
+	public void setReport_format_type(java.lang.Integer formatType) {
+		setFormatType(formatType);
+	}
+
+	public java.lang.Integer getPage_sgt_report() {
+		return getPageId();
+	}
+
+	public void setPage_sgt_report(java.lang.Integer pageId) {
+		setPageId(pageId);
+	}
+
+	public String getReport_filename() {
+		return getFileName();
+	}
+
+	public void setReport_filename(String filename) {
+		setFileName(filename);
+	}
+
+	public java.lang.Integer getPerson_id_report() {
+		return getPersonId();
+	}
+
+	public void setPerson_id_report(java.lang.Integer personId) {
+		setPersonId(personId);
+	}
+
+	public String getReport_desc() {
+		return getDescription();
+	}
+
+	public void setReport_desc(String desc) {
+		setDescription(desc);
+	}
+
+	public java.lang.Integer getReport_type() {
+		return getType();
+	}
+
+	public void setReport_type(java.lang.Integer type) {
+		setType(type);
+	}
+	
+	public java.lang.Integer getReport_id() {
+		return getId();
+	}
+
+	public void setReport_id(java.lang.Integer id) {
+		setId(id);
+	}
+
+	public int getDelete_status() {
+		return getDeleteStatus();
+	}
+
+	public void setDelete_status(int deleteStatus) {
+		setDeleteStatus(deleteStatus);
+	}

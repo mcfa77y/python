@@ -1,0 +1,564 @@
+14a15,42
+>     <form-bean
+>       name="CovenantForm"
+>       type="com.bricsnet.globalcontract.web.forms.CovenantForm"
+>     />
+>     <form-bean
+>       name="GlobalContractPaymentForm"
+>       type="com.bricsnet.globalcontract.web.forms.GlobalContractPaymentForm"
+>     />
+>     <form-bean
+>       name="DeliverableForm"
+>       type="com.bricsnet.globalcontract.web.forms.DeliverableForm"
+>     />
+>     <form-bean
+>       name="HistoryForm"
+>       type="com.bricsnet.globalcontract.web.forms.HistoryForm"
+>     />
+>     <form-bean
+>       name="ServiceLevelAgreementForm"
+>       type="com.bricsnet.globalcontract.web.forms.ServiceLevelAgreementForm"
+>     />
+>     <form-bean
+>       name="GlobalContractForm"
+>       type="com.bricsnet.globalcontract.web.forms.GlobalContractForm"
+>     />
+>     <form-bean
+>       name="GlobalContractListForm"
+>       type="com.bricsnet.globalcontract.web.forms.GlobalContractListForm"
+>     />
+48a77,344
+>     <action
+>       path="/GlobalContractPaymentLoad"
+>       type="com.bricsnet.globalcontract.web.actions.GlobalContractPaymentLoadAction"
+>       name="GlobalContractPaymentForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/GlobalContractPayment.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/DeliverableLoad"
+>       type="com.bricsnet.globalcontract.web.actions.DeliverableLoadAction"
+>       name="DeliverableForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/Deliverable.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/frag/ClassificationSearchFrag"
+>       type="com.bricsnet.globalcontract.web.actions.ClassificationSearchFragAction"
+>       name="ClassificationForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/ClassificationSearch.frag.tree.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ServiceLevelAgreementLoad"
+>       type="com.bricsnet.globalcontract.web.actions.ServiceLevelAgreementLoadAction"
+>       name="ServiceLevelAgreementForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/ServiceLevelAgreement.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ServiceLevelAgreementStore"
+>       type="com.bricsnet.globalcontract.web.actions.ServiceLevelAgreementStoreAction"
+>       name="ServiceLevelAgreementForm"
+>       scope="session"
+>       input="/ServiceLevelAgreement.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/CloseRefreshParent.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/DeliverableListLoad"
+>       type="com.bricsnet.globalcontract.web.actions.DeliverableListLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/DeliverableList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/DeliverableStore"
+>       type="com.bricsnet.globalcontract.web.actions.DeliverableStoreAction"
+>       name="DeliverableForm"
+>       scope="session"
+>       input="/Deliverable.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/DeliverableListLoad.do"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success_sla_delete"
+>         path="/DeliverableLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/DeliverableSelectPopupLoad"
+>       type="com.bricsnet.globalcontract.web.actions.DeliverableSelectPopupLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/DeliverableSelectPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/GlobalContractStore"
+>       type="com.bricsnet.globalcontract.web.actions.GlobalContractStoreAction"
+>       name="GlobalContractForm"
+>       scope="session"
+>       input="/GlobalContract.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/GlobalContractLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/HistoryLoad"
+>       type="com.bricsnet.globalcontract.web.actions.HistoryLoadAction"
+>       name="HistoryForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/History.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ClassificationSearch"
+>       type="com.bricsnet.globalcontract.web.actions.ClassificationSearchAction"
+>       name="ClassificationForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/ClassificationSearch.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/GlobalContractListLoad"
+>       type="com.bricsnet.globalcontract.web.actions.GlobalContractListLoadAction"
+>       name="GlobalContractListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/GlobalContractList.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success_advanced_search"
+>         path="/AdvancedSearch.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/GlobalContractPaymentStore"
+>       type="com.bricsnet.globalcontract.web.actions.GlobalContractPaymentStoreAction"
+>       name="GlobalContractPaymentForm"
+>       scope="session"
+>       input="/GlobalContractPayment.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/GlobalContractPaymentListLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/CovenantLoad"
+>       type="com.bricsnet.globalcontract.web.actions.CovenantLoadAction"
+>       name="CovenantForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/Covenant.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/GlobalContractListAjaxLoad"
+>       type="com.bricsnet.globalcontract.web.actions.GlobalContractListAjaxLoadAction"
+>       name="GlobalContractListForm"
+>       scope="request"
+>       input="/GlobalContractListAjax.jsp"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/GlobalContractListAjax.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/CovenantStore"
+>       type="com.bricsnet.globalcontract.web.actions.CovenantStoreAction"
+>       name="CovenantForm"
+>       scope="session"
+>       input="/Covenant.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/CloseRefreshParent.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/GlobalContractPaymentListLoad"
+>       type="com.bricsnet.globalcontract.web.actions.GlobalContractPaymentListLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/GlobalContractPaymentList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/GlobalContractLoad"
+>       type="com.bricsnet.globalcontract.web.actions.GlobalContractLoadAction"
+>       name="GlobalContractForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/GlobalContract.jsp"
+>         redirect="false"
+>       />
+>     </action>
+60c356
+<     <!-- $Id: struts-message-resources.xml 40267 2010-10-08 12:14:33Z rkumar $ -->
+---
+>     <!-- $Id: struts-message-resources.xml 38113 2009-08-12 20:44:01Z bkallay $ -->
+91c387
+<     <message-resources parameter="person-status" key="person-status" null="false"
+---
+>     <message-resources parameter="r_person-status" key="r_person-status" null="false"
+96,122d391
+<     <message-resources parameter="generalLedgerCode-type" key="generalLedgerCode-type" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="schedule-status" key="core.schedule-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="task-status" key="task-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="task-periodStatus" key="task-periodStatus" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="task-priority" key="task-priority" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+< 
+<     <!-- Classification externalized descriptions -->
+<     <message-resources parameter="classification_name" key="classification_name" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="classification_desc" key="classification_desc" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="classification_code" key="classification_code" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+< 
+<     <!-- from other modules -->
+<     <message-resources parameter="docmanager.doc-status"  key="doc-status"  null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="docmanager.search-options"  key="search-options"  null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="property.property-status" key="property-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+< 
+124,337c393,406
+<     <message-resources parameter="project.label"  null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.label"  key="label"  null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.header" key="header" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.action"  key="action"  null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.navigation" key="navigation" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+< 
+<     <!-- Resources which are enums for a specific column -->
+<     <message-resources parameter="project.project-status"
+<         key="project-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.project-type" key="project-type"
+<         null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.project-geographicScope"
+<         key="project-geographicScope" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.project-riskRating"
+<         key="project-riskRating" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.project-revenueType"
+<         key="project-revenueType" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.project-clientStatus"
+<         key="project-clientStatus" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.account-type"
+<         key="account-type" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.budget-type"
+<         key="budget-type" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.budget-status"
+<         key="budget-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.commitment-status"
+<         key="commitment-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.commitment-type"
+<         key="commitment-type" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.invoice-status"
+<         key="invoice-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.invoice-disputecategory"
+<         key="invoice-disputecategory" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.invoice-type"
+<         key="invoice-type" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.overstock-status"
+<         key="overstock-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.overstock-unit"
+<         key="overstock-unit" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.training-status"
+<         key="training-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.training-type"
+<         key="training-type" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.payment-status"
+<         key="payment-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.payment-type"
+<         key="payment-type" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="payment-paymentMethod"
+<         key="payment-paymentMethod" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="payment-creditCardType"
+<         key="payment-creditCardType" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.rfp-status"
+<         key="rfp-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.bid-type"
+<         key="bid-type" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.bid-status"
+<         key="bid-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.project-scorecard"
+<         key="project-scorecard" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.spendYear-isDraft"
+<         key="spendYear-isDraft" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.projectInspection-status"
+<         key="projectInspection-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.projectInspectionRemediation-status"
+<         key="projectInspectionRemediation-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.projectSubmittal-status"
+<         key="projectSubmittal-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.projectSubmittal-status"
+<         key="projectSubmittalPackage-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.projectSubmittalApprover-status"
+<         key="projectSubmittalApprover-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.projectCommitmentApprover-status"
+<         key="projectCommitmentApprover-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.discipline"
+<         key="discipline" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.discipline"
+<         key="projectSubmittal-disciplineId" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.discipline"
+<         key="projectSubmittalPackage-disciplineId" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.projectRequirement-type"
+<         key="projectRequirement-type" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.projectRequirement-status"
+<         key="projectRequirement-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.projectDamage-status"
+<         key="projectDamage-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.projectDamage-resolutionType"
+<         key="projectDamage-resolutionType" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+< 
+<     <!-- Issue Module -->
+<     <message-resources parameter="project.issue-status"
+<                        key="issue-status"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+< 
+<     <message-resources parameter="project.issue-type"
+<                        key="issue-type"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+< 
+<     <message-resources parameter="project.issueeventaction-type"
+<                        key="issueeventaction-type"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+< 
+<     <message-resources parameter="project.issueevent-type"
+<                        key="issueevent-type"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+< 
+<     <!-- Contract Module -->
+<     <message-resources parameter="project.contract-status"
+<                        key="contract-status"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+< 
+<     <!-- Ad Hoc Bundles -->
+<     <message-resources parameter="adhoc-footer"
+<                        key="core.adhoc-footer"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+< 
+<     <message-resources parameter="adhoc-sort"
+<                        key="core.adhoc-sort"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+< 
+<     <message-resources parameter="Action"
+<                        key="core.action"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+< 
+<     <message-resources parameter="space.propertySpaceRequest-status"
+<                        key="propertySpaceRequest-status"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+< 
+<     <message-resources parameter="space.propertySpaceRequest-type"
+<                        key="propertySpaceRequest-type"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+< 
+<     <message-resources parameter="txmanager.tx-status"
+<                        key="tx-status"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+<     <message-resources parameter="txmanager.tx-type"
+<                        key="tx-type"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+<     <message-resources parameter="pipeline.opportunity-type"
+<                        key="opportunity-type"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+<     <message-resources parameter="pipeline.opportunity-status"
+<                        key="opportunity-status"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+< 	<message-resources parameter="priority-rating"
+<                        key="priority-factor-ratings"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />            
+<     <message-resources parameter="project.schedulevalue-status"
+<                        key="schedulevalue-status"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+<    <message-resources parameter="project.schedule-earningrule"
+<                        key="schedule-earningrule"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />             
+---
+>     <message-resources parameter="globalcontract.label"  null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="globalcontract.label"  key="label"  null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="globalcontract.header" key="header" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="globalcontract.action"  key="action"  null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="globalcontract.navigation" key="navigation" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+> 
+>     <message-resources parameter="globalcontract.globalcontract-status" key="globalcontract-status" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="globalcontract.globalcontract-category" key="globalcontract-category" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="globalcontract.globalcontract-type" key="globalcontract-type" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="globalcontract.globalcontract-subType" key="globalcontract-subType" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="globalcontract.deliverable-type" key="deliverable-type" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="globalcontract.deliverable-frequency" key="deliverable-frequency" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="globalcontract.deliverable-billingUnit" key="deliverable-billingUnit" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="globalcontract.covenant-type" key="covenant-type" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />

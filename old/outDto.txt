@@ -1,0 +1,906 @@
+
+package com.bricsnet.core.dal.person;
+import javax.persistence.Transient;
+import javax.persistence.Id;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+
+/**
+ * Value object for DirectoryEntry.
+ *
+ * @author <a href="mailto:david.hamilton@bricsnet.com">David J. Hamilton</a>
+ */
+
+@Entity
+@Table(name="DirectoryEntry")
+public class DirectoryEntryDTO
+   extends com.bricsnet.core.dal.person.BaseDirectoryEntryDTO
+   implements java.io.Serializable ,com.bricsnet.core.util.model.type.Auditable
+{
+
+   private java.lang.Integer id;
+   private boolean idHasBeenSet = false;
+   private java.lang.String name;
+   private boolean nameHasBeenSet = false;
+   private java.lang.String description;
+   private boolean descriptionHasBeenSet = false;
+   private java.lang.String organization;
+   private boolean organizationHasBeenSet = false;
+   private java.lang.String addressOne;
+   private boolean addressOneHasBeenSet = false;
+   private java.lang.String addressTwo;
+   private boolean addressTwoHasBeenSet = false;
+   private java.lang.String city;
+   private boolean cityHasBeenSet = false;
+   private java.lang.String state;
+   private boolean stateHasBeenSet = false;
+   private java.lang.String country;
+   private boolean countryHasBeenSet = false;
+   private java.lang.String postalCode;
+   private boolean postalCodeHasBeenSet = false;
+   private java.lang.String phone;
+   private boolean phoneHasBeenSet = false;
+   private java.lang.String fax;
+   private boolean faxHasBeenSet = false;
+   private java.lang.String email;
+   private boolean emailHasBeenSet = false;
+   private java.lang.Integer refObjectId;
+   private boolean refObjectIdHasBeenSet = false;
+   private java.lang.Integer refObjectType;
+   private boolean refObjectTypeHasBeenSet = false;
+   private int deleteStatus;
+   private boolean deleteStatusHasBeenSet = false;
+   private java.lang.Integer lastUpdatedBy;
+   private boolean lastUpdatedByHasBeenSet = false;
+   private java.sql.Timestamp lastUpdatedOn;
+   private boolean lastUpdatedOnHasBeenSet = false;
+   private java.lang.Integer version;
+   private boolean versionHasBeenSet = false;
+
+   
+
+   public DirectoryEntryDTO()
+   {
+   }
+
+   public DirectoryEntryDTO( java.lang.Integer id,java.lang.String name,java.lang.String description,java.lang.String organization,java.lang.String addressOne,java.lang.String addressTwo,java.lang.String city,java.lang.String state,java.lang.String country,java.lang.String postalCode,java.lang.String phone,java.lang.String fax,java.lang.String email,java.lang.Integer refObjectId,java.lang.Integer refObjectType,int deleteStatus,java.lang.Integer lastUpdatedBy,java.sql.Timestamp lastUpdatedOn,java.lang.Integer version )
+   {
+	  this.id = id;
+	  idHasBeenSet = true;
+	  this.name = name;
+	  nameHasBeenSet = true;
+	  this.description = description;
+	  descriptionHasBeenSet = true;
+	  this.organization = organization;
+	  organizationHasBeenSet = true;
+	  this.addressOne = addressOne;
+	  addressOneHasBeenSet = true;
+	  this.addressTwo = addressTwo;
+	  addressTwoHasBeenSet = true;
+	  this.city = city;
+	  cityHasBeenSet = true;
+	  this.state = state;
+	  stateHasBeenSet = true;
+	  this.country = country;
+	  countryHasBeenSet = true;
+	  this.postalCode = postalCode;
+	  postalCodeHasBeenSet = true;
+	  this.phone = phone;
+	  phoneHasBeenSet = true;
+	  this.fax = fax;
+	  faxHasBeenSet = true;
+	  this.email = email;
+	  emailHasBeenSet = true;
+	  this.refObjectId = refObjectId;
+	  refObjectIdHasBeenSet = true;
+	  this.refObjectType = refObjectType;
+	  refObjectTypeHasBeenSet = true;
+	  this.deleteStatus = deleteStatus;
+	  deleteStatusHasBeenSet = true;
+	  this.lastUpdatedBy = lastUpdatedBy;
+	  lastUpdatedByHasBeenSet = true;
+	  this.lastUpdatedOn = lastUpdatedOn;
+	  lastUpdatedOnHasBeenSet = true;
+	  this.version = version;
+	  versionHasBeenSet = true;
+	  
+   }
+
+   //TODO Cloneable is better than this !
+   public DirectoryEntryDTO( DirectoryEntryDTO otherValue )
+   {
+	  this.id = otherValue.id;
+	  idHasBeenSet = true;
+	  this.name = otherValue.name;
+	  nameHasBeenSet = true;
+	  this.description = otherValue.description;
+	  descriptionHasBeenSet = true;
+	  this.organization = otherValue.organization;
+	  organizationHasBeenSet = true;
+	  this.addressOne = otherValue.addressOne;
+	  addressOneHasBeenSet = true;
+	  this.addressTwo = otherValue.addressTwo;
+	  addressTwoHasBeenSet = true;
+	  this.city = otherValue.city;
+	  cityHasBeenSet = true;
+	  this.state = otherValue.state;
+	  stateHasBeenSet = true;
+	  this.country = otherValue.country;
+	  countryHasBeenSet = true;
+	  this.postalCode = otherValue.postalCode;
+	  postalCodeHasBeenSet = true;
+	  this.phone = otherValue.phone;
+	  phoneHasBeenSet = true;
+	  this.fax = otherValue.fax;
+	  faxHasBeenSet = true;
+	  this.email = otherValue.email;
+	  emailHasBeenSet = true;
+	  this.refObjectId = otherValue.refObjectId;
+	  refObjectIdHasBeenSet = true;
+	  this.refObjectType = otherValue.refObjectType;
+	  refObjectTypeHasBeenSet = true;
+	  this.deleteStatus = otherValue.deleteStatus;
+	  deleteStatusHasBeenSet = true;
+	  this.lastUpdatedBy = otherValue.lastUpdatedBy;
+	  lastUpdatedByHasBeenSet = true;
+	  this.lastUpdatedOn = otherValue.lastUpdatedOn;
+	  lastUpdatedOnHasBeenSet = true;
+	  this.version = otherValue.version;
+	  versionHasBeenSet = true;
+
+	  
+   }
+
+
+
+   @Id
+@Transient
+public java.lang.Integer getId()
+   {
+	  return this.id;
+   }
+
+   public void setId( java.lang.Integer id )
+   {
+	this.id = id;
+	  idHasBeenSet = true;
+
+	resetLocalization("id"); 
+
+	
+		resetLocalization("primaryKey"); 
+   }
+
+   @Transient
+public boolean idHasBeenSet(){
+	  return idHasBeenSet;
+   }
+   @Transient
+public java.lang.String getName()
+   {
+	  return this.name;
+   }
+
+   public void setName( java.lang.String name )
+   {
+	this.name = name;
+	  nameHasBeenSet = true;
+
+	resetLocalization("name"); 
+
+   }
+
+   @Transient
+public boolean nameHasBeenSet(){
+	  return nameHasBeenSet;
+   }
+   @Transient
+public java.lang.String getDescription()
+   {
+	  return this.description;
+   }
+
+   public void setDescription( java.lang.String description )
+   {
+	this.description = description;
+	  descriptionHasBeenSet = true;
+
+	resetLocalization("description"); 
+
+   }
+
+   @Transient
+public boolean descriptionHasBeenSet(){
+	  return descriptionHasBeenSet;
+   }
+   @Transient
+public java.lang.String getOrganization()
+   {
+	  return this.organization;
+   }
+
+   public void setOrganization( java.lang.String organization )
+   {
+	this.organization = organization;
+	  organizationHasBeenSet = true;
+
+	resetLocalization("organization"); 
+
+   }
+
+   @Transient
+public boolean organizationHasBeenSet(){
+	  return organizationHasBeenSet;
+   }
+   @Transient
+public java.lang.String getAddressOne()
+   {
+	  return this.addressOne;
+   }
+
+   public void setAddressOne( java.lang.String addressOne )
+   {
+	this.addressOne = addressOne;
+	  addressOneHasBeenSet = true;
+
+	resetLocalization("addressOne"); 
+
+   }
+
+   @Transient
+public boolean addressOneHasBeenSet(){
+	  return addressOneHasBeenSet;
+   }
+   @Transient
+public java.lang.String getAddressTwo()
+   {
+	  return this.addressTwo;
+   }
+
+   public void setAddressTwo( java.lang.String addressTwo )
+   {
+	this.addressTwo = addressTwo;
+	  addressTwoHasBeenSet = true;
+
+	resetLocalization("addressTwo"); 
+
+   }
+
+   @Transient
+public boolean addressTwoHasBeenSet(){
+	  return addressTwoHasBeenSet;
+   }
+   @Transient
+public java.lang.String getCity()
+   {
+	  return this.city;
+   }
+
+   public void setCity( java.lang.String city )
+   {
+	this.city = city;
+	  cityHasBeenSet = true;
+
+	resetLocalization("city"); 
+
+   }
+
+   @Transient
+public boolean cityHasBeenSet(){
+	  return cityHasBeenSet;
+   }
+   @Transient
+public java.lang.String getState()
+   {
+	  return this.state;
+   }
+
+   public void setState( java.lang.String state )
+   {
+	this.state = state;
+	  stateHasBeenSet = true;
+
+	resetLocalization("state"); 
+
+   }
+
+   @Transient
+public boolean stateHasBeenSet(){
+	  return stateHasBeenSet;
+   }
+   @Transient
+public java.lang.String getCountry()
+   {
+	  return this.country;
+   }
+
+   public void setCountry( java.lang.String country )
+   {
+	this.country = country;
+	  countryHasBeenSet = true;
+
+	resetLocalization("country"); 
+
+   }
+
+   @Transient
+public boolean countryHasBeenSet(){
+	  return countryHasBeenSet;
+   }
+   @Transient
+public java.lang.String getPostalCode()
+   {
+	  return this.postalCode;
+   }
+
+   public void setPostalCode( java.lang.String postalCode )
+   {
+	this.postalCode = postalCode;
+	  postalCodeHasBeenSet = true;
+
+	resetLocalization("postalCode"); 
+
+   }
+
+   @Transient
+public boolean postalCodeHasBeenSet(){
+	  return postalCodeHasBeenSet;
+   }
+   @Transient
+public java.lang.String getPhone()
+   {
+	  return this.phone;
+   }
+
+   public void setPhone( java.lang.String phone )
+   {
+	this.phone = phone;
+	  phoneHasBeenSet = true;
+
+	resetLocalization("phone"); 
+
+   }
+
+   @Transient
+public boolean phoneHasBeenSet(){
+	  return phoneHasBeenSet;
+   }
+   @Transient
+public java.lang.String getFax()
+   {
+	  return this.fax;
+   }
+
+   public void setFax( java.lang.String fax )
+   {
+	this.fax = fax;
+	  faxHasBeenSet = true;
+
+	resetLocalization("fax"); 
+
+   }
+
+   @Transient
+public boolean faxHasBeenSet(){
+	  return faxHasBeenSet;
+   }
+   @Transient
+public java.lang.String getEmail()
+   {
+	  return this.email;
+   }
+
+   public void setEmail( java.lang.String email )
+   {
+	this.email = email;
+	  emailHasBeenSet = true;
+
+	resetLocalization("email"); 
+
+   }
+
+   @Transient
+public boolean emailHasBeenSet(){
+	  return emailHasBeenSet;
+   }
+   @Transient
+public java.lang.Integer getRefObjectId()
+   {
+	  return this.refObjectId;
+   }
+
+   public void setRefObjectId( java.lang.Integer refObjectId )
+   {
+	this.refObjectId = refObjectId;
+	  refObjectIdHasBeenSet = true;
+
+	resetLocalization("refObjectId"); 
+
+   }
+
+   @Transient
+public boolean refObjectIdHasBeenSet(){
+	  return refObjectIdHasBeenSet;
+   }
+   @Transient
+public java.lang.Integer getRefObjectType()
+   {
+	  return this.refObjectType;
+   }
+
+   public void setRefObjectType( java.lang.Integer refObjectType )
+   {
+	this.refObjectType = refObjectType;
+	  refObjectTypeHasBeenSet = true;
+
+	resetLocalization("refObjectType"); 
+
+   }
+
+   @Transient
+public boolean refObjectTypeHasBeenSet(){
+	  return refObjectTypeHasBeenSet;
+   }
+   @Transient
+public int getDeleteStatus()
+   {
+	  return this.deleteStatus;
+   }
+
+   public void setDeleteStatus( int deleteStatus )
+   {
+	this.deleteStatus = deleteStatus;
+	  deleteStatusHasBeenSet = true;
+
+	resetLocalization("deleteStatus"); 
+
+   }
+
+   @Transient
+public boolean deleteStatusHasBeenSet(){
+	  return deleteStatusHasBeenSet;
+   }
+   @Transient
+public java.lang.Integer getLastUpdatedBy()
+   {
+	  return this.lastUpdatedBy;
+   }
+
+   public void setLastUpdatedBy( java.lang.Integer lastUpdatedBy )
+   {
+	this.lastUpdatedBy = lastUpdatedBy;
+	  lastUpdatedByHasBeenSet = true;
+
+	resetLocalization("lastUpdatedBy"); 
+
+   }
+
+   @Transient
+public boolean lastUpdatedByHasBeenSet(){
+	  return lastUpdatedByHasBeenSet;
+   }
+   @Transient
+public java.sql.Timestamp getLastUpdatedOn()
+   {
+	  return this.lastUpdatedOn;
+   }
+
+   public void setLastUpdatedOn( java.sql.Timestamp lastUpdatedOn )
+   {
+	this.lastUpdatedOn = lastUpdatedOn;
+	  lastUpdatedOnHasBeenSet = true;
+
+	resetLocalization("lastUpdatedOn"); 
+
+   }
+
+   @Transient
+public boolean lastUpdatedOnHasBeenSet(){
+	  return lastUpdatedOnHasBeenSet;
+   }
+   @Transient
+public java.lang.Integer getVersion()
+   {
+	  return this.version;
+   }
+
+   public void setVersion( java.lang.Integer version )
+   {
+	this.version = version;
+	  versionHasBeenSet = true;
+
+	resetLocalization("version"); 
+
+   }
+
+   @Transient
+public boolean versionHasBeenSet(){
+	  return versionHasBeenSet;
+   }
+
+   public String toString()
+   {
+	  StringBuffer str = new StringBuffer("{");
+
+	  str.append("id=" + getId() + " " + "name=" + getName() + " " + "description=" + getDescription() + " " + "organization=" + getOrganization() + " " + "addressOne=" + getAddressOne() + " " + "addressTwo=" + getAddressTwo() + " " + "city=" + getCity() + " " + "state=" + getState() + " " + "country=" + getCountry() + " " + "postalCode=" + getPostalCode() + " " + "phone=" + getPhone() + " " + "fax=" + getFax() + " " + "email=" + getEmail() + " " + "refObjectId=" + getRefObjectId() + " " + "refObjectType=" + getRefObjectType() + " " + "deleteStatus=" + getDeleteStatus() + " " + "lastUpdatedBy=" + getLastUpdatedBy() + " " + "lastUpdatedOn=" + getLastUpdatedOn() + " " + "version=" + getVersion());
+	  str.append('}');
+
+	  return(str.toString());
+   }
+
+   /**
+    * A Value Object has an identity if the attributes making its Primary Key have all been set. An object without identity is never equal to any other object.
+    *
+    * @return true if this instance has an identity.
+    */
+   protected boolean hasIdentity()
+   {
+	  return idHasBeenSet;
+   }
+
+   public boolean equals(Object other)
+   {
+      if (this == other)
+         return true;
+	  if ( ! hasIdentity() ) return false;
+	  if (other instanceof DirectoryEntryDTO)
+	  {
+		 DirectoryEntryDTO that = (DirectoryEntryDTO) other;
+		 if ( ! that.hasIdentity() ) return false;
+		 boolean lEquals = true;
+		 if( this.id == null )
+		 {
+			lEquals = lEquals && ( that.id == null );
+		 }
+		 else
+		 {
+			lEquals = lEquals && this.id.equals( that.id );
+		 }
+
+		 lEquals = lEquals && isIdentical(that);
+
+		 return lEquals;
+	  }
+
+	 return false;
+   }
+
+   public boolean isIdentical(Object other)
+   {
+	  if (other instanceof DirectoryEntryDTO)
+	  {
+		 DirectoryEntryDTO that = (DirectoryEntryDTO) other;
+		 boolean lEquals = true;
+		 if( this.name == null )
+		 {
+			lEquals = lEquals && ( that.name == null );
+		 }
+		 else
+		 {
+			lEquals = lEquals && this.name.equals( that.name );
+		 }
+		 if( this.description == null )
+		 {
+			lEquals = lEquals && ( that.description == null );
+		 }
+		 else
+		 {
+			lEquals = lEquals && this.description.equals( that.description );
+		 }
+		 if( this.organization == null )
+		 {
+			lEquals = lEquals && ( that.organization == null );
+		 }
+		 else
+		 {
+			lEquals = lEquals && this.organization.equals( that.organization );
+		 }
+		 if( this.addressOne == null )
+		 {
+			lEquals = lEquals && ( that.addressOne == null );
+		 }
+		 else
+		 {
+			lEquals = lEquals && this.addressOne.equals( that.addressOne );
+		 }
+		 if( this.addressTwo == null )
+		 {
+			lEquals = lEquals && ( that.addressTwo == null );
+		 }
+		 else
+		 {
+			lEquals = lEquals && this.addressTwo.equals( that.addressTwo );
+		 }
+		 if( this.city == null )
+		 {
+			lEquals = lEquals && ( that.city == null );
+		 }
+		 else
+		 {
+			lEquals = lEquals && this.city.equals( that.city );
+		 }
+		 if( this.state == null )
+		 {
+			lEquals = lEquals && ( that.state == null );
+		 }
+		 else
+		 {
+			lEquals = lEquals && this.state.equals( that.state );
+		 }
+		 if( this.country == null )
+		 {
+			lEquals = lEquals && ( that.country == null );
+		 }
+		 else
+		 {
+			lEquals = lEquals && this.country.equals( that.country );
+		 }
+		 if( this.postalCode == null )
+		 {
+			lEquals = lEquals && ( that.postalCode == null );
+		 }
+		 else
+		 {
+			lEquals = lEquals && this.postalCode.equals( that.postalCode );
+		 }
+		 if( this.phone == null )
+		 {
+			lEquals = lEquals && ( that.phone == null );
+		 }
+		 else
+		 {
+			lEquals = lEquals && this.phone.equals( that.phone );
+		 }
+		 if( this.fax == null )
+		 {
+			lEquals = lEquals && ( that.fax == null );
+		 }
+		 else
+		 {
+			lEquals = lEquals && this.fax.equals( that.fax );
+		 }
+		 if( this.email == null )
+		 {
+			lEquals = lEquals && ( that.email == null );
+		 }
+		 else
+		 {
+			lEquals = lEquals && this.email.equals( that.email );
+		 }
+		 if( this.refObjectId == null )
+		 {
+			lEquals = lEquals && ( that.refObjectId == null );
+		 }
+		 else
+		 {
+			lEquals = lEquals && this.refObjectId.equals( that.refObjectId );
+		 }
+		 if( this.refObjectType == null )
+		 {
+			lEquals = lEquals && ( that.refObjectType == null );
+		 }
+		 else
+		 {
+			lEquals = lEquals && this.refObjectType.equals( that.refObjectType );
+		 }
+		 lEquals = lEquals && this.deleteStatus == that.deleteStatus;
+		 if( this.lastUpdatedBy == null )
+		 {
+			lEquals = lEquals && ( that.lastUpdatedBy == null );
+		 }
+		 else
+		 {
+			lEquals = lEquals && this.lastUpdatedBy.equals( that.lastUpdatedBy );
+		 }
+		 if( this.lastUpdatedOn == null )
+		 {
+			lEquals = lEquals && ( that.lastUpdatedOn == null );
+		 }
+		 else
+		 {
+			lEquals = lEquals && this.lastUpdatedOn.equals( that.lastUpdatedOn );
+		 }
+		 if( this.version == null )
+		 {
+			lEquals = lEquals && ( that.version == null );
+		 }
+		 else
+		 {
+			lEquals = lEquals && this.version.equals( that.version );
+		 }
+
+		 return lEquals;
+	  }
+
+	 return false;
+   }
+
+   public int hashCode(){
+	  int result = 17;
+      result = 37*result + ((this.id != null) ? this.id.hashCode() : 0);
+
+      result = 37*result + ((this.name != null) ? this.name.hashCode() : 0);
+
+      result = 37*result + ((this.description != null) ? this.description.hashCode() : 0);
+
+      result = 37*result + ((this.organization != null) ? this.organization.hashCode() : 0);
+
+      result = 37*result + ((this.addressOne != null) ? this.addressOne.hashCode() : 0);
+
+      result = 37*result + ((this.addressTwo != null) ? this.addressTwo.hashCode() : 0);
+
+      result = 37*result + ((this.city != null) ? this.city.hashCode() : 0);
+
+      result = 37*result + ((this.state != null) ? this.state.hashCode() : 0);
+
+      result = 37*result + ((this.country != null) ? this.country.hashCode() : 0);
+
+      result = 37*result + ((this.postalCode != null) ? this.postalCode.hashCode() : 0);
+
+      result = 37*result + ((this.phone != null) ? this.phone.hashCode() : 0);
+
+      result = 37*result + ((this.fax != null) ? this.fax.hashCode() : 0);
+
+      result = 37*result + ((this.email != null) ? this.email.hashCode() : 0);
+
+      result = 37*result + ((this.refObjectId != null) ? this.refObjectId.hashCode() : 0);
+
+      result = 37*result + ((this.refObjectType != null) ? this.refObjectType.hashCode() : 0);
+
+      result = 37*result + (int) deleteStatus;
+
+      result = 37*result + ((this.lastUpdatedBy != null) ? this.lastUpdatedBy.hashCode() : 0);
+
+      result = 37*result + ((this.lastUpdatedOn != null) ? this.lastUpdatedOn.hashCode() : 0);
+
+      result = 37*result + ((this.version != null) ? this.version.hashCode() : 0);
+
+	  return result;
+   }
+
+	protected static boolean merged = false;
+	protected static java.util.Map<String, String> formatMap =
+		new java.util.HashMap<String, String>();
+	protected static java.util.Map<String, Integer> maxLengths =
+		new java.util.HashMap<String, Integer>();
+	protected static java.util.Map<String, Number> maxValues =
+		new java.util.HashMap<String, Number>();
+	protected static java.util.Map<String, Number> minValues =
+		new java.util.HashMap<String, Number>();
+	protected static java.util.Set<String> historyProperties =
+		new java.util.HashSet<String>();
+	static {
+
+	// handle bricsnet.localize
+		formatMap.put("id", "#"); // java.lang.Integer
+	// handle bricsnet.validate
+	// bricsnet.hiddenFromHistory
+
+	// handle bricsnet.localize
+	// handle bricsnet.validate
+	// bricsnet.hiddenFromHistory
+		historyProperties.add("name");
+
+	// handle bricsnet.localize
+	// handle bricsnet.validate
+	// bricsnet.hiddenFromHistory
+		historyProperties.add("description");
+
+	// handle bricsnet.localize
+	// handle bricsnet.validate
+	// bricsnet.hiddenFromHistory
+		historyProperties.add("organization");
+
+	// handle bricsnet.localize
+	// handle bricsnet.validate
+	// bricsnet.hiddenFromHistory
+		historyProperties.add("addressOne");
+
+	// handle bricsnet.localize
+	// handle bricsnet.validate
+	// bricsnet.hiddenFromHistory
+		historyProperties.add("addressTwo");
+
+	// handle bricsnet.localize
+	// handle bricsnet.validate
+	// bricsnet.hiddenFromHistory
+		historyProperties.add("city");
+
+	// handle bricsnet.localize
+	// handle bricsnet.validate
+	// bricsnet.hiddenFromHistory
+		historyProperties.add("state");
+
+	// handle bricsnet.localize
+	// handle bricsnet.validate
+	// bricsnet.hiddenFromHistory
+		historyProperties.add("country");
+
+	// handle bricsnet.localize
+	// handle bricsnet.validate
+	// bricsnet.hiddenFromHistory
+		historyProperties.add("postalCode");
+
+	// handle bricsnet.localize
+	// handle bricsnet.validate
+	// bricsnet.hiddenFromHistory
+		historyProperties.add("phone");
+
+	// handle bricsnet.localize
+	// handle bricsnet.validate
+	// bricsnet.hiddenFromHistory
+		historyProperties.add("fax");
+
+	// handle bricsnet.localize
+	// handle bricsnet.validate
+	// bricsnet.hiddenFromHistory
+		historyProperties.add("email");
+
+	// handle bricsnet.localize
+	// handle bricsnet.validate
+	// bricsnet.hiddenFromHistory
+
+	// handle bricsnet.localize
+	// handle bricsnet.validate
+	// bricsnet.hiddenFromHistory
+
+	// handle bricsnet.localize
+	// handle bricsnet.validate
+	// bricsnet.hiddenFromHistory
+		historyProperties.add("deleteStatus");
+
+	// handle bricsnet.localize
+		formatMap.put("lastUpdatedBy", "#"); // java.lang.Integer
+	// handle bricsnet.validate
+	// bricsnet.hiddenFromHistory
+
+	// handle bricsnet.localize
+	// handle bricsnet.validate
+	// bricsnet.hiddenFromHistory
+
+	// handle bricsnet.localize
+	// handle bricsnet.validate
+	// bricsnet.hiddenFromHistory
+
+	}
+
+	@Transient
+public java.util.Map<String, String> getFormatMap() {
+		//TODO:DTO is Auditable, delete the lines in the merge method that are showing errors and leave the rest.
+ merge();
+		return formatMap;
+	}
+	@Transient
+public java.util.Map<String, Integer> getMaxLengthsMap() {
+		merge();
+		return maxLengths;
+	}
+	@Transient
+public java.util.Map<String, Number> getMaxValuesMap() {
+		merge();
+		return maxValues;
+	}
+	@Transient
+public java.util.Map<String, Number> getMinValuesMap() {
+		merge();
+		return minValues;
+	}
+	// only Auditable objects really need to implement this, 
+	// but it's simpler to just give it to everybody
+	@Transient
+public java.util.Set<String> getHistoryProperties() {
+		merge();
+		return historyProperties;
+	}
+	private synchronized void merge() {
+		if(merged) return;
+			formatMap.putAll(super.getFormatMap());
+			maxLengths.putAll(super.getMaxLengthsMap());
+			maxValues.putAll(super.getMaxValuesMap());
+			minValues.putAll(super.getMinValuesMap());
+			historyProperties.addAll(super.getHistoryProperties());
+		merged = true;
+	}
+
+}

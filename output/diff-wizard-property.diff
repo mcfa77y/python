@@ -1,0 +1,1606 @@
+14a15,110
+>     <form-bean
+>       name="PropertyFinancialsImportForm"
+>       type="com.bricsnet.property.web.forms.PropertyFinancialsImportForm"
+>     />
+>     <form-bean
+>       name="AttachWorkOrderForm"
+>       type="com.bricsnet.property.web.forms.AttachWorkOrderForm"
+>     />
+>     <form-bean
+>       name="PropertyCampusForm"
+>       type="com.bricsnet.property.web.forms.PropertyCampusForm"
+>     />
+>     <form-bean
+>       name="ChargeForm"
+>       type="com.bricsnet.property.web.forms.ChargeForm"
+>     />
+>     <form-bean
+>       name="AttachedWorkOrdersListForm"
+>       type="com.bricsnet.property.web.forms.AttachedWorkOrdersListForm"
+>     />
+>     <form-bean
+>       name="HistoryForm"
+>       type="com.bricsnet.property.web.forms.HistoryForm"
+>     />
+>     <form-bean
+>       name="PaymentBatchForm"
+>       type="com.bricsnet.property.web.forms.PaymentBatchForm"
+>     />
+>     <form-bean
+>       name="PropertyCompareForm"
+>       type="com.bricsnet.property.web.forms.PropertyCompareForm"
+>     />
+>     <form-bean
+>       name="PropertyCampusSummaryForm"
+>       type="com.bricsnet.property.web.forms.PropertyCampusSummaryForm"
+>     />
+>     <form-bean
+>       name="PropertyPaymentForm"
+>       type="com.bricsnet.property.web.forms.PropertyPaymentForm"
+>     />
+>     <form-bean
+>       name="PaymentListForm"
+>       type="com.bricsnet.property.web.forms.PaymentListForm"
+>     />
+>     <form-bean
+>       name="ChargeTermsListForm"
+>       type="com.bricsnet.property.web.forms.ChargeTermsListForm"
+>     />
+>     <form-bean
+>       name="RelatedWorkOrderListForm"
+>       type="com.bricsnet.property.web.forms.RelatedWorkOrderListForm"
+>     />
+>     <form-bean
+>       name="PropertyBudgetListForm"
+>       type="com.bricsnet.property.web.forms.PropertyBudgetListForm"
+>     />
+>     <form-bean
+>       name="PropertyChargeForm"
+>       type="com.bricsnet.property.web.forms.PropertyChargeForm"
+>     />
+>     <form-bean
+>       name="PropertyBudgetForm"
+>       type="com.bricsnet.property.web.forms.PropertyBudgetForm"
+>     />
+>     <form-bean
+>       name="ChargeCopyForm"
+>       type="com.bricsnet.property.web.forms.ChargeCopyForm"
+>     />
+>     <form-bean
+>       name="PropertyListForm"
+>       type="com.bricsnet.property.web.forms.PropertyListForm"
+>     />
+>     <form-bean
+>       name="PropertyCharacteristicForm"
+>       type="com.bricsnet.property.web.forms.PropertyCharacteristicForm"
+>     />
+>     <form-bean
+>       name="PropertyAmenityForm"
+>       type="com.bricsnet.property.web.forms.PropertyAmenityForm"
+>     />
+>     <form-bean
+>       name="PropertyParcelTaxForm"
+>       type="com.bricsnet.property.web.forms.PropertyParcelTaxForm"
+>     />
+>     <form-bean
+>       name="ChargeOverviewForm"
+>       type="com.bricsnet.property.web.forms.ChargeOverviewForm"
+>     />
+>     <form-bean
+>       name="PropertyForm"
+>       type="com.bricsnet.property.web.forms.PropertyForm"
+>     />
+>     <form-bean
+>       name="PropertyParcelForm"
+>       type="com.bricsnet.property.web.forms.PropertyParcelForm"
+>     />
+48a145,1262
+>     <action
+>       path="/DetachWorkOrderStore"
+>       type="com.bricsnet.property.web.actions.DetachWorkOrderStoreAction"
+>       name="AttachWorkOrderForm"
+>       scope="request"
+>       input="AttachedWorkOrderList.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/AttachedWorkOrdersListLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyCampusInfoLoad"
+>       type="com.bricsnet.property.web.actions.PropertyCampusInfoLoadAction"
+>       name="PropertyCampusForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyCampusInfoPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyParcelLoad"
+>       type="com.bricsnet.property.web.actions.PropertyParcelLoadAction"
+>       name="PropertyParcelForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyParcel.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ExpPaymentGlobalListLoad"
+>       type="com.bricsnet.property.web.actions.ExpPaymentGlobalListLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/ExpPaymentGlobalList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyBudgetListLoad"
+>       type="com.bricsnet.property.web.actions.PropertyBudgetListLoadAction"
+>       name="PropertyBudgetListForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyBudgetList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PaymentBatchListLoad"
+>       type="com.bricsnet.property.web.actions.PaymentBatchListLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/PaymentBatchList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyListAjaxLoad"
+>       type="com.bricsnet.property.web.actions.PropertyListAjaxLoadAction"
+>       name="PropertyListForm"
+>       scope="request"
+>       input="/PropertyListAjax.jsp"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyListAjax.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success_advanced_search"
+>         path="/PropertyListAjax.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyDatasheetModify"
+>       type="com.bricsnet.property.web.actions.PropertyDatasheetModifyAction"
+>       name="PropertyForm"
+>       scope="session"
+>       input="/PropertyDatasheet.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyDatasheet.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyBudgetNew"
+>       type="com.bricsnet.property.web.actions.PropertyBudgetNewAction"
+>       name="PropertyBudgetForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyBudget.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ChargeOverviewStore"
+>       type="com.bricsnet.property.web.actions.ChargeOverviewStoreAction"
+>       name="ChargeOverviewForm"
+>       scope="session"
+>       input="/ChargeExpenseOverview.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success_expense"
+>         path="/ChargeOverviewLoad.do"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success_income"
+>         path="/ChargeOverviewLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ChargeTermsListStore"
+>       type="com.bricsnet.property.web.actions.ChargeTermsListStoreAction"
+>       name="ChargeTermsListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/ChargeTermsListLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyParcelTaxStore"
+>       type="com.bricsnet.property.web.actions.PropertyParcelTaxStoreAction"
+>       name="PropertyParcelTaxForm"
+>       scope="session"
+>       input="/PropertyParcelTax.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyParcelLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/HistoryLoad"
+>       type="com.bricsnet.property.web.actions.HistoryLoadAction"
+>       name="HistoryForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/History.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/RelatedWorkOrderListLoad"
+>       type="com.bricsnet.property.web.actions.RelatedWorkOrderListLoadAction"
+>       name="RelatedWorkOrderListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/RelatedWorkOrderList.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success_advanced_search"
+>         path="/AdvancedSearch.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyInfoLoad"
+>       type="com.bricsnet.property.web.actions.PropertyInfoLoadAction"
+>       name="PropertyForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyInfoPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyParcelListLoad"
+>       type="com.bricsnet.property.web.actions.PropertyParcelListLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyParcelList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyCharacteristicLoad"
+>       type="com.bricsnet.property.web.actions.PropertyCharacteristicLoadAction"
+>       name="PropertyCharacteristicForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyCharacteristic.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/IncPaymentGlobalListLoad"
+>       type="com.bricsnet.property.web.actions.IncPaymentGlobalListLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/IncPaymentGlobalList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyBudgetDelete"
+>       type="com.bricsnet.property.web.actions.PropertyBudgetDeleteAction"
+>       name="PropertyBudgetForm"
+>       scope="session"
+>       input="/PropertyBudgetList.jsp"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyBudgetListLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyBudgetCopy"
+>       type="com.bricsnet.property.web.actions.PropertyBudgetCopyAction"
+>       name="PropertyBudgetForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyBudgetCopyPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyAmenityListLoad"
+>       type="com.bricsnet.property.web.actions.PropertyAmenityListLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyAmenityList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/AttachWorkOrderStore"
+>       type="com.bricsnet.property.web.actions.AttachWorkOrderStoreAction"
+>       name="AttachWorkOrderForm"
+>       scope="request"
+>       input="AttachWorkOrderSelectPopup.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/CloseRefreshParent.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ChargeCopyLoad"
+>       type="com.bricsnet.property.web.actions.ChargeCopyLoadAction"
+>       name="ChargeCopyForm"
+>       scope="session"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/ChargeCopyPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyBudgetUpdate"
+>       type="com.bricsnet.property.web.actions.PropertyBudgetUpdateAction"
+>       name="PropertyBudgetForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyBudget.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyCampusLoad"
+>       type="com.bricsnet.property.web.actions.PropertyCampusLoadAction"
+>       name="PropertyCampusForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyCampus.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyCampusStore"
+>       type="com.bricsnet.property.web.actions.PropertyCampusStoreAction"
+>       name="PropertyCampusForm"
+>       scope="session"
+>       input="/PropertyCampus.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyCampusSummaryLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/AttachedWorkOrdersListLoad"
+>       type="com.bricsnet.property.web.actions.AttachedWorkOrdersListLoadAction"
+>       name="AttachedWorkOrdersListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/AttachedWorkOrdersList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PaymentBatchLoad"
+>       type="com.bricsnet.property.web.actions.PaymentBatchLoadAction"
+>       name="PaymentBatchForm"
+>       scope="session"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/PaymentBatch.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/NewOneTimePaymentStore"
+>       type="com.bricsnet.property.web.actions.NewOneTimePaymentStoreAction"
+>       name="PropertyPaymentForm"
+>       scope="session"
+>       input="/NewOneTimePayment.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/ChargePaymentListLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyBudgetStore"
+>       type="com.bricsnet.property.web.actions.PropertyBudgetStoreAction"
+>       name="PropertyBudgetForm"
+>       scope="session"
+>       input="/PropertyBudget.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyBudgetListLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/frag/ClassificationSearchFrag"
+>       type="com.bricsnet.property.web.actions.ClassificationSearchFragAction"
+>       name="ClassificationForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/ClassificationSearch.frag.tree.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/NewOneTimePaymentLoad"
+>       type="com.bricsnet.property.web.actions.NewOneTimePaymentLoadAction"
+>       name="PropertyPaymentForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/NewOneTimePayment.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyChargeInfoLoad"
+>       type="com.bricsnet.property.web.actions.PropertyChargeInfoLoadAction"
+>       name="PropertyChargeForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyChargeInfoPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyBudgetCopyStore"
+>       type="com.bricsnet.property.web.actions.PropertyBudgetCopyStoreAction"
+>       name="PropertyBudgetForm"
+>       scope="session"
+>       input="/PropertyBudgetCopyPopup.jsp"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyBudgetRefresh.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyAmenityDatasheetStore"
+>       type="com.bricsnet.property.web.actions.PropertyAmenityDatasheetStoreAction"
+>       name="PropertyAmenityForm"
+>       scope="session"
+>       input="/PropertyAmenityDatasheet.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyAmenityListLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/ChargeCopyStore"
+>       type="com.bricsnet.property.web.actions.ChargeCopyStoreAction"
+>       name="ChargeCopyForm"
+>       scope="session"
+>       input="/ChargeCopyPopup.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/CloseRefreshParent.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyCampusAjaxListLoad"
+>       type="com.bricsnet.property.web.actions.PropertyCampusListAjaxLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyCampusListAjax.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyRelatedRequestListLoad"
+>       type="com.bricsnet.property.web.actions.PropertyRelatedRequestListLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyRelatedRequestList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/AttachWorkOrderSelectPopupLoad"
+>       type="com.bricsnet.property.web.actions.AttachWorkOrderSelectPopupLoadAction"
+>       name="AttachedWorkOrdersListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/AttachWorkOrderSelectPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyParcelTaxLoad"
+>       type="com.bricsnet.property.web.actions.PropertyParcelTaxLoadAction"
+>       name="PropertyParcelTaxForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyParcelTax.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ChargeOverviewModify"
+>       type="com.bricsnet.property.web.actions.ChargeOverviewModifyAction"
+>       name="ChargeOverviewForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success_expense"
+>         path="/ChargeExpenseOverview.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success_income"
+>         path="/ChargeIncomeOverview.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyParcelTaxModify"
+>       type="com.bricsnet.property.web.actions.PropertyParcelTaxModifyAction"
+>       name="PropertyParcelTaxForm"
+>       scope="session"
+>       input="/PropertyParcelTax.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyParcelTax.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ChargeUpdate"
+>       type="com.bricsnet.property.web.actions.ChargeUpdateAction"
+>       name="ChargeForm"
+>       scope="session"
+>       input="/Charge.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/Charge.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyCampusListLoad"
+>       type="com.bricsnet.property.web.actions.PropertyCampusListLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyCampusList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyCampusSummaryLoad"
+>       type="com.bricsnet.property.web.actions.PropertyCampusSummaryLoadAction"
+>       name="PropertyCampusSummaryForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyCampusSummary.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="nullid"
+>         path="/PropertyCampusListLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/ChargePaymentListLoad"
+>       type="com.bricsnet.property.web.actions.ChargePaymentListLoadAction"
+>       name="PaymentListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/ChargePaymentList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ChargePaymentScheduleLoad"
+>       type="com.bricsnet.property.web.actions.ChargePaymentScheduleLoadAction"
+>       name="ChargeForm"
+>       scope="session"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/ChargePaymentScheduleList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyAmenityDatasheetLoad"
+>       type="com.bricsnet.property.web.actions.PropertyAmenityDatasheetLoadAction"
+>       name="PropertyAmenityForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyAmenityDatasheet.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ChargeStore"
+>       type="com.bricsnet.property.web.actions.ChargeStoreAction"
+>       name="ChargeForm"
+>       scope="session"
+>       input="/Charge.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/ChargeTermsListLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ChargePaymentDetailStore"
+>       type="com.bricsnet.property.web.actions.ChargePaymentDetailStoreAction"
+>       name="PropertyPaymentForm"
+>       scope="session"
+>       input="/ChargePaymentDetails.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/ChargePaymentListLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/ClassificationSearch"
+>       type="com.bricsnet.property.web.actions.ClassificationSearchAction"
+>       name="ClassificationForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/ClassificationSearch.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/AdhocLoad"
+>       type="com.bricsnet.property.web.actions.AdhocLoadAction"
+>       name="AdhocForm"
+>       scope="session"
+>       input="/Adhoc.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/Adhoc.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success-payment"
+>         path="/AdhocPayment.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         contextRelative="false"
+>         module="/"
+>         name="failure"
+>         path="/AdhocListLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ChargeLoad"
+>       type="com.bricsnet.property.web.actions.ChargeLoadAction"
+>       name="ChargeForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/Charge.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyCompareLoad"
+>       type="com.bricsnet.property.web.actions.PropertyCompareLoadAction"
+>       name="PropertyCompareForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyCompare.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyCharacteristicStore"
+>       type="com.bricsnet.property.web.actions.PropertyCharacteristicStoreAction"
+>       name="PropertyCharacteristicForm"
+>       scope="session"
+>       input="/PropertyCharacteristic.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyCharacteristicsListLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyFinancialsImportStore"
+>       type="com.bricsnet.property.web.actions.PropertyFinancialsImportStoreAction"
+>       name="PropertyFinancialsImportForm"
+>       scope="session"
+>       input="/PropertyFinancialsImport.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyFinancialsImport.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ChargeOverviewLoad"
+>       type="com.bricsnet.property.web.actions.ChargeOverviewLoadAction"
+>       name="ChargeOverviewForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success_expense"
+>         path="/ChargeExpenseOverview.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success_income"
+>         path="/ChargeIncomeOverview.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyCampusSelectPopupLoad"
+>       type="com.bricsnet.property.web.actions.PropertyCampusSelectPopupLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyCampusSelectPopup.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="error"
+>         path="/PropertyCampusSelectPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyParcelStore"
+>       type="com.bricsnet.property.web.actions.PropertyParcelStoreAction"
+>       name="PropertyParcelForm"
+>       scope="session"
+>       input="/PropertyParcel.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyParcelListLoad.do"
+>         redirect="false"
+>       />
+>       <forward
+>         name="add_tax"
+>         path="/PropertyParcelTaxLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyDatasheetStore"
+>       type="com.bricsnet.property.web.actions.PropertyDatasheetStoreAction"
+>       name="PropertyForm"
+>       scope="session"
+>       input="/PropertyDatasheet.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySummaryLoad.do"
+>         redirect="true"
+>       />
+>       <forward
+>         contextRelative="true"
+>         module="/txmanager"
+>         name="success-associate-transaction"
+>         path="/TransactionLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyCharacteristicsListLoad"
+>       type="com.bricsnet.property.web.actions.PropertyCharacteristicsListLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyCharacteristicsList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ChargeSelectPopupLoad"
+>       type="com.bricsnet.property.web.actions.ChargeSelectPopupLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/ChargeSelectPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/WorkOrderDetailLoad"
+>       type="com.bricsnet.property.web.actions.WorkOrderDetailLoadAction"
+>       name="PropertyPaymentForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/ChargePaymentDetails.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyRelatedProjectListLoad"
+>       type="com.bricsnet.property.web.actions.PropertyRelatedProjectListLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyRelatedProjectList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyBudgetLoad"
+>       type="com.bricsnet.property.web.actions.PropertyBudgetLoadAction"
+>       name="PropertyBudgetForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyBudget.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyFinancialsImportLoad"
+>       type="com.bricsnet.property.web.actions.PropertyFinancialsImportLoadAction"
+>       name="PropertyFinancialsImportForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyFinancialsImport.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyListLoad"
+>       type="com.bricsnet.property.web.actions.PropertyListLoadAction"
+>       name="PropertyListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyList.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success_advanced_search"
+>         path="/AdvancedSearch.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyRelatedAssetListLoad"
+>       type="com.bricsnet.property.web.actions.PropertyRelatedAssetListLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyRelatedAssetList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyDatasheetLoad"
+>       type="com.bricsnet.property.web.actions.PropertyDatasheetLoadAction"
+>       name="PropertyForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertyDatasheet.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertySummaryLoad"
+>       type="com.bricsnet.property.web.actions.PropertySummaryLoadAction"
+>       name="PropertyForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PropertySummary.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ChargePaymentDetailLoad"
+>       type="com.bricsnet.property.web.actions.ChargePaymentDetailLoadAction"
+>       name="PropertyPaymentForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/ChargePaymentDetails.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ChargeTermsListLoad"
+>       type="com.bricsnet.property.web.actions.ChargeTermsListLoadAction"
+>       name="ChargeTermsListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success_expense"
+>         path="/ChargeExpenseTermsList.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success_income"
+>         path="/ChargeIncomeTermsList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PropertyRelatedTransactionListLoad"
+>       type="com.bricsnet.property.web.actions.PropertyRelatedTransactionListLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="core"
+>         path="/PropertyRelatedTransactionList.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="lease"
+>         path="/lease/RelatedTransactionList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+60c1274,1280
+<     <!-- $Id: struts-message-resources.xml 40267 2010-10-08 12:14:33Z rkumar $ -->
+---
+>     <!-- $Id: struts-message-resources.xml 42127 2011-08-31 08:58:21Z mjanardhan $ -->
+> 
+>     <!-- Resources from legacy -->
+>     <message-resources parameter="legacy.fieldvaluelabels"
+>                        key="legacy.fieldvaluelabels"
+>                        null="false"
+>                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+64a1285,1286
+>     <message-resources parameter="Action"  key="core.action"  null="false"
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+66a1289,1290
+>     <message-resources parameter="common-action" key="core.common-action" null="false"
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+83c1307
+<     <message-resources parameter="month" key="month" null="false"
+---
+>     <message-resources parameter="month" key="core.month" null="false"
+95,100c1319
+< 
+<     <message-resources parameter="generalLedgerCode-type" key="generalLedgerCode-type" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="schedule-status" key="core.schedule-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="task-status" key="task-status" null="false"
+---
+>     <message-resources parameter="charge-type" key="propertyCharge-typeId" null="false"
+102c1321
+<     <message-resources parameter="task-periodStatus" key="task-periodStatus" null="false"
+---
+>     <message-resources parameter="payment-creditCardType" key="propertyPayment-creditType" null="false"
+104c1323
+<     <message-resources parameter="task-priority" key="task-priority" null="false"
+---
+>     <message-resources parameter="payment-paymentMethod" key="propertyPayment-paymentMethod" null="false"
+120,128c1339
+<     <message-resources parameter="property.property-status" key="property-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+< 
+<     <!-- Standard resources -->
+<     <message-resources parameter="project.label"  null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.label"  key="label"  null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.header" key="header" null="false"
+---
+>     <message-resources parameter="docmanager.label"  key="doc-label"  null="false"
+130,132c1341
+<     <message-resources parameter="project.action"  key="action"  null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.navigation" key="navigation" null="false"
+---
+>     <message-resources parameter="txmanager.label"  key="tx-label"  null="false"
+135,152c1344,1345
+<     <!-- Resources which are enums for a specific column -->
+<     <message-resources parameter="project.project-status"
+<         key="project-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.project-type" key="project-type"
+<         null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.project-geographicScope"
+<         key="project-geographicScope" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.project-riskRating"
+<         key="project-riskRating" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.project-revenueType"
+<         key="project-revenueType" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.project-clientStatus"
+<         key="project-clientStatus" null="false"
+---
+>     <!-- Standard resources -->
+>     <message-resources parameter="property.label"  null="false"
+154,155c1347
+<     <message-resources parameter="project.account-type"
+<         key="account-type" null="false"
+---
+>     <message-resources parameter="property.label"  key="label"  null="false"
+157,158c1349
+<     <message-resources parameter="project.budget-type"
+<         key="budget-type" null="false"
+---
+>     <message-resources parameter="property.label"  key="property.label"  null="false"
+160,161c1351
+<     <message-resources parameter="project.budget-status"
+<         key="budget-status" null="false"
+---
+>     <message-resources parameter="property.header" key="header" null="false"
+163,164c1353
+<     <message-resources parameter="project.commitment-status"
+<         key="commitment-status" null="false"
+---
+>     <message-resources parameter="property.action"  key="action"  null="false"
+166,167c1355
+<     <message-resources parameter="project.commitment-type"
+<         key="commitment-type" null="false"
+---
+>     <message-resources parameter="property.property-status" key="property-status" null="false"
+169,170c1357
+<     <message-resources parameter="project.invoice-status"
+<         key="invoice-status" null="false"
+---
+>     <message-resources parameter="property.property-status" key="property.property-status" null="false"
+172,173c1359
+<     <message-resources parameter="project.invoice-disputecategory"
+<         key="invoice-disputecategory" null="false"
+---
+>     <message-resources parameter="property.property-type" key="property-type" null="false"
+175,176c1361
+<     <message-resources parameter="project.invoice-type"
+<         key="invoice-type" null="false"
+---
+>     <message-resources parameter="property.property-type" key="property.property-type" null="false"
+178,179c1363
+<     <message-resources parameter="project.overstock-status"
+<         key="overstock-status" null="false"
+---
+>     <message-resources parameter="property.property-ownershipType" key="property-ownershipType" null="false"
+181,182c1365
+<     <message-resources parameter="project.overstock-unit"
+<         key="overstock-unit" null="false"
+---
+>     <message-resources parameter="property.property-ownershipType" key="property.property-ownershipType" null="false"
+184,185c1367
+<     <message-resources parameter="project.training-status"
+<         key="training-status" null="false"
+---
+>     <message-resources parameter="property.property-constructionType" key="property-constructionType" null="false"
+187,188c1369
+<     <message-resources parameter="project.training-type"
+<         key="training-type" null="false"
+---
+>     <message-resources parameter="property.property-zoning" key="property-zoning" null="false"
+190,191c1371
+<     <message-resources parameter="project.payment-status"
+<         key="payment-status" null="false"
+---
+>     <message-resources parameter="property.property-buildingClass" key="property-buildingClass" null="false"
+193,194c1373
+<     <message-resources parameter="project.payment-type"
+<         key="payment-type" null="false"
+---
+>     <message-resources parameter="property.property-landType" key="property-landType" null="false"
+196,197c1375
+<     <message-resources parameter="payment-paymentMethod"
+<         key="payment-paymentMethod" null="false"
+---
+>     <message-resources parameter="property.property-fiscalYearTypes" key="property-fiscalYearTypes" null="false"
+199,200c1377
+<     <message-resources parameter="payment-creditCardType"
+<         key="payment-creditCardType" null="false"
+---
+>     <message-resources parameter="property.property-ledgerImportType" key="property-ledgerImportType" null="false"
+202,203c1379
+<     <message-resources parameter="project.rfp-status"
+<         key="rfp-status" null="false"
+---
+>     <message-resources parameter="property.property-useType" key="property-useType" null="false"
+205,206c1381
+<     <message-resources parameter="project.bid-type"
+<         key="bid-type" null="false"
+---
+>     <message-resources parameter="property.property-useType" key="property.property-useType" null="false"
+208,209c1383
+<     <message-resources parameter="project.bid-status"
+<         key="bid-status" null="false"
+---
+>     <message-resources parameter="property.property-spaceAllocationType" key="property-spaceAllocationType" null="false"
+211,212c1385
+<     <message-resources parameter="project.project-scorecard"
+<         key="project-scorecard" null="false"
+---
+>     <message-resources parameter="property.property-spaceRateType" key="property-spaceRateType" null="false"
+214,215c1387
+<     <message-resources parameter="project.spendYear-isDraft"
+<         key="spendYear-isDraft" null="false"
+---
+>     <message-resources parameter="property.property-spaceVarianceType" key="property-spaceVarianceType" null="false"
+217,218c1389
+<     <message-resources parameter="project.projectInspection-status"
+<         key="projectInspection-status" null="false"
+---
+>     <message-resources parameter="property.property-unitLand" key="property-unitLand" null="false"
+220,221c1391
+<     <message-resources parameter="project.projectInspectionRemediation-status"
+<         key="projectInspectionRemediation-status" null="false"
+---
+>     <message-resources parameter="property.property-unitStructure" key="property-unitStructure" null="false"
+223,224c1393
+<     <message-resources parameter="project.projectSubmittal-status"
+<         key="projectSubmittal-status" null="false"
+---
+>     <message-resources parameter="property.property-unitBuilding" key="property-unitBuilding" null="false"
+226,227c1395
+<     <message-resources parameter="project.projectSubmittal-status"
+<         key="projectSubmittalPackage-status" null="false"
+---
+>     <message-resources parameter="property.property-leaseAuthority" key="property-leaseAuthority" null="false"
+229,230c1397
+<     <message-resources parameter="project.projectSubmittalApprover-status"
+<         key="projectSubmittalApprover-status" null="false"
+---
+>     <message-resources parameter="property.property-historicalStatus" key="property-historicalStatus" null="false"
+232,233c1399
+<     <message-resources parameter="project.projectCommitmentApprover-status"
+<         key="projectCommitmentApprover-status" null="false"
+---
+>     <message-resources parameter="property.property-utilization" key="property-utilization" null="false"
+235,236c1401
+<     <message-resources parameter="project.discipline"
+<         key="discipline" null="false"
+---
+>     <message-resources parameter="property.property-missionDependency" key="property-missionDependency" null="false"
+238,239c1403
+<     <message-resources parameter="project.discipline"
+<         key="projectSubmittal-disciplineId" null="false"
+---
+>     <message-resources parameter="property.property-restriction" key="property-restriction" null="false"
+241,242c1405
+<     <message-resources parameter="project.discipline"
+<         key="projectSubmittalPackage-disciplineId" null="false"
+---
+>     <message-resources parameter="property.property-dispositionMethod" key="property-dispositionMethod" null="false"
+244,245c1407
+<     <message-resources parameter="project.projectRequirement-type"
+<         key="projectRequirement-type" null="false"
+---
+>     <message-resources parameter="property.property-sustainability" key="property-sustainability" null="false"
+247,248c1409
+<     <message-resources parameter="project.projectRequirement-status"
+<         key="projectRequirement-status" null="false"
+---
+>     <message-resources parameter="property.property-outgrant" key="property-outgrant" null="false"
+250,251c1411
+<     <message-resources parameter="project.projectDamage-status"
+<         key="projectDamage-status" null="false"
+---
+>     <message-resources parameter="property.property-accessType" key="property-accessType" null="false"
+253,254c1413
+<     <message-resources parameter="project.projectDamage-resolutionType"
+<         key="projectDamage-resolutionType" null="false"
+---
+>         <message-resources parameter="property.property-operatingDays" key="property-operatingDays" null="false"
+257,260c1416,1417
+<     <!-- Issue Module -->
+<     <message-resources parameter="project.issue-status"
+<                        key="issue-status"
+<                        null="false"
+---
+>     <!-- Property budgets -->
+>     <message-resources parameter="property.propertyBudget-status" key="propertyBudget-status" null="false"
+262,265c1419
+< 
+<     <message-resources parameter="project.issue-type"
+<                        key="issue-type"
+<                        null="false"
+---
+>     <message-resources parameter="property.propertyBudget-copyType" key="propertyBudget-copyType" null="false"
+268,271c1422,1433
+<     <message-resources parameter="project.issueeventaction-type"
+<                        key="issueeventaction-type"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+---
+> <!-- Related Work Order -->
+>     <message-resources parameter="workorder.workOrder-responsibility" key="workOrder-responsibility" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="workorder.workOrder-skillRequired" key="workOrder-skillRequired" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="workorder.workOrder-laborGroup" key="workOrder-laborGroup" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="workorder.workOrder-certification" key="workOrder-certification" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="workorder.workOrder-status" key="workOrder-status" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="workorder.workOrder-maintenanceType" key="workOrder-maintenanceType" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="workorder.priorityLevel" key="workOrder-priorityLevel" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="workorder.workOrder-timeConstraints" key="workOrder-timeConstraints" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="workorder.workOrder-requestSeverity" key="workOrder-requestSeverity" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="workorder.request-status" key="request-status" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="workorder.request-severity" key="request-severity" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+273,276c1435,1439
+<     <message-resources parameter="project.issueevent-type"
+<                        key="issueevent-type"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+---
+>     <message-resources parameter="workorder.workOrder-declineReason" key="workOrder-declineReason" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="workorder.workOrder-closeType" key="workOrder-closeType" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="workorder.workOrder-faultCode" key="workOrder-faultCode" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="workorder.workOrder-ratingType" key="workOrder-ratingType" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="workorder.workOrder-delayReason" key="workOrder-delayReason" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+278,282c1441
+<     <!-- Contract Module -->
+<     <message-resources parameter="project.contract-status"
+<                        key="contract-status"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+---
+>     <!-- Resources which are enums for a specific column -->
+294d1452
+< 
+300,301c1458,1460
+<     <message-resources parameter="space.propertySpaceRequest-status"
+<                        key="propertySpaceRequest-status"
+---
+>     <!-- Characteristic -->
+>     <message-resources parameter="property.characteristic-type"
+>                        key="characteristic-type"
+305,306c1464,1466
+<     <message-resources parameter="space.propertySpaceRequest-type"
+<                        key="propertySpaceRequest-type"
+---
+>     <!-- property related project -->
+>     <message-resources parameter="project.project-status"
+>                        key="project-status"
+309,311c1469,1470
+< 
+<     <message-resources parameter="txmanager.tx-status"
+<                        key="tx-status"
+---
+>     <message-resources parameter="project.project-type"
+>                        key="project-type"
+314,315c1473,1476
+<     <message-resources parameter="txmanager.tx-type"
+<                        key="tx-type"
+---
+> 
+>                        <!-- property related request -->
+>     <message-resources parameter="workorder.request-status"
+>                        key="request-status"
+318,319c1479,1480
+<     <message-resources parameter="pipeline.opportunity-type"
+<                        key="opportunity-type"
+---
+>     <message-resources parameter="workorder.request-severity"
+>                        key="request-severity"
+322,324c1483,1485
+<     <message-resources parameter="pipeline.opportunity-status"
+<                        key="opportunity-status"
+<                        null="false"
+---
+> 
+>     <!-- PropertyPayment Bundles -->
+>     <message-resources parameter="property.propertyPayment-status" key="propertyPayment-status" null="false"
+326,328c1487,1491
+< 	<message-resources parameter="priority-rating"
+<                        key="priority-factor-ratings"
+<                        null="false"
+---
+>     <message-resources parameter="charge-type" key="propertyPaymentCharge-type" null="false"
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="property.propertyCharge-status" key="propertyCharge-status" null="false"
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="property.propertyPayment-period" key="propertyPayment-period" null="false"
+330,331c1493,1518
+<     <message-resources parameter="project.schedulevalue-status"
+<                        key="schedulevalue-status"
+---
+>     <message-resources parameter="property.propertyPayment-paymentMethod" key="propertyPayment-paymentMethod" null="false"
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="property.propertyPayment-paymentType" key="propertyPayment-paymentType" null="false"
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="workorder.workOrder-landlordResponsibility" key="workOrder-landlordResponsibility" null="false"
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+> 
+>     <!-- PropertyCharge Bundles -->
+>     <message-resources parameter="property.propertyCharge-proRataVar" key="propertyCharge-proRataVar" null="false"
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="property.propertyCharge-proRataStd" key="propertyCharge-proRataStd" null="false"
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+> 
+>         <!-- Property Campus -->
+>     <message-resources parameter="property.campus-landSizeUnit" key="campus-landSizeUnit" null="false"
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+> 
+>     <!-- Property Parcel Tax Assessment -->
+>     <message-resources parameter="property.propertyParcelTaxAssessment-assessmentType" key="propertyParcelTaxAssessment-assessmentType" null="false"
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="property.propertyParcelTaxAssessment-taxType" key="propertyParcelTaxAssessment-taxType" null="false"
+>         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+> 
+>     <!-- Assets -->
+>     <message-resources parameter="asset.legacyAsset-ownershipType"
+>                        key="asset-ownershipType"
+334,335c1521,1522
+<    <message-resources parameter="project.schedule-earningrule"
+<                        key="schedule-earningrule"
+---
+>     <message-resources parameter="asset.legacyAsset-locationStatus"
+>                        key="asset-locationStatus"

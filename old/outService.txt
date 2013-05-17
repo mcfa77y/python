@@ -1,0 +1,319 @@
+/*
+ * $Id: DirectoryEntryServiceEJB.java 41186 2011-04-14 16:43:43Z jlau $
+ */
+package com.bricsnet.core.dal.person;
+import com.bricsnet.core.util.model.ServiceException;
+import com.bricsnet.core.util.hibernate.ThreadUserPrincipal;
+import com.bricsnet.core.util.impl.service.AbstractChild1BizObjectService;
+
+import java.util.List;
+
+
+import javax.ejb.SessionBean;
+import javax.ejb.SessionContext;
+
+import com.bricsnet.core.entity.person.DirectoryEntryLocal;
+import com.bricsnet.core.entity.person.DirectoryEntryUtil;
+import com.bricsnet.core.util.Constants;
+import com.bricsnet.core.util.model.type.BizObject;
+import com.bricsnet.core.util.model.type.ChildObject;
+import com.bricsnet.core.util.observer.BusinessObjectObserver;
+import com.bricsnet.core.util.security.policy.BricsnetPolicy;
+import com.bricsnet.core.util.security.principal.UserPrincipal;
+import com.bricsnet.core.util.session.BaseAncillaryObjectSessionBean;
+import com.bricsnet.core.util.struts.ValidationMethod;
+
+/**
+ *
+
+
+ *           name="DirectoryEntryService" jndi-name="ejb/DirectoryEntryService"
+ *           type="Stateless" view-type="both"
+ *           display-name="DirectoryEntryServiceEJB"
+
+ *      com.bricsnet.core.util.model.service.ChildObjectService<com.bricsnet.core.entity.person.DirectoryEntryDTO>"
+
+
+ *      ejb-name="DirectoryEntry"
+ *      view-type="local"
+ *      ref-name="ejb/DirectoryEntryLocal"
+ *      link="DirectoryEntryLocal"
+ *
+ * @author <a href="mailto:david.hamilton@bricsnet.com">David J. Hamilton</a>
+ */
+public class DirectoryEntryService extends AbstractChild1BizObjectService
+         {
+
+    /**
+     * Gets a DirectoryEntryDTO object based on its id (primary key) and the
+     * isExtended boolean value. An extended dto contains all the objects that
+     * are represented by foreign keys in the table.
+     *
+     * @param id The id (primary key) of the object to get.
+     * @param isExtended If true get the extended attributes.
+     *
+
+
+     */
+    public DirectoryEntryDTO getDTO(Integer id, boolean isExtended) throws ServiceException {
+        try {
+            UserPrincipal p = ThreadUserPrincipal.getUserPrincipal();
+            DirectoryEntryDTO dto = DirectoryEntryDTOFactory.getDTO(id,
+                                                                    p,
+                                                                    isExtended);
+            BricsnetPolicy.checkPermission(p, dto);
+            return dto;
+        } catch (ServiceException e) {
+            throw e;
+        } catch (Exception e) {
+            throw new ServiceException(e);
+        }
+    }
+
+    /**
+     * Returns the list of directory entries for the root object specified by
+     * <tt>rootId</tt> and <tt>rootType</tt>, with extended attributes set
+     * IFF <tt>extended</tt> is true.
+     *
+     * @param rootId
+     * @param rootType
+     * @param extended
+     * @return
+     *
+
+
+     */
+    public List<DirectoryEntryDTO> getAllForParent(Integer rootId,
+                                                   Integer rootType,
+                                                   boolean extended) {
+        try {
+            return DirectoryEntryDTOFactory.getAllForParent(rootId,
+                                                            rootType,
+                                                            ThreadUserPrincipal.getUserPrincipal(),
+                                                            extended);
+        } catch (ServiceException e) {
+            throw e;
+        } catch (Exception e) {
+            throw new ServiceException(e);
+        }
+    }
+
+    /**
+     * Creates a new DirectoryEntryDTO with a blank custom attrib hierarchy
+     * (contains AttribGroupRefDTOs, AttribDTOs, and empty AttribValueDTOs).
+     * Does not create anything in the database, just produces a blank DTO.
+     *
+
+
+     */
+    public DirectoryEntryDTO getNewDTO() {
+        return (DirectoryEntryDTO) getNewDTO(DirectoryEntryDTO.class);
+    }
+
+    /**
+     * Convenience method for <code>create(d, null, false);</code>
+     *
+     * @see #create(BizObject, ValidationMethod[], boolean)
+
+
+     */
+    public DirectoryEntryDTO create(DirectoryEntryDTO d) throws ServiceException {
+        return create(d, null, false);
+    }
+
+    /**
+     * Creates a Directory Entry.
+     *
+
+
+     */
+    public DirectoryEntryDTO create(Object obj,
+                                    ValidationMethod[] vmethods,
+                                    boolean extended) {
+        return create((DirectoryEntryDTO) obj, vmethods, extended);
+    }
+
+    /**
+     * Creates a Directory Entry.
+     *
+
+
+     */
+    public DirectoryEntryDTO create(BizObject obj,
+                                    ValidationMethod[] vmethods,
+                                    boolean extended) {
+        return create((DirectoryEntryDTO) obj, vmethods, extended);
+    }
+
+    /**
+     * Creates a Directory Entry. Uses the localization map to set properties in
+     * the bean, but if the map is empty it will not effect the bean.
+     *
+     * @param dto Contains the data to write to the database
+
+
+     */
+    public DirectoryEntryDTO create(DirectoryEntryDTO dto,
+                                    ValidationMethod[] list,
+                                    boolean extended) {
+        try {
+            UserPrincipal p = ThreadUserPrincipal.getUserPrincipal();
+
+            BricsnetPolicy.checkPermission(p, dto);
+
+            BusinessObjectObserver.beforeCreate(dto, null, p);
+
+            DirectoryEntryDTO created;
+            created = DirectoryEntryUtil.getLocalHome().create(dto)
+                    .getDirectoryEntryDTO();
+
+            BusinessObjectObserver.afterCreate(created, null, p);
+
+            return created;
+        } catch (ServiceException e) {
+            throw e;
+        } catch (Exception e) {
+            throw new ServiceException(e);
+        }
+    }
+
+    /**
+     * Updates a Directory Entry.
+     *
+
+
+     */
+    public void update(Object obj, ValidationMethod[] vm) throws ServiceException {
+        update((DirectoryEntryDTO) obj, vm);
+    }
+
+    /**
+     * Updates a Directory Entry.
+     *
+
+
+     */
+    public void update(BizObject obj, ValidationMethod[] vm) throws ServiceException {
+        update((DirectoryEntryDTO) obj, vm);
+    }
+
+    /**
+     * Updates a Directory Entry.
+     *
+
+
+     */
+    public void update(DirectoryEntryDTO dto, ValidationMethod[] list) throws ServiceException {
+        try {
+            UserPrincipal p = ThreadUserPrincipal.getUserPrincipal();
+
+            BricsnetPolicy.checkPermission(p, dto);
+
+            DirectoryEntryDTO prior =
+                DirectoryEntryDTOFactory.getDTO(dto.getId(), null, false);
+            BusinessObjectObserver.beforeUpdate(prior, dto, null, p);
+
+            DirectoryEntryUtil.getLocalHome().findByPrimaryKey(dto.getId())
+            .setDirectoryEntryDTO(dto);
+            storeCustomAttributes(dto);
+
+            BusinessObjectObserver.afterUpdate(prior, dto, null, p);
+        } catch(ServiceException e) {
+            throw e;
+        } catch(Exception e) {
+            throw new ServiceException(e);
+        }
+    }
+
+    /**
+     * Deletes a DirectoryEntry. The record remains in the database and
+     * the delete flag is set (soft delete).
+     *
+
+
+     */
+    public void delete(Object dto) throws ServiceException {
+        delete(((DirectoryEntryDTO)dto).getId());
+    }
+
+    /**
+     * Deletes a DirectoryEntry. The record remains in the database and
+     * the delete flag is set (soft delete).
+     *
+
+
+     */
+    public void delete(BizObject dto) throws ServiceException {
+        delete(((DirectoryEntryDTO)dto).getId());
+    }
+
+    /**
+     * Deletes a DirectoryEntryDTO.
+     *
+
+
+     */
+    public void delete(DirectoryEntryDTO dto) throws ServiceException {
+        delete(dto.getId());
+    }
+
+    /**
+     * Deletes a Directory Entry.
+     *
+     * @param id The id (primary key) of the object to delete.
+     *
+
+
+     */
+    public void delete(Integer id) throws ServiceException {
+        try {
+            DirectoryEntryLocal ejb =
+                DirectoryEntryUtil.getLocalHome().findByPrimaryKey(id);
+            DirectoryEntryDTO dto = ejb.getDirectoryEntryDTO();
+            UserPrincipal p = ThreadUserPrincipal.getUserPrincipal();
+            BricsnetPolicy.checkPermission(p, dto);
+            dto.setDeleteStatus(Constants.DELETED);
+            BusinessObjectObserver.beforeRemove(dto, p);
+            ejb.setDirectoryEntryDTO(dto);
+            BusinessObjectObserver.afterRemove(dto, p);
+        } catch(ServiceException e) {
+            throw e;
+        } catch(Exception e) {
+            throw new ServiceException(e);
+        }
+    }
+
+    /**
+
+
+     */
+    public List<DirectoryEntryDTO> getChildDTOsOf(BizObject bo) throws ServiceException {
+        return getAllForParent(bo.getObjectId(), bo.getObjectType(), true);
+    }
+
+    /**
+
+
+     */
+    public DirectoryEntryDTO setParentChildReference(DirectoryEntryDTO child, BizObject parent) {
+        child.setRefObjectId(parent.getObjectId());
+        child.setRefObjectType(parent.getObjectType());
+        return child;
+    }
+
+    /**
+
+
+     */
+    public DirectoryEntryDTO setParentChildReference(ChildObject child, BizObject parent) {
+        return setParentChildReference((DirectoryEntryDTO) child, parent);
+    }
+
+    /**
+
+
+     */
+    public DirectoryEntryDTO setParentChildReference(Object child, BizObject parent) {
+        return setParentChildReference((DirectoryEntryDTO) child, parent);
+    }
+}

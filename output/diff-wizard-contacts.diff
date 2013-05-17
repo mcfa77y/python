@@ -1,0 +1,894 @@
+14a15,54
+>     <form-bean
+>       name="AssociateCostCentersForm"
+>       type="com.bricsnet.contacts.web.forms.AssociateCostCentersForm"
+>     />
+>     <form-bean
+>       name="PersonListForm"
+>       type="com.bricsnet.contacts.web.forms.PersonListForm"
+>     />
+>     <form-bean
+>       name="OrganizationHistoryForm"
+>       type="com.bricsnet.contacts.web.forms.OrganizationHistoryForm"
+>     />
+>     <form-bean
+>       name="PersonHistoryForm"
+>       type="com.bricsnet.contacts.web.forms.PersonHistoryForm"
+>     />
+>     <form-bean
+>       name="PersonForm"
+>       type="com.bricsnet.contacts.web.forms.PersonForm"
+>     />
+>     <form-bean
+>       name="OrganizationChartForm"
+>       type="com.bricsnet.contacts.web.forms.OrganizationChartForm"
+>     />
+>     <form-bean
+>       name="OrganizationForm"
+>       type="com.bricsnet.contacts.web.forms.OrganizationForm"
+>     />
+>     <form-bean
+>       name="LogonForm"
+>       type="com.bricsnet.contacts.web.forms.LogonForm"
+>     />
+>     <form-bean
+>       name="OrganizationChartNodeForm"
+>       type="com.bricsnet.contacts.web.forms.OrganizationChartNodeForm"
+>     />
+>     <form-bean
+>       name="ResetPasswordForm"
+>       type="com.bricsnet.contacts.web.forms.ResetPasswordForm"
+>     />
+29a70,93
+>     <form-bean
+>         name="AddressForm"
+>         type="com.bricsnet.core.web.forms.AddressForm"
+>     />
+> 
+>     <form-bean
+>         name="TimesheetListForm"
+>         type="com.bricsnet.core.web.forms.TimesheetListForm"
+>     />
+> 
+>     <form-bean
+>         name="TimesheetForm"
+>         type="com.bricsnet.core.web.forms.TimesheetForm"
+>     />
+> 
+>     <form-bean
+>         name="PersonListForm"
+>         type="com.bricsnet.contacts.web.forms.PersonListForm"
+>     />
+> 
+>     <form-bean
+>         name="DeleteForm"
+>         type="com.bricsnet.core.util.web.DeleteForm"/>
+> 
+48a113,615
+>     <action
+>       path="/LogonDatasheetStore"
+>       type="com.bricsnet.contacts.web.actions.LogonDatasheetStoreAction"
+>       name="LogonForm"
+>       scope="session"
+>       input="/LogonDatasheet.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/LogonDatasheetLoad.do"
+>         redirect="true"
+>       />
+>       <forward
+>         contextRelative="false"
+>         module="/"
+>         name="success-return-to-team"
+>         path="/TeamListLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/OrganizationClassificationSearch"
+>       type="com.bricsnet.contacts.web.actions.OrganizationClassificationSearchAction"
+>       name="ClassificationForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/OrganizationClassificationSearch.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/MainOrganizationSummaryLoad"
+>       type="com.bricsnet.contacts.web.actions.MainOrganizationSummaryLoadAction"
+>       name="OrganizationForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/OrganizationSummary.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PersonSummaryLoad"
+>       type="com.bricsnet.contacts.web.actions.PersonSummaryLoadAction"
+>       name="PersonForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PersonSummary.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/OrganizationDatasheetStore"
+>       type="com.bricsnet.contacts.web.actions.OrganizationDatasheetStoreAction"
+>       name="OrganizationForm"
+>       scope="session"
+>       input="/OrganizationDatasheet.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/OrganizationSummaryLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/PersonHistoryLoad"
+>       type="com.bricsnet.contacts.web.actions.PersonHistoryLoadAction"
+>       name="PersonHistoryForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/PersonHistory.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PersonAddressDatasheetLoad"
+>       type="com.bricsnet.contacts.web.actions.PersonAddressDatasheetLoadAction"
+>       name="AddressForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PersonAddressDatasheet.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/DisassociateCostCenterFromOrganizationStore"
+>       type="com.bricsnet.contacts.web.actions.DisassociateCostCenterFromOrganizationStoreAction"
+>       name="OrganizationForm"
+>       scope="session"
+>       input="/OrganizationSummary.jsp"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/OrganizationDatasheetLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/OrganizationListLoad"
+>       type="com.bricsnet.contacts.web.actions.OrganizationListLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/OrganizationList.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success_advanced_search"
+>         path="/OrganizationAdvancedSearch.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/LogonDatasheetLoad"
+>       type="com.bricsnet.contacts.web.actions.LogonDatasheetLoadAction"
+>       name="LogonForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/LogonDatasheet.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/DeleteOrganization"
+>       type="com.bricsnet.contacts.web.actions.DeleteOrganizationAction"
+>       name="DeleteForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/OrganizationListLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PersonAddressDatasheetStore"
+>       type="com.bricsnet.contacts.web.actions.PersonAddressDatasheetStoreAction"
+>       name="AddressForm"
+>       scope="session"
+>       input="/PersonAddressDatasheet.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/PersonSummaryLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/OrganizationQuickAddStore"
+>       type="com.bricsnet.contacts.web.actions.OrganizationQuickAddStoreAction"
+>       name="OrganizationForm"
+>       scope="session"
+>       input="/OrganizationDatasheet.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/OrganizationDatasheet.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/AssociateCostCenterToOrganizationStore"
+>       type="com.bricsnet.contacts.web.actions.AssociateCostCenterToOrganizationStoreAction"
+>       name="AssociateCostCentersForm"
+>       scope="request"
+>       input="/AssociateCostCentersToOrganization.jsp"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/AssociateCostCentersToOrganizationStoreResponse.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/frag/OrganizationClassificationSearchFrag"
+>       type="com.bricsnet.contacts.web.actions.OrganizationClassificationSearchFragAction"
+>       name="ClassificationForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/OrganizationClassificationSearch.frag.tree.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PersonDatasheetLoad"
+>       type="com.bricsnet.contacts.web.actions.PersonDatasheetLoadAction"
+>       name="PersonForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PersonDatasheet.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/DeletePerson"
+>       type="com.bricsnet.contacts.web.actions.DeletePersonAction"
+>       name="DeleteForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PersonListLoad.do"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PersonListAjaxLoad"
+>       type="com.bricsnet.contacts.web.actions.PersonListAjaxLoadAction"
+>       name="PersonListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PersonListAjax.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success_advanced_search"
+>         path="/PersonListAjax.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/OrganizationListAjaxLoad"
+>       type="com.bricsnet.contacts.web.actions.OrganizationListAjaxLoadAction"
+>       name="ListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/OrganizationListAjax.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success_advanced_search"
+>         path="/OrganizationListAjax.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/OrganizationDatasheetLoad"
+>       type="com.bricsnet.contacts.web.actions.OrganizationDatasheetLoadAction"
+>       name="OrganizationForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/OrganizationDatasheet.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/OrganizationHistoryLoad"
+>       type="com.bricsnet.contacts.web.actions.OrganizationHistoryLoadAction"
+>       name="OrganizationHistoryForm"
+>       scope="request"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/OrganizationHistory.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/OrganizationInfoLoad"
+>       type="com.bricsnet.contacts.web.actions.OrganizationInfoLoadAction"
+>       name="OrganizationForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/OrganizationInfoPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/ResetPasswordStore"
+>       type="com.bricsnet.contacts.web.actions.ResetPasswordStoreAction"
+>       name="ResetPasswordForm"
+>       scope="session"
+>       input="/LogonDatasheet.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/ResetPasswordConfirmation.jsp"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/PersonTimesheetDatasheetLoad"
+>       type="com.bricsnet.contacts.web.actions.PersonTimesheetDatasheetLoadAction"
+>       name="TimesheetForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PersonTimesheetDatasheet.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/OrganizationSummaryLoad"
+>       type="com.bricsnet.contacts.web.actions.OrganizationSummaryLoadAction"
+>       name="OrganizationForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/OrganizationSummary.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PersonTimesheetDatasheetStore"
+>       type="com.bricsnet.contacts.web.actions.PersonTimesheetDatasheetStoreAction"
+>       name="TimesheetForm"
+>       scope="session"
+>       input="/PersonTimesheetDatasheet.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/PersonTimesheetListLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/AssociateCostCentersToOrganizationLoad"
+>       type="com.bricsnet.contacts.web.actions.AssociateCostCentersToOrganizationLoadAction"
+>       name="AssociateCostCentersForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/AssociateCostCentersToOrganizationPopup.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/OrganizationQuickAddLoad"
+>       type="com.bricsnet.contacts.web.actions.OrganizationQuickAddLoadAction"
+>       name="OrganizationForm"
+>       scope="session"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/OrganizationDatasheet.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PersonDatasheetStore"
+>       type="com.bricsnet.contacts.web.actions.PersonDatasheetStoreAction"
+>       name="PersonForm"
+>       scope="session"
+>       input="/PersonDatasheet.jsp"
+>       unknown="false"
+>       validate="true"
+>     >
+>       <forward
+>         name="success"
+>         path="/PersonDatasheetLoad.do"
+>         redirect="true"
+>       />
+>       <forward
+>         name="newAccount"
+>         path="/LogonDatasheetLoad.do"
+>         redirect="true"
+>       />
+>     </action>
+>     <action
+>       path="/PersonTimesheetListLoad"
+>       type="com.bricsnet.contacts.web.actions.PersonTimesheetListLoadAction"
+>       name="TimesheetListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PersonTimesheetList.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/OrganizationChartNodeLoad"
+>       type="com.bricsnet.contacts.web.actions.OrganizationChartNodeLoadAction"
+>       name="OrganizationChartNodeForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/OrganizationChartNode.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/PersonListLoad"
+>       type="com.bricsnet.contacts.web.actions.PersonListLoadAction"
+>       name="PersonListForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/PersonList.jsp"
+>         redirect="false"
+>       />
+>       <forward
+>         name="success_advanced_search"
+>         path="/PersonAdvancedSearch.jsp"
+>         redirect="false"
+>       />
+>     </action>
+>     <action
+>       path="/OrganizationChartLoad"
+>       type="com.bricsnet.contacts.web.actions.OrganizationChartLoadAction"
+>       name="OrganizationChartForm"
+>       scope="request"
+>       unknown="false"
+>       validate="false"
+>     >
+>       <forward
+>         name="success"
+>         path="/OrganizationChart.jsp"
+>         redirect="false"
+>       />
+>     </action>
+60d626
+<     <!-- $Id: struts-message-resources.xml 40267 2010-10-08 12:14:33Z rkumar $ -->
+62,93c628,631
+<     <!-- Resources from the core directory -->
+<     <message-resources parameter="Label" key="core.label" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="Header" key="core.header" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+<     <message-resources parameter="navigation" key="core.navigation" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+<     <message-resources parameter="Header" key="core.Header" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="Error"  key="error"  null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="warning"  key="warning"  null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="boolean" key="boolean" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="country" key="country" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="currency_code" key="currency_code" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="unit" key="unit" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="month" key="month" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="businessRole" key="businessRole" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="currency" key="currency" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+<     <message-resources parameter="module" key="module" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+<     <message-resources parameter="person-status" key="person-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+<     <message-resources parameter="ObjectType-short" key="ObjectType-short" null="false"
+---
+>     <!-- Resources from legacy -->
+>     <message-resources parameter="legacy.fieldvaluelabels"
+>                        key="legacy.fieldvaluelabels"
+>                        null="false"
+96,104c634,643
+<     <message-resources parameter="generalLedgerCode-type" key="generalLedgerCode-type" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="schedule-status" key="core.schedule-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="task-status" key="task-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="task-periodStatus" key="task-periodStatus" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="task-priority" key="task-priority" null="false"
+---
+>     <!-- Resources from the core directory -->
+>     <message-resources parameter="Error"  key="error"  null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="Header" key="core.Header" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="charge-type" key="propertyCharge-typeId" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="payment-creditCardType" key="propertyPayment-creditType" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+>     <message-resources parameter="payment-paymentMethod" key="propertyPayment-paymentMethod" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+>     <message-resources parameter="navigation" key="core.navigation" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="address-type"
+>                        key="address-type"
+>                        null="false"
+107,113c646,651
+<     <!-- Classification externalized descriptions -->
+<     <message-resources parameter="classification_name" key="classification_name" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="classification_desc" key="classification_desc" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="classification_code" key="classification_code" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+---
+>     <!-- Standard resources -->
+>     <message-resources parameter="label"  null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+>     <message-resources parameter="label"  key="Label"  null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+>     <message-resources parameter="header" key="Header" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+>     <message-resources parameter="action"  key="action"  null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+>     <message-resources parameter="navigation" key="navigation" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+115,121c653,656
+<     <!-- from other modules -->
+<     <message-resources parameter="docmanager.doc-status"  key="doc-status"  null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="docmanager.search-options"  key="search-options"  null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="property.property-status" key="property-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+---
+>     <!-- Classification externalizated descriptions -->
+>     <message-resources parameter="classification_name" key="classification_name" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="classification_desc" key="classification_desc" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+>     <message-resources parameter="classification_code" key="classification_code" null="false" factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+123,132c658,660
+<     <!-- Standard resources -->
+<     <message-resources parameter="project.label"  null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.label"  key="label"  null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.header" key="header" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.action"  key="action"  null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.navigation" key="navigation" null="false"
+---
+>     <message-resources parameter="organization-typeId"
+>                        key="organization-typeId"
+>                        null="false"
+135,139c663,664
+<     <!-- Resources which are enums for a specific column -->
+<     <message-resources parameter="project.project-status"
+<         key="project-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.project-type" key="project-type"
+---
+>     <message-resources parameter="organization-status"
+>                        key="organization-status"
+142,254c667,670
+<     <message-resources parameter="project.project-geographicScope"
+<         key="project-geographicScope" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.project-riskRating"
+<         key="project-riskRating" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.project-revenueType"
+<         key="project-revenueType" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.project-clientStatus"
+<         key="project-clientStatus" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.account-type"
+<         key="account-type" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.budget-type"
+<         key="budget-type" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.budget-status"
+<         key="budget-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.commitment-status"
+<         key="commitment-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.commitment-type"
+<         key="commitment-type" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.invoice-status"
+<         key="invoice-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.invoice-disputecategory"
+<         key="invoice-disputecategory" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.invoice-type"
+<         key="invoice-type" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.overstock-status"
+<         key="overstock-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.overstock-unit"
+<         key="overstock-unit" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.training-status"
+<         key="training-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.training-type"
+<         key="training-type" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.payment-status"
+<         key="payment-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.payment-type"
+<         key="payment-type" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="payment-paymentMethod"
+<         key="payment-paymentMethod" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="payment-creditCardType"
+<         key="payment-creditCardType" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.rfp-status"
+<         key="rfp-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.bid-type"
+<         key="bid-type" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.bid-status"
+<         key="bid-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.project-scorecard"
+<         key="project-scorecard" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.spendYear-isDraft"
+<         key="spendYear-isDraft" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.projectInspection-status"
+<         key="projectInspection-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.projectInspectionRemediation-status"
+<         key="projectInspectionRemediation-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.projectSubmittal-status"
+<         key="projectSubmittal-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.projectSubmittal-status"
+<         key="projectSubmittalPackage-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.projectSubmittalApprover-status"
+<         key="projectSubmittalApprover-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.projectCommitmentApprover-status"
+<         key="projectCommitmentApprover-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.discipline"
+<         key="discipline" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.discipline"
+<         key="projectSubmittal-disciplineId" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.discipline"
+<         key="projectSubmittalPackage-disciplineId" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.projectRequirement-type"
+<         key="projectRequirement-type" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.projectRequirement-status"
+<         key="projectRequirement-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.projectDamage-status"
+<         key="projectDamage-status" null="false"
+<         factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"/>
+<     <message-resources parameter="project.projectDamage-resolutionType"
+<         key="projectDamage-resolutionType" null="false"
+---
+> 
+>     <message-resources parameter="organization-industry"
+>                        key="organization-industry"
+>                        null="false"
+257,259c673,674
+<     <!-- Issue Module -->
+<     <message-resources parameter="project.issue-status"
+<                        key="issue-status"
+---
+>     <message-resources parameter="sic-code"
+>                        key="organization-sicCode"
+263,264c678,679
+<     <message-resources parameter="project.issue-type"
+<                        key="issue-type"
+---
+>     <message-resources parameter="person-type"
+>                        key="person-type"
+268,269c683,684
+<     <message-resources parameter="project.issueeventaction-type"
+<                        key="issueeventaction-type"
+---
+>     <message-resources parameter="person-status"
+>                        key="person-status"
+273,274c688,689
+<     <message-resources parameter="project.issueevent-type"
+<                        key="issueevent-type"
+---
+>     <message-resources parameter="person-gender"
+>                        key="person-gender"
+278,280c693,710
+<     <!-- Contract Module -->
+<     <message-resources parameter="project.contract-status"
+<                        key="contract-status"
+---
+>     <message-resources parameter="currency"
+>                        key="propertyCharge-currencyId"
+>                        null="false"
+>                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="currency"
+>                        key="propertyPayment-currencyId"
+>                        null="false"
+>                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="currency"
+>                        key="currency"
+>                        null="false"
+>                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="currency_code"
+>                        key="currency_code"
+>                        null="false"
+>                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory"  />
+>     <message-resources parameter="unit"
+>                        key="unit"
+284d713
+<     <!-- Ad Hoc Bundles -->
+300,301c729,730
+<     <message-resources parameter="space.propertySpaceRequest-status"
+<                        key="propertySpaceRequest-status"
+---
+>     <message-resources parameter="timesheet-type"
+>                        key="timesheet-type"
+305,306c734,735
+<     <message-resources parameter="space.propertySpaceRequest-type"
+<                        key="propertySpaceRequest-type"
+---
+>     <message-resources parameter="timesheet-status"
+>                        key="timesheet-status"
+310,335c739,740
+<     <message-resources parameter="txmanager.tx-status"
+<                        key="tx-status"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+<     <message-resources parameter="txmanager.tx-type"
+<                        key="tx-type"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+<     <message-resources parameter="pipeline.opportunity-type"
+<                        key="opportunity-type"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+<     <message-resources parameter="pipeline.opportunity-status"
+<                        key="opportunity-status"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+< 	<message-resources parameter="priority-rating"
+<                        key="priority-factor-ratings"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />            
+<     <message-resources parameter="project.schedulevalue-status"
+<                        key="schedulevalue-status"
+<                        null="false"
+<                        factory="com.bricsnet.core.util.BricsnetPropertyMessageResourcesFactory" />
+<    <message-resources parameter="project.schedule-earningrule"
+<                        key="schedule-earningrule"
+---
+>     <message-resources parameter="legacy.usergroups"
+>                        key="usergroups"

@@ -1,0 +1,43 @@
+Revert process
+for ex)
+	delete current workflow step youre on, depending on which queue you're in.
+	set the phase on participant_project to whatever phase it needs to be; based on the flowchart
+	set step, that you've reverted to, to "in progress" 
+	do this till you reach your destination step
+	
+	can only revert s/t that you've worked on; cant revert for other users.
+	cant revert on scorecard but it will just remove user's name // needs clarification on how to do this or if it is needed.
+	
+	
+Scorecard:
+	remove user attached to scorecard
+	discard all the data in scorecard (look for discard in controller) need the discard to be shared among various queues
+
+RevertWorkflow.java:
+	toScoring:
+		set participant_project phase to scoring
+		set all scorecard to in progress
+	toIntegrate:
+		set participant_project phase to integrate
+		set integrate to in progress
+	toCustomization:
+		set participant_project phase to customization
+		set customization to in progress
+		
+QIntegrate:
+	delete integrate record
+	toScoring()
+
+QCustomization:
+	delete customization record
+	if shell
+		toScoring()
+	else
+		toIntegrate()
+
+QEdit:
+	delete edit record
+	if mll lva simulator:
+		toScoring()
+	else
+		toCustomization()

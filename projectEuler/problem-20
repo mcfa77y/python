@@ -1,0 +1,18 @@
+#!/cygdrive/c/Python30/python
+# -*- coding: utf-8 -*-
+import math
+"""
+sum the digits of 100!
+"""
+
+
+def main():
+	t=math.factorial(100)
+	sum=0
+	for x in str(t):
+		print(x)
+		sum+=int(x)
+	print(sum)
+
+
+main() 

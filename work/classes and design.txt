@@ -1,0 +1,11 @@
+There are a few objects at play here
+user which is can be of two types an admin or a candidate group
+
+master questions which are the questions that are added on by an admin
+
+question is a combination of masterQuestion and answers
+
+use cases:
+	candidates add an account and answer the questions and register
+	admin can review candidates and add/remove/(update) questions
+

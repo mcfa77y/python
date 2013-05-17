@@ -1,0 +1,20 @@
+movie
+	a perfect world
+	my perfect woman
+	pretty woman
+count(perfect)=2
+count(storm)=0
+N=8
+
+song
+	a perfect day
+	electric storm
+	another rainy day
+count(perfect)=1
+count(storm)=1
+N=9
+
+vocabulary=11
+P(perfect | movie,Song)
+
+storm|movie,song

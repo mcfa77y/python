@@ -1,0 +1,14 @@
+./apps/wizard/build/WEB-INF/struts-config.xml
+./apps/asset/build/WEB-INF/struts-config.xml
+./apps/contacts/build/WEB-INF/struts-config.xml
+./apps/core/build/WEB-INF/struts-config.xml
+./apps/docmanager/build/WEB-INF/struts-config.xml
+./apps/globalcontract/build/WEB-INF/struts-config.xml
+./apps/lease/build/WEB-INF/struts-config.xml
+./apps/pipeline/build/WEB-INF/struts-config.xml
+./apps/program/build/WEB-INF/struts-config.xml
+./apps/project/build/WEB-INF/struts-config.xml
+./apps/property/build/WEB-INF/struts-config.xml
+./apps/space/build/WEB-INF/struts-config.xml
+./apps/txmanager/build/WEB-INF/struts-config.xml
+./apps/workorder/build/WEB-INF/struts-config.xml
