@@ -1,4 +1,4 @@
-#!/cygdrive/c/Python32/python
+#!/usr/bin/python3
 from urllib.request import urlopen,urlretrieve,FancyURLopener
 from bs4 import BeautifulSoup
 from math import log, sqrt
@@ -39,7 +39,8 @@ def getUrlList(soup):
 	urls={}
 	i=0
 	ll=[]
-	for link in links:
+	for link in links[:20]:
+		print("link: "+link.attrs['href'])
 		ll.append(BASE_URL+link.attrs['href'])
 	ll=set(ll)
 	for l in ll:	
@@ -73,6 +74,8 @@ dictionary = set()
 # postings[term][id] is the frequency with which term appears in
 # document id.
 postings = defaultdict(dict)
+doc_tf = defaultdict(dict)
+doc_tfidf = defaultdict(dict)
 
 # document_frequency: a defaultdict whose keys are terms, with
 # corresponding values equal to the number of documents which contain
@@ -103,9 +106,16 @@ def removeTags(s):
 	return TAGS.sub('',s)
 
 def main():
+	global doc_tfidf
 	initialize_terms_and_postings()
 	initialize_document_frequencies()
 	initialize_lengths()
+	dist_graph = get_distance_graph(doc_tfidf)
+
+	for cluster in majorclust(dist_graph):
+		print("=========")
+		for doc_id in cluster:
+			print(str(documents[doc_id]))
 	while True:
 		do_search()
 
@@ -115,18 +125,17 @@ def initialize_terms_and_postings():
 	dictionary, and adds the document to the posting list for each
 	term, with value equal to the frequency of the term in the
 	document."""
-	global dictionary, postings,N, document_frequency
-	
+	global dictionary, postings,N, document_frequency, doc_tf,doc_tfidf
 	
 	for id in document_filenames:
 		print("reading: "+str(id)+"\t"+document_filenames[id])
 		document = readUrl(document_filenames[id])
 		terms = tokenize(document)
-		print("\ttokenized")
+		#print("\ttokenized")
 		unique_terms = set(terms)
-		print("\tuniqued")
+		#print("\tuniqued")
 		dictionary = dictionary.union(unique_terms)
-		print("\tdict union")
+		#print("\tdict union")
 		for term in unique_terms:
 			postings[term][id] = terms.count(term) # the value is the
 												   # frequency of the
@@ -137,12 +146,17 @@ def initialize_terms_and_postings():
 			for term in unique_terms:
 				score = float(postings[term][id])/num_tokens
 				doc_tf[term][id]=score
-	for term, docIds in doc_tf:
-		idf = log(N/document_frequency[term])
-		for id, tf in docIds:
-			tfidf = doc_tf[term][id]*idf
-			if tfidf>0:
-				doc_tfidf[term][id]=tfidf
+				#print("term: "+term+"\tid:"+str(id)+"\tscore:"+str(doc_tf[term][id]))
+	for term,docIds in doc_tf.items():
+		docLen = len(doc_tf[term])
+		if docLen>0:
+			idf = log(N/docLen)
+			for id, tf in docIds.items():
+				tfidf = doc_tf[term][id]*idf
+				if tfidf>0:
+					doc_tfidf[id][term]=tfidf
+					
+					
 def init_document_term_tfidf():
 	tokens = {}
 	for id, doc in enumerate(documents):
@@ -201,7 +215,7 @@ def imp(term,id):
 def inverse_document_frequency(term):
 	"""Returns the inverse document frequency of term.  Note that if
 	term isn't in the dictionary then it returns 0, by convention."""
-	N = 100
+	N = len(document_filenames)
 	if term in dictionary:
 		print("IDF:\n\t"+str(N)+":"+str(document_frequency[term]))
 		return math.log(N/document_frequency[term],2)
@@ -268,10 +282,10 @@ def document_similarity(id0,id1):
 	
 def cosine_distance(a, b):
 	cos = 0.0
-	a_tfidf = a["tfidf"]
-	for token, tfidf in b["tfidf"].iteritems():
+	a_tfidf = a
+	for token in b:
 		if token in a_tfidf:
-			cos += tfidf * a_tfidf[token]
+			cos += b[token] * a_tfidf[token]
 	return cos
 	
 def choose_cluster(node, cluster_lookup, edges):
@@ -281,7 +295,7 @@ def choose_cluster(node, cluster_lookup, edges):
 		for target, weight in edges.get(node, []):
 			seen[cluster_lookup[target]] = seen.get(
 				cluster_lookup[target], 0.0) + weight
-		for k, v in seen.iteritems():
+		for k, v in seen.items():
 			num_seen.setdefault(v, []).append(k)
 		new = num_seen[max(num_seen)][0]
 	return new
@@ -322,6 +336,7 @@ def get_distance_graph(documents):
 	doc_ids = range(N)
 	graph.nodes = set(document_filenames)
 	for a, b in combinations(document_filenames, 2):
+		print("doc A:"+str(documents[a]))
 		graph.add_edge(a, b, cosine_distance(documents[a], documents[b]))
 	return graph
 

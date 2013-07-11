@@ -47,6 +47,7 @@ def findSurvivor(max):
 		seatNumber=findNextAvailableSeat(d,seatNumber)
 		if seatNumber==ERROR_INDEX:
 			#print("\tresetting seatNumber")
+			#find seat from the begining of the array
 			seatNumber=findNextAvailableSeat(d,0)
 		# skip every other seat	
 		if counter%2==0:
