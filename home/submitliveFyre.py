@@ -8,10 +8,10 @@ import re,sys
 DOCUMENT_URL = ""
 docString = ""
 
-# postings: a defaultdict whose keys are terms, and whose values are 
+# termFrequency: a defaultdict whose keys are terms, and whose values are 
 # the count of them
 
-postings = {}
+termFrequency = {}
 
 # The list of characters (mostly, punctuation) we want to strip out of
 # terms in the document.
@@ -19,9 +19,9 @@ characters = " .,!#$%^&*();:\n\t\\\"?!{}[]<>"
 
 def main():
 	global DOCUMENT_URL
-	DOCUMENT_URL = input("Document URL >> ")
-	#DOCUMENT_URL = "../input/imdbShort.txt"
-	global postings
+	#DOCUMENT_URL = input("Document URL >> ")
+	DOCUMENT_URL = "../input/imdbShort.txt"
+	global termFrequency
 	
 	print(("reading:\t"+DOCUMENT_URL))
 	document = open(DOCUMENT_URL, 'r')
@@ -30,18 +30,20 @@ def main():
 	unique_terms = set(terms)
 	
 	#reverse index
-	d = {}
+	reverseIndex = {}
 	
 	#print(docString)
 	for term in unique_terms:
-		postings[term] = terms.count(term) # the value is the
+		termFrequency[term] = terms.count(term) # the value is the
 											   # frequency of the
 											   # term in the
 											   # document
-		d[term]=findGet(docString, term,0)
-	print(str(postings))
-	print("posting end")
-	print(str(d))
+		foundIndexList = findGet(docString, term,0,[])
+		reverseIndex[term]=foundIndexList
+		print("Term: ",str(term),"value: ",str(foundIndexList),"\n\n")
+	print(str(termFrequency))
+	print("term frequency - END")
+	print(str(reverseIndex))
 	
 
 def tokenize(document):
@@ -49,9 +51,9 @@ def tokenize(document):
 	terms = []
 	for line in document:
 		terms.extend(line.lower().split())
-		docString= docString+ line
-	print(terms)	
-	print("tokeninzing end")	
+		docString= docString+ line.lower()
+	#print(terms)	
+	#print("tokeninzing end")	
 	#terms = document.split()
 	return [term.strip(characters) for term in terms]
 
@@ -59,14 +61,21 @@ def tokenize(document):
 	# index that it was found at
 	# is a list of tuples 
 	# [(found string, index)+]
-def findGet(docString, searchTerm, start):
-	global DOCUMENT_LIST_FORM
-	docStringIndex = docString.find(searchTerm)
-	if docStringIndex != -1:
-		return [docStringIndex]
-		#return [docStringIndex, findGet(docString,searchTerm,docStringIndex+1)]
+def findGet(docString, searchTerm, start, list):
+	if len(searchTerm)<1:
+		return []	
+	docStringIndex = docString.find(searchTerm,start)
+	print("searchTerm:",searchTerm,"\n\tstart",str(start),"\n\tindex", str(docStringIndex))
+	if docStringIndex == -1:
+		print('\tRETURNING list',str(list))
+		return list
 	else:
-		return []
-    
+		list.extend([docStringIndex])
+		val = findGet(docString,searchTerm,docStringIndex+1,list)
+		if val !=None:
+			print('\t\tVAL',val)
+			print('\t\tLIST:',str(list))
+			return list.extend(val)
+	
 if __name__ == "__main__":
 	main()

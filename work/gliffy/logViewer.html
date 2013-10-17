@@ -1,0 +1,135 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/media/images/favicon.ico" />
+        
+        <title>Wood Viewer</title>
+        <style type="text/css" title="currentStyle">
+            @import "DataTables-1.9.4/media/css/demo_page.css";
+            @import "DataTables-1.9.4/media/css/demo_table.css";
+        </style>
+        <script type="text/javascript" language="javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script type="text/javascript" language="javascript" src="DataTables-1.9.4/media/js/jquery.dataTables.js"></script>
+        <script type="text/javascript" charset="utf-8">
+            $(document).ready(function() {
+                var oTable = $('#example').dataTable( {
+                    "bProcessing": true,
+                    "sAjaxSource": "output.txt",
+                    "aoColumns": [
+                        { "mData": "time" },
+                        { "mData": "tipo" },
+                        { "mData": "key" },
+                        { "mData": "extra" }
+                        ],
+                    "oLanguage": {
+                        "sSearch": "Search all columns:"
+                    }
+                } );
+
+               /* Add a select menu for each TH element in the table footer */
+            $("#typeCol").each( function ( i ) {
+                alert('i:'+i);
+                this.innerHTML = fnCreateSelect( oTable.fnGetColumnData(i) );
+                $('select', this).change( function () {
+                    oTable.fnFilter( $(this).val(), i );
+                } );
+            } );
+            } );
+
+
+            (function($) {
+            /*
+             * Function: fnGetColumnData
+             * Purpose:  Return an array of table values from a particular column.
+             * Returns:  array string: 1d data array
+             * Inputs:   object:oSettings - dataTable settings object. This is always the last argument past to the function
+             *           int:iColumn - the id of the column to extract the data from
+             *           bool:bUnique - optional - if set to false duplicated values are not filtered out
+             *           bool:bFiltered - optional - if set to false all the table data is used (not only the filtered)
+             *           bool:bIgnoreEmpty - optional - if set to false empty values are not filtered from the result array
+             * Author:   Benedikt Forchhammer <b.forchhammer /AT\ mind2.de>
+             */
+            $.fn.dataTableExt.oApi.fnGetColumnData = function ( oSettings, iColumn, bUnique, bFiltered, bIgnoreEmpty ) {
+                // check that we have a column id
+                if ( typeof iColumn == "undefined" ) return new Array();
+                 
+                // by default we only want unique data
+                if ( typeof bUnique == "undefined" ) bUnique = true;
+                 
+                // by default we do want to only look at filtered data
+                if ( typeof bFiltered == "undefined" ) bFiltered = true;
+                 
+                // by default we do not want to include empty values
+                if ( typeof bIgnoreEmpty == "undefined" ) bIgnoreEmpty = true;
+                 
+                // list of rows which we're going to loop through
+                var aiRows;
+                 
+                // use only filtered rows
+                if (bFiltered == true) aiRows = oSettings.aiDisplay;
+                // use all rows
+                else aiRows = oSettings.aiDisplayMaster; // all row numbers
+             
+                // set up data array   
+                var asResultData = new Array();
+                 
+                for (var i=0,c=aiRows.length; i<c; i++) {
+                    iRow = aiRows[i];
+                    var aData = this.fnGetData(iRow);
+                    var sValue = aData[iColumn];
+                     
+                    // ignore empty values?
+                    if (bIgnoreEmpty == true && sValue.length == 0) continue;
+             
+                    // ignore unique values?
+                    else if (bUnique == true && jQuery.inArray(sValue, asResultData) > -1) continue;
+                     
+                    // else push the value onto the result data array
+                    else asResultData.push(sValue);
+                }
+                 
+                return asResultData;
+            }}(jQuery));
+             
+             
+            function fnCreateSelect( aData )
+            {
+                var r='<select><option value=""></option>', i, iLen=aData.length;
+                for ( i=0 ; i<iLen ; i++ )
+                {
+                    r += '<option value="'+aData[i]+'">'+aData[i]+'</option>';
+                }
+                return r+'</select>';
+            }
+             
+            
+
+        </script>
+
+    </head>
+    <body id="dt_example">
+        <table cellpadding="0" cellspacing="0" border="0" class="display" id="example">
+    <thead>
+        <tr>
+            <th width="20%">Time</th>
+            <th width="5%">Type</th>
+            <th width="25%">Key</th>
+            <th>Extra</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        
+    </tbody>
+    <tfoot>
+        <tr>
+            <th>Time</th>
+            <th id="typeCol">Type</th>
+            <th>Key</th>
+            <th>Extra</th>
+        </tr>
+    </tfoot>
+</table>
+    </body>
+</html>

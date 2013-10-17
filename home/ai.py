@@ -1,10 +1,13 @@
 #!/usr/bin/python3
+import codecs
 from urllib.request import urlopen,urlretrieve,FancyURLopener
-from bs4 import BeautifulSoup
-from math import log, sqrt
+from math import log
 from itertools import combinations
 
-import re,sys,functools, pickle
+from bs4 import BeautifulSoup
+import re,functools, pickle 
+
+#from cluster import KMeansClustering
 
 """vsm.py implements a toy search engine to illustrate the vector
 space model for documents.
@@ -14,35 +17,39 @@ matching the query, in decreasing order of cosine similarity,
 according to the vector space model."""
 
 from collections import defaultdict
-import math
-import sys
-
+from math import sqrt
 
 
 # dup a user agent to bypass 403 HTTP errors
 class MyOpener(FancyURLopener):
 	version = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; it; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11'
 
+#LOAD_NEW_DATA = False
+LOAD_NEW_DATA = True
 MAX=120
 COUNTER=0
-#URL='http://greenwake.keenspot.com/d/20120206.html'
-#IMG_PATTERN=re.compile('http://cdn.greenwake.keenspot.com/comics/gw\d+\.jpg')
-#URL='http://sfbay.craigslist.org/sfc/sof/3786775038.html'
 URL='http://sfbay.craigslist.org/search/sof/sfc?zoomToPosting=&query=java+-qa&srchType=A'
 BASE_URL='http://sfbay.craigslist.org'
 IMG_PATTERN=re.compile('http://dis-connection.com/comics/\d+\.jpg')
 SCRIPT_TAG=re.compile(r'<script.*?>.*?</script>')
 TAGS=re.compile(r'</?.*?>|\[|\]')
-
+STOP_WORDS = set(["a","about","above","after","again","against","all","am","an","and","any","are","aren't","as","at","be","because","been","before","being","below","between","both","but","by","can't","cannot","could","couldn't","did","didn't","do","does","doesn't","doing","don't","down","during","each","few","for","from","further","had","hadn't","has","hasn't","have","haven't","having","he","he'd","he'll","he's","her","here","here's","hers","herself","him","himself","his","how","how's","i","i'd","i'll","i'm","i've","if","in","into","is","isn't","it","it's","its","itself","let's","me","more","most","mustn't","my","myself","no","nor","not","of","off","on","once","only","or","other","ought","our","ours ","ourselves","out","over","own","same","shan't","she","she'd","she'll","she's","should","shouldn't","so","some","such","than","that","that's","the","their","theirs","them","themselves","then","there","there's","these","they","they'd","they'll","they're","they've","this","those","through","to","too","under","until","up","very","was","wasn't","we","we'd","we'll","we're","we've","were","weren't","what","what's","when","when's","where","where's","which","while","who","who's","whom","why","why's","with","won't","would","wouldn't","you","you'd","you'll","you're","you've","your","yours","yourself","yourselves",])
+	
 def getUrlList(soup):
+	#print(("\n\nSOUP:"+soup.get_text()))
 	links = soup.find_all(href=re.compile('/sfc/sof/'))
 	urls={}
 	i=0
 	ll=[]
+	print(("number of links: "+str(len(links))))
+	#for link in links[:10]:
 	for link in links:
-		#print(("link: "+link.attrs['href']))
-		ll.append(BASE_URL+link.attrs['href'])
+		newUrl = BASE_URL+link.attrs['href']
+		if newUrl != 'http://sfbay.craigslist.org/sfc/sof/':
+			#print(("link: "+link.attrs['href']))
+			ll.append(BASE_URL+link.attrs['href'])
 	ll=set(ll)
+	print(("number of links after set: "+str(len(ll))))
 	for l in ll:	
 		urls[i]=l
 		i+=1
@@ -53,7 +60,7 @@ def getUrlList(soup):
 # these are the keys in the following dict.  The values are the
 # corresponding filenames.
 document_filenames = getUrlList(BeautifulSoup(urlopen(URL)))
-
+documents = defaultdict(dict)
 # The size of the corpus
 N = len(document_filenames)
 
@@ -112,7 +119,7 @@ def getEmail(url):
 	#pageText = soup.find(classs='postingtitle')
 	pageText = str(soup.find("a", { "class" : "gmail" }))
 	#pageText = removeTags(pageText).strip()
-	print("email: "+pageText)
+	print(("email: "+pageText))
 	
 	return (pageText)
 	
@@ -121,30 +128,35 @@ def getTitle(url):
 	#pageText = soup.find(classs='postingtitle')
 	pageText = str(soup.find("h2", { "class" : "postingtitle" }))
 	pageText = removeTags(pageText).strip()
-	print("title: "+pageText)
+	#print(("title: "+pageText))
 	
 	return (pageText)
 
 def main():
-	global doc_tfidf,page_text
-	#initialize_terms_and_postings()
-	#initialize_document_frequencies()
-	#initialize_lengths()
-	
-	#pickle.dump(doc_tfidf,open('../input/doc_tfidf.p','wb'))
-	#pickle.dump(document_filenames,open('../input/document_filenames','wb'))
-	#pickle.dump(page_text,open('../input/page_text.p','wb'))
-	
-	doc_tfidf= pickle.load( open( "../input/doc_tfidf.p", "rb" ) )
-	document_filenames = pickle.load( open( "../input/document_filenames.p", "rb" ) )
-	page_text = pickle.load( open( "../input/page_text.p", "rb" ) )
+	global doc_tfidf,page_text,document_filenames
+	if LOAD_NEW_DATA:	
+		initialize_terms_and_postings()
+		initialize_document_frequencies()
+		initialize_lengths()
+		pickle.dump(doc_tfidf,open('../input/doc_tfidf.p','wb'))
+		pickle.dump(document_filenames,open('../input/document_filenames','wb'))
+		pickle.dump(page_text,open('../input/page_text.p','wb'))
+	else:	
+		doc_tfidf= pickle.load( open( "../input/doc_tfidf.p", "rb" ) )
+		document_filenames = pickle.load( open( "../input/document_filenames.p", "rb" ) )
+		page_text = pickle.load( open( "../input/page_text.p", "rb" ) )
 
-	
+	#g = []
+	#for a, b in combinations(document_filenames, 2):
+		#print(("doc A:"+str(documents[a])))
+	#	g.append((a, b))
+	#print(("g",g))
+	#cl = KMeansClustering(g, lambda a, b: cosine_distance(documents[a], documents[b]))
+	#clusters = cl.getclusters(3)
+	#print(("clusters",str(len(clusters))))
 	dist_graph = get_distance_graph(doc_tfidf)
-	#pickle.dump(dist_graph,open('../input/dist_graph.p','wb'))
-	#dist_graph= pickle.load( open( "../input/dist_graph.p", "rb" ) )
-	#document_filenames = pickle.load( open( "../input/document_filenames.p", "rb" ) )
-	f = open("jorbOutput.html",'w')
+	#f = open("jorbOutput.html",'w')
+	f = codecs.open("jorbOutput.html",'w',"utf-8")
 	g = open("../input/htmlHeader.html",'r')
 	for line in g:
 		f.write(line)
@@ -156,15 +168,19 @@ def main():
 		for doc_id in cluster:
 			docUrl = str(document_filenames[doc_id])
 			title = getTitle(docUrl)
-			emailUrl = getEmail(docUrl)
 			f.write("\n<h3>"+title+"</h3>\n\t<div>")
 			f.write("<div style=\"text-align:right\"><a href=\""+docUrl+"\">"+title+"</a>")
 			f.write
 			f.write("</div><br>\n")
-			f.write(page_text[docUrl])
+			try:
+				f.write(page_text[docUrl])
+			except KeyError:
+				f.write("no text found")
 			f.write("\t</div>")
 			print(docUrl)
 		f.write("</div>")
+		f.write("<hr>")
+		f.write("<hr>")
 		f.write("<hr>")
 	f.write("</body></html>\n")
 	f.close()
@@ -175,7 +191,7 @@ def initialize_terms_and_postings():
 	dictionary, and adds the document to the posting list for each
 	term, with value equal to the frequency of the term in the
 	document."""
-	global dictionary, postings,N, document_frequency, doc_tf,doc_tfidf
+	global dictionary, postings,N, document_frequency, doc_tf,doc_tfidf,document_filenames
 	
 	for id in document_filenames:
 		print(("reading: "+str(id)+"\t"+document_filenames[id]))
@@ -206,37 +222,25 @@ def initialize_terms_and_postings():
 				if tfidf>0:
 					doc_tfidf[id][term]=tfidf
 					
-					
-def init_document_term_tfidf():
-	tokens = {}
-	for id, doc in enumerate(documents):
-		tf = {}
-		doc["tfidf"] = {}
-		doc_tokens = doc.get("tokens", [])
-		for token in doc_tokens:
-			tf[token] = tf.get(token, 0) + 1
-		num_tokens = len(doc_tokens)
-		if num_tokens > 0:
-			for token, freq in tf.items():
-				tokens.setdefault(token, []).append((id, float(freq) / num_tokens))
-
-	doc_count = float(len(documents))
-	for token, docs in tokens.items():
-		idf = log(doc_count / len(docs))
-		for id, tf in docs:
-			tfidf = tf * idf
-			if tfidf > 0:
-				documents[id]["tfidf"][token] = tfidf
-
-	for doc in documents:
-		doc["tfidf"] = normalize(doc["tfidf"])
+	for doc in doc_tfidf.values():
+		doc = normalize(doc)
+	
+def normalize(features):
+	print("NORMALIZE")
+	norm = 1.0 / sqrt(sum(i**2 for i in features.values()))
+	print(str(norm))
+	for k, v in features.items():
+		features[k] = v * norm
+	return features				
 def tokenize(document):
 	"""Returns a list whose elements are the separate terms in
 	document.  Something of a hack, but for the simple documents we're
 	using, it's okay.  Note that we case-fold when we tokenize, i.e.,
 	we lowercase everything."""
-	terms = document.lower().split()
+	terms = set(document.lower().split())
+	terms.difference_update(STOP_WORDS)
 	return [term.strip(characters) for term in terms]
+
 
 def initialize_document_frequencies():
 	"""For each term in the dictionary, count the number of documents
@@ -252,7 +256,7 @@ def initialize_lengths():
 		l = 0
 		for term in dictionary:
 			l += imp(term,id)**2
-		length[id] = math.sqrt(l)
+		length[id] = sqrt(l)
 
 def imp(term,id):
 	"""Returns the importance of term in document id.  If the term
@@ -267,8 +271,8 @@ def inverse_document_frequency(term):
 	term isn't in the dictionary then it returns 0, by convention."""
 	N = len(document_filenames)
 	if term in dictionary:
-		print(("IDF:\n\t"+str(N)+":"+str(document_frequency[term])))
-		return math.log(N/document_frequency[term],2)
+		#print(("IDF:\n\t"+str(N)+":"+str(document_frequency[term])))
+		return log(N/document_frequency[term],2)
 	else:
 		return 0.0
 
@@ -336,6 +340,8 @@ def cosine_distance(a, b):
 	for token in b:
 		if token in a_tfidf:
 			cos += b[token] * a_tfidf[token]
+	#if (cos>0):
+		#print(cos)
 	return cos
 	
 def choose_cluster(node, cluster_lookup, edges):
@@ -367,7 +373,7 @@ def majorclust(graph):
 				finished = False
 
 	clusters = {}
-	for k, v in cluster_lookup.items():
+	for k, v in list(cluster_lookup.items()):
 		clusters.setdefault(v, []).append(k)
 
 	return list(clusters.values())
@@ -386,7 +392,6 @@ def get_distance_graph(documents):
 	doc_ids = list(range(N))
 	graph.nodes = set(document_filenames)
 	for a, b in combinations(document_filenames, 2):
-		print(("doc A:"+str(documents[a])))
 		graph.add_edge(a, b, cosine_distance(documents[a], documents[b]))
 	return graph
 
