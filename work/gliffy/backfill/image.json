@@ -1,0 +1,26 @@
+{
+	"IS_DIAGRAM" : false,
+
+	"QUERY" : "SELECT id, image_path FROM `stage-gliffycom-gliffyap`.image_aws",
+	"QUERY_WINDOW" : 3,
+	"QUERY_MAX_ROWS" : 10,
+	"TABLE_NAME" : "`stage-gliffycom-gliffyap`.image_aws",
+
+	"IMAGE_PATTERN" : "image\\.(png|gif|jpg|jpeg)",
+	"IMAGE_THUMB_PATTERN" : "image_TN\\.(png|gif|jpg|jpeg)",
+	
+	"PREFIX" : "image_",
+	"SUFFIX" : "_thumb",
+
+	"IMAGE_DIR" : "/var/www/domains/gliffy.com/stage/uploadedImages/",
+
+
+	"BUCKET_NAME" : "gliffy-go-image-test",
+	"AWS_ACCESS_KEY_ID" : "AKIAJJ2JFQACQENQSEWQ",
+	"AWS_SECRET_ACCESS_KEY" : "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",
+
+	"DB_URL" : "gliffy03.managed.contegix.com",
+	"USER" : "jlau",
+	"DB_NAME" : "stage-gliffycom-gliffyap",
+	"PASSWORD" : "0n3w0rdFJ"
+}

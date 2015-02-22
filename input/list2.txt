@@ -1,0 +1,8 @@
+btn_circle_next
+btn_circle_previous
+btn_rect_next
+btn_rect_previous
+pagination
+slide_indicator
+tab_horizontal
+tab_vertical
