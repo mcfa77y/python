@@ -1,5 +1,5 @@
 #!/cygdrive/c/Python33/python
-from urllib.request import urlopen,urlretrieve,FancyURLopener
+from urllib.request import urlopen, FancyURLopener
 from bs4 import BeautifulSoup
 import re
 # dup a user agent to bypass 403 HTTP errors
@@ -15,7 +15,7 @@ IMG_PATTERN=re.compile('http://dis-connection.com/comics/\d+\.jpg')
 
 
 
-def main(url):	
+def main(url):
 	global MAX, COUNTER, IMG_PATTERN
 	soup = BeautifulSoup(urlopen(url))
 	pageText = soup.prettify()
@@ -41,13 +41,13 @@ def main(url):
 def getNextPage(soup):
 	links = soup.find_all('a')
 	return getNextSimpleCounter(links)
-	
+
 	#return getNextGW(links)
 def getNextSimpleCounter():
 	global COUNTER
 	url = 'http://www.dis-connection.com/?cid='
 	return url+str(COUNTER+1)
-	
+
 def getNextGW(links):
 	# search all links
 	for link in links:
@@ -58,7 +58,7 @@ def getNextGW(links):
 				#nextPageURL=link.attrs['href']
 				#print('found next link', link.attrs['href'])
 				return link.attrs['href']
-		# skip links w/o rel attributes		
+		# skip links w/o rel attributes
 		except KeyError:
-			pass		
+			pass
 main(URL)
